@@ -25,6 +25,32 @@
           "src/main/resources/assets/hoh_4_core/models/item/moonlight_sword.json"
         ]
       }
+    },
+    {
+      "name": "MoonlightDashItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moonlight_dash_item",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/item/MoonlightDashItemItem.java",
+          "src/main/resources/assets/hoh_4_core/models/item/moonlight_dash_item.json"
+        ]
+      }
+    },
+    {
+      "name": "MoonlightDash",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moonlight_dash",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/entity/MoonlightDashEntity.java",
+          "src/main/java/gama/studios/hoh4core/client/renderer/MoonlightDashRenderer.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -37,7 +63,8 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.hoh_4_core.moonlight_sword": "Moonlight Sword"
+      "item.hoh_4_core.moonlight_sword": "Moonlight Sword",
+      "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item"
     }
   },
   "foldersRoot": {

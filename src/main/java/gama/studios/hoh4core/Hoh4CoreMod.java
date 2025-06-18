@@ -28,6 +28,7 @@ import java.util.AbstractMap;
 
 import gama.studios.hoh4core.init.Hoh4CoreModTabs;
 import gama.studios.hoh4core.init.Hoh4CoreModItems;
+import gama.studios.hoh4core.init.Hoh4CoreModEntities;
 
 @Mod("hoh_4_core")
 public class Hoh4CoreMod {
@@ -41,6 +42,7 @@ public class Hoh4CoreMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		Hoh4CoreModItems.REGISTRY.register(bus);
+		Hoh4CoreModEntities.REGISTRY.register(bus);
 
 		Hoh4CoreModTabs.REGISTRY.register(bus);
 
