@@ -150,17 +150,43 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
+        ]
+      }
+    },
+    {
+      "name": "BackCrystalPriShchielchkiePKMPoBloku",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "back_crystal_pri_shchielchkie_pkm_po_bloku",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/BackCrystalPriShchielchkiePKMPoBlokuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BackCrystal",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "back_crystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/item/back_crystal.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/back_crystal.json",
+          "src/main/java/gama/studios/hoh4core/block/BackCrystalBlock.java",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/back_crystal.json",
+          "src/main/resources/assets/hoh_4_core/models/block/back_crystal.json"
         ]
       }
     }
@@ -213,7 +239,8 @@
     "en_us": {
       "item.hoh_4_core.moonlight_sword": "Moonlight Sword",
       "biome.hoh_4_core.death_world_biome": "Death World Biome",
-      "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item"
+      "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
+      "block.hoh_4_core.back_crystal": "Back Crystal"
     }
   },
   "foldersRoot": {

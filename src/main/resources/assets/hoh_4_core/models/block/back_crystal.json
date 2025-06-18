@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/amethyst_block",
+    "up": "minecraft:block/amethyst_block",
+    "north": "minecraft:block/amethyst_block",
+    "east": "minecraft:block/amethyst_block",
+    "south": "minecraft:block/amethyst_block",
+    "west": "minecraft:block/amethyst_block",
+    "particle": "minecraft:block/amethyst_block"
+  },
+  "render_type": "solid"
+}
