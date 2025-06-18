@@ -103,11 +103,95 @@
           }
         ]
       }
+    },
+    {
+      "name": "DeathWorld",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_world",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/dimension_type/death_world.json",
+          "src/main/resources/data/hoh_4_core/dimension/death_world.json"
+        ]
+      }
+    },
+    {
+      "name": "DeathWorldBiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_world_biome",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/world/features/treedecorators/DeathWorldBiomeFruitDecorator.java",
+          "src/main/resources/data/hoh_4_core/worldgen/placed_feature/death_world_biome_tree.json",
+          "src/main/java/gama/studios/hoh4core/world/features/treedecorators/DeathWorldBiomeTrunkDecorator.java",
+          "src/main/resources/data/hoh_4_core/worldgen/configured_feature/death_world_biome_tree.json",
+          "src/main/java/gama/studios/hoh4core/world/features/treedecorators/DeathWorldBiomeLeaveDecorator.java",
+          "src/main/resources/data/hoh_4_core/worldgen/biome/death_world_biome.json"
+        ]
+      }
+    },
+    {
+      "name": "Death",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/DeathProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "status",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "respx",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "respy",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "respz",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "deathworld",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.SMOOTH_BASALT",
+      "~Blocks.BLACKSTONE",
+      "~Blocks.BASALT"
+    ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:MoonlightSword"
     ]
@@ -116,6 +200,7 @@
   "language_map": {
     "en_us": {
       "item.hoh_4_core.moonlight_sword": "Moonlight Sword",
+      "biome.hoh_4_core.death_world_biome": "Death World Biome",
       "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item"
     }
   },

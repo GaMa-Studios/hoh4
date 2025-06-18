@@ -1,0 +1,58 @@
+{
+  "has_precipitation": false,
+  "temperature": 1,
+  "downfall": 0,
+  "effects": {
+    "ambient_sound": "ambient.soul_sand_valley.additions",
+    "additions_sound": {
+      "sound": "ambient.cave",
+      "tick_chance": 0.0111
+    },
+    "music": {
+      "sound": "ambient.basalt_deltas.additions",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": true
+    },
+    "foliage_color": -14140376,
+    "grass_color": -14140376,
+    "sky_color": -13421773,
+    "fog_color": -13421773,
+    "water_color": -12623506,
+    "water_fog_color": -12623506
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "zombie",
+        "weight": 3,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "hoh_4_core:death_world_biome_tree"
+    ],
+    []
+  ]
+}
