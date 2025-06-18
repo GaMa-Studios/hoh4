@@ -25,7 +25,7 @@ public class MoonlightSwordPriShchielchkiePKMProcedure {
 					entityToSpawn.setPierceLevel(piercing);
 					return entityToSpawn;
 				}
-			}.getArrow(projectileLevel, entity, 5, 1, (byte) 1);
+			}.getArrow(projectileLevel, entity, 36, 1, (byte) 10);
 			_entityToSpawn.setPos((entity.getX()), (entity.getY() + 1.5), (entity.getZ()));
 			_entityToSpawn.shoot((entity.getLookAngle().x), (entity.getLookAngle().y), (entity.getLookAngle().z), 1, 0);
 			projectileLevel.addFreshEntity(_entityToSpawn);

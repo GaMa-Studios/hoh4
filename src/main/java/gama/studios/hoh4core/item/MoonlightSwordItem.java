@@ -25,7 +25,7 @@ public class MoonlightSwordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 0f;
+				return 14f;
 			}
 
 			public int getLevel() {
