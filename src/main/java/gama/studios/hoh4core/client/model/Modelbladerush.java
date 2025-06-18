@@ -33,8 +33,10 @@ public class Modelbladerush<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition up = partdefinition.addOrReplaceChild("up", CubeListBuilder.create().texOffs(-4, 12).addBox(-8.0F, 0.0F, -4.0F, 16.0F, 0.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 23.5F, 2.0F));
-		PartDefinition down = partdefinition.addOrReplaceChild("down", CubeListBuilder.create().texOffs(-6, 0).addBox(-8.0F, 0.0F, -6.0F, 16.0F, 0.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 2.0F));
+		PartDefinition up = partdefinition.addOrReplaceChild("up", CubeListBuilder.create().texOffs(-4, 12).addBox(-16.0F, 0.0F, -8.0F, 16.0F, 0.0F, 4.0F, new CubeDeformation(0.0F)),
+				PartPose.offsetAndRotation(0.0F, 19.5F, -8.0F, 0.0F, 1.5708F, 1.5708F));
+		PartDefinition down = partdefinition.addOrReplaceChild("down", CubeListBuilder.create().texOffs(-6, 0).addBox(-16.0F, 0.0F, -8.0F, 16.0F, 0.0F, 6.0F, new CubeDeformation(0.0F)),
+				PartPose.offsetAndRotation(0.0F, 20.0F, -8.0F, 0.0F, 1.5708F, 1.5708F));
 		return LayerDefinition.create(meshdefinition, 32, 32);
 	}
 

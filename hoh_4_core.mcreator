@@ -51,6 +51,58 @@
           "src/main/java/gama/studios/hoh4core/client/renderer/MoonlightDashRenderer.java"
         ]
       }
+    },
+    {
+      "name": "MoonlightSwordPriShchielchkiePKM",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moonlight_sword_pri_shchielchkie_pkm",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/MoonlightSwordPriShchielchkiePKMProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MoonlightDashKazhdyiTikPriPoliotieSnariada",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moonlight_dash_kazhdyi_tik_pri_poliotie_snariada",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/MoonlightDashKazhdyiTikPriPoliotieSnariadaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

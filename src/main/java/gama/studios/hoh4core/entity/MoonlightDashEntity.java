@@ -7,24 +7,19 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.EntityHitResult;
-import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
-import javax.annotation.Nullable;
-
+import gama.studios.hoh4core.procedures.MoonlightDashKazhdyiTikPriPoliotieSnariadaProcedure;
 import gama.studios.hoh4core.init.Hoh4CoreModItems;
 import gama.studios.hoh4core.init.Hoh4CoreModEntities;
 
@@ -70,40 +65,20 @@ public class MoonlightDashEntity extends AbstractArrow implements ItemSupplier {
 		entity.setArrowCount(entity.getArrowCount() - 1);
 	}
 
-	@Nullable
-	@Override
-	protected EntityHitResult findHitEntity(Vec3 projectilePosition, Vec3 deltaPosition) {
-		double d0 = Double.MAX_VALUE;
-		Entity entity = null;
-		AABB lookupBox = this.getBoundingBox().expandTowards(deltaPosition).inflate(1.0D);
-		for (Entity entity1 : this.level().getEntities(this, lookupBox, this::canHitEntity)) {
-			if (entity1 == this.getOwner())
-				continue;
-			AABB aabb = entity1.getBoundingBox();
-			if (aabb.intersects(lookupBox)) {
-				double d1 = projectilePosition.distanceToSqr(projectilePosition);
-				if (d1 < d0) {
-					entity = entity1;
-					d0 = d1;
-				}
-			}
-		}
-		return entity == null ? null : new EntityHitResult(entity);
-	}
-
 	@Override
 	public void tick() {
 		super.tick();
+		MoonlightDashKazhdyiTikPriPoliotieSnariadaProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 		if (this.inGround)
 			this.discard();
 	}
 
 	public static MoonlightDashEntity shoot(Level world, LivingEntity entity, RandomSource source) {
-		return shoot(world, entity, source, 1f, 5, 5);
+		return shoot(world, entity, source, 20f, 5, 5);
 	}
 
 	public static MoonlightDashEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
-		return shoot(world, entity, source, pullingPower * 1f, 5, 5);
+		return shoot(world, entity, source, pullingPower * 20f, 5, 5);
 	}
 
 	public static MoonlightDashEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
@@ -123,7 +98,7 @@ public class MoonlightDashEntity extends AbstractArrow implements ItemSupplier {
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 1f * 2, 12.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 20f * 2, 12.0F);
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(5);
 		entityarrow.setKnockback(5);
