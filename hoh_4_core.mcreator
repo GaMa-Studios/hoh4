@@ -12,14 +12,33 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "MoonlightSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moonlight_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/item/MoonlightSwordItem.java",
+          "src/main/resources/assets/hoh_4_core/models/item/moonlight_sword.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:MoonlightSword"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.hoh_4_core.moonlight_sword": "Moonlight Sword"
+    }
   },
   "foldersRoot": {
     "name": "~",
