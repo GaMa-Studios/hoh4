@@ -20,6 +20,7 @@ import net.minecraft.commands.CommandSource;
 import javax.annotation.Nullable;
 
 import gama.studios.hoh4core.network.Hoh4CoreModVariables;
+import gama.studios.hoh4core.Hoh4CoreMod;
 
 @Mod.EventBusSubscriber
 public class DeathProcedure {
@@ -76,12 +77,11 @@ public class DeathProcedure {
 			if (Hoh4CoreModVariables.MapVariables.get(world).deathworld == false) {
 				Hoh4CoreModVariables.MapVariables.get(world).deathworld = true;
 				Hoh4CoreModVariables.MapVariables.get(world).syncData(world);
-				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"/execute in hoh_4_core:death_world run setblock 0 200 0 hoh_4_core:back_crystal");
-				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"/tell @a \u0432\u0440\u043E\u0434\u0435");
+				Hoh4CoreMod.queueServerWork(80, () -> {
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"/execute in hoh_4_core:death_world run setblock 0 70 0 hoh_4_core:back_crystal");
+				});
 			}
 		}
 		if ((entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).status == -1) {

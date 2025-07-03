@@ -10,7 +10,11 @@
     "blockingModelName": "Normal blocking",
     "name": "Moonlight Sword",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "§nВторая атака: §rВолна Разрушения ",
+        "§nТрата: §9200 духа",
+        "§oИсточник: Чертова реинкарнация"
+      ]
     },
     "creativeTabs": [
       {

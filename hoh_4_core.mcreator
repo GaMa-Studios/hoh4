@@ -201,6 +201,19 @@
           "src/main/resources/assets/hoh_4_core/models/block/back_crystal.json"
         ]
       }
+    },
+    {
+      "name": "PrimordialPowerTalisman",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primordial_power_talisman",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/item/PrimordialPowerTalismanItem.java",
+          "src/main/resources/assets/hoh_4_core/models/item/primordial_power_talisman_chestplate.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -233,6 +246,18 @@
       "type": "logic",
       "scope": "map",
       "value": "false"
+    },
+    {
+      "name": "SpiritForceMax",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SpiritForce",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -248,9 +273,23 @@
   },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {
-      "item.hoh_4_core.moonlight_sword": "Moonlight Sword",
+    "ru_ru": {
+      "item.hoh_4_core.primordial_power_talisman_chestplate": "Оберег Первозданной силы",
+      "item.hoh_4_core.moonlight_sword": "Лунный Клинок",
+      "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: Волна Разрушения ",
       "biome.hoh_4_core.death_world_biome": "Death World Biome",
+      "item.hoh_4_core.moonlight_sword.description_2": "§oИсточник: Чертова реинкарнация",
+      "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
+      "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
+      "block.hoh_4_core.back_crystal": "Back Crystal"
+    },
+    "en_us": {
+      "item.hoh_4_core.primordial_power_talisman_chestplate": "Primordial Power Talisman",
+      "item.hoh_4_core.moonlight_sword": "Moonlight Sword",
+      "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: §rВолна Разрушения ",
+      "biome.hoh_4_core.death_world_biome": "Death World Biome",
+      "item.hoh_4_core.moonlight_sword.description_2": "§oИсточник: Чертова реинкарнация",
+      "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
       "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
       "block.hoh_4_core.back_crystal": "Back Crystal"
     }

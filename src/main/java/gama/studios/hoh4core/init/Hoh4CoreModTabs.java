@@ -23,6 +23,8 @@ public class Hoh4CoreModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(Hoh4CoreModItems.MOONLIGHT_SWORD.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(Hoh4CoreModItems.PRIMORDIAL_POWER_TALISMAN_CHESTPLATE.get());
 		}
 	}
 }

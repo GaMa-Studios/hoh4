@@ -76,7 +76,9 @@ public class Hoh4CoreModVariables {
 			clone.respx = original.respx;
 			clone.respy = original.respy;
 			clone.respz = original.respz;
+			clone.SpiritForceMax = original.SpiritForceMax;
 			if (!event.isWasDeath()) {
+				clone.SpiritForce = original.SpiritForce;
 			}
 		}
 
@@ -249,6 +251,8 @@ public class Hoh4CoreModVariables {
 		public double respx = 0;
 		public double respy = 0;
 		public double respz = 0;
+		public double SpiritForceMax = 0;
+		public double SpiritForce = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -261,6 +265,8 @@ public class Hoh4CoreModVariables {
 			nbt.putDouble("respx", respx);
 			nbt.putDouble("respy", respy);
 			nbt.putDouble("respz", respz);
+			nbt.putDouble("SpiritForceMax", SpiritForceMax);
+			nbt.putDouble("SpiritForce", SpiritForce);
 			return nbt;
 		}
 
@@ -270,6 +276,8 @@ public class Hoh4CoreModVariables {
 			respx = nbt.getDouble("respx");
 			respy = nbt.getDouble("respy");
 			respz = nbt.getDouble("respz");
+			SpiritForceMax = nbt.getDouble("SpiritForceMax");
+			SpiritForce = nbt.getDouble("SpiritForce");
 		}
 	}
 
@@ -298,6 +306,8 @@ public class Hoh4CoreModVariables {
 					variables.respx = message.data.respx;
 					variables.respy = message.data.respy;
 					variables.respz = message.data.respz;
+					variables.SpiritForceMax = message.data.SpiritForceMax;
+					variables.SpiritForce = message.data.SpiritForce;
 				}
 			});
 			context.setPacketHandled(true);
