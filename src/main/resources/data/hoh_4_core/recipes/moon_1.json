@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hoh_4_core:moon_sharp"
+    },
+    {
+      "item": "hoh_4_core:moonlighswordbroken"
+    }
+  ],
+  "result": {
+    "item": "hoh_4_core:moolightswordhalfworked",
+    "count": 1
+  }
+}

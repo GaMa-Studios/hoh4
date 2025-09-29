@@ -58,5 +58,6 @@ public class MoolightswordhalfworkedItem extends SwordItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.translatable("item.hoh_4_core.moolightswordhalfworked.description_0"));
 		list.add(Component.translatable("item.hoh_4_core.moolightswordhalfworked.description_1"));
+		list.add(Component.translatable("item.hoh_4_core.moolightswordhalfworked.description_2"));
 	}
 }

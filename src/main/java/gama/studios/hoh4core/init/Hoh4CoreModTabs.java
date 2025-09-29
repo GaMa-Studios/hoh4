@@ -26,6 +26,8 @@ public class Hoh4CoreModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.hoh_4_core.hoh_4")).icon(() -> new ItemStack(Blocks.AMETHYST_CLUSTER)).displayItems((parameters, tabData) -> {
 				tabData.accept(Hoh4CoreModItems.MOONLIGHT_SWORD.get());
 				tabData.accept(Hoh4CoreModItems.PRIMORDIAL_POWER_TALISMAN_CHESTPLATE.get());
+				tabData.accept(Hoh4CoreModItems.MOONLIGHSWORDBROKEN.get());
+				tabData.accept(Hoh4CoreModItems.MOON_SHARP.get());
 			}).build());
 
 	@SubscribeEvent

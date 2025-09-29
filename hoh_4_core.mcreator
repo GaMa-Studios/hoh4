@@ -289,6 +289,105 @@
           "src/main/java/gama/studios/hoh4core/network/SpiritForceMoreMessage.java"
         ]
       }
+    },
+    {
+      "name": "SpiritForceShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spirit_force_show",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/SpiritForceShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpiritForce",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spirit_force",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/client/screens/SpiritForceOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "AddMaxSpiritForce",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_max_spirit_force",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/AddMaxSpiritForceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Moonlighswordbroken",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moonlighswordbroken",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/item/MoonlighswordbrokenItem.java",
+          "src/main/resources/assets/hoh_4_core/models/item/moonlighswordbroken.json"
+        ]
+      }
+    },
+    {
+      "name": "MoonSharp",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_sharp",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/item/MoonSharpItem.java",
+          "src/main/resources/assets/hoh_4_core/models/item/moon_sharp.json"
+        ]
+      }
+    },
+    {
+      "name": "Moon1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/moon_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Moon2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/moon_2.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -351,14 +450,19 @@
   "language_map": {
     "ru_ru": {
       "item.hoh_4_core.primordial_power_talisman_chestplate": "Оберег Первозданной силы",
+      "item.hoh_4_core.moon_sharp.description_0": "§oИсточник: Чертова реинкарнация",
       "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: Волна Разрушения ",
       "key.hoh_4_core.spirit_force_more": "Spirit Force ",
       "item.hoh_4_core.moonlight_sword.description_2": "§oИсточник: Чертова реинкарнация",
       "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
       "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
+      "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nБонус: §r200 Духа",
+      "item.hoh_4_core.moon_sharp": "Moonlighswordbroken",
       "item.hoh_4_core.moonlight_sword": "Лунный Клинок",
+      "item.hoh_4_core.moonlighswordbroken": "Moonlighswordbroken",
       "biome.hoh_4_core.death_world_biome": "Death World Biome",
       "item.hoh_4_core.moolightswordhalfworked": "Лунный клинок (Поврежден)",
+      "item.hoh_4_core.moonlighswordbroken.description_0": "§oИсточник: Чертова реинкарнация",
       "item.hoh_4_core.moolightswordhalfworked.description_0": "§nВторая атака: §rВолна Разрушения ",
       "item.hoh_4_core.moolightswordhalfworked.description_1": "§nТрата: §9200 духа",
       "item.hoh_4_core.moolightswordhalfworked.description_2": "§oИсточник: Чертова реинкарнация",
@@ -367,16 +471,21 @@
     },
     "en_us": {
       "item.hoh_4_core.primordial_power_talisman_chestplate": "Primordial Power Talisman",
+      "item.hoh_4_core.moon_sharp.description_0": "§oИсточник: Чертова реинкарнация",
       "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: §rВолна Разрушения ",
       "key.hoh_4_core.spirit_force_more": "Spirit Force ",
       "item.hoh_4_core.moonlight_sword.description_2": "§oИсточник: Чертова реинкарнация",
       "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
       "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
+      "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nБонус: §r200 Духа",
+      "item.hoh_4_core.moon_sharp": "Moon Sharp",
       "item.hoh_4_core.moonlight_sword": "Moonlight Sword",
+      "item.hoh_4_core.moonlighswordbroken": "Moonlighswordbroken",
       "biome.hoh_4_core.death_world_biome": "Death World Biome",
       "item.hoh_4_core.moolightswordhalfworked": "Moonlight Sword Cracked",
+      "item.hoh_4_core.moonlighswordbroken.description_0": "§oИсточник: Чертова реинкарнация",
       "item.hoh_4_core.moolightswordhalfworked.description_0": "§nВторая атака: §rВолна Разрушения ",
-      "item.hoh_4_core.moolightswordhalfworked.description_1": "§oИсточник: Чертова реинкарнация",
+      "item.hoh_4_core.moolightswordhalfworked.description_1": "§nТрата: §950 духа",
       "item.hoh_4_core.moolightswordhalfworked.description_2": "§oИсточник: Чертова реинкарнация",
       "item_group.hoh_4_core.hoh_4": "HOH 4",
       "block.hoh_4_core.back_crystal": "Back Crystal"

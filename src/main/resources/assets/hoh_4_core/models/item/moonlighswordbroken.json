@@ -1,0 +1,7 @@
+{
+  "parent": "hoh_4_core:custom/moon_sword_broken",
+  "textures": {
+    "0": "hoh_4_core:block/sword1",
+    "particle": "minecraft:item/empty_slot_sword"
+  }
+}
