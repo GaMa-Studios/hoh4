@@ -6,19 +6,18 @@
     "renderType": 1,
     "blockingRenderType": 0,
     "texture": "minecraft:empty_slot_sword",
-    "customModelName": "moon_sword:default",
+    "customModelName": "moon_sworcracked:default",
     "blockingModelName": "Normal blocking",
-    "name": "Moonlight Sword",
+    "name": "Moonlight Sword Cracked",
     "specialInformation": {
       "fixedValue": [
         "§nВторая атака: §rВолна Разрушения ",
-        "§nТрата: §9200 духа",
         "§oИсточник: Чертова реинкарнация"
       ]
     },
     "creativeTabs": [
       {
-        "value": "CUSTOM:HOH4"
+        "value": "TOOLS"
       }
     ],
     "efficiency": 4.0,
@@ -36,7 +35,7 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onRightClickedInAir": {
-      "name": "MoonlightSwordPriShchielchkiePKM"
+      "name": "MoonLightCrackDash"
     }
   }
 }

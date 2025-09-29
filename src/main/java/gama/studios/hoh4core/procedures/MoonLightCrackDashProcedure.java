@@ -11,11 +11,11 @@ import gama.studios.hoh4core.network.Hoh4CoreModVariables;
 import gama.studios.hoh4core.init.Hoh4CoreModEntities;
 import gama.studios.hoh4core.entity.MoonlightDashEntity;
 
-public class MoonlightSwordPriShchielchkiePKMProcedure {
+public class MoonLightCrackDashProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).SpiritForce >= 200) {
+		if ((entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).SpiritForce >= 50) {
 			if (world instanceof ServerLevel projectileLevel) {
 				Projectile _entityToSpawn = new Object() {
 					public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
@@ -27,13 +27,13 @@ public class MoonlightSwordPriShchielchkiePKMProcedure {
 						entityToSpawn.setPierceLevel(piercing);
 						return entityToSpawn;
 					}
-				}.getArrow(projectileLevel, entity, 36, 1, (byte) 10);
+				}.getArrow(projectileLevel, entity, 9, 0, (byte) 5);
 				_entityToSpawn.setPos((entity.getX()), (entity.getY() + 1.5), (entity.getZ()));
 				_entityToSpawn.shoot((entity.getLookAngle().x), (entity.getLookAngle().y), (entity.getLookAngle().z), 1, 0);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
 			{
-				double _setval = (entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).SpiritForce - 200;
+				double _setval = (entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).SpiritForce - 50;
 				entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.SpiritForce = _setval;
 					capability.syncPlayerVariables(entity);

@@ -1,10 +1,16 @@
 {
   "item.hoh_4_core.primordial_power_talisman_chestplate": "Оберег Первозданной силы",
-  "item.hoh_4_core.moonlight_sword": "Лунный Клинок",
   "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: Волна Разрушения ",
-  "biome.hoh_4_core.death_world_biome": "Death World Biome",
+  "key.hoh_4_core.spirit_force_more": "Spirit Force ",
   "item.hoh_4_core.moonlight_sword.description_2": "§oИсточник: Чертова реинкарнация",
   "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
   "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
+  "item.hoh_4_core.moonlight_sword": "Лунный Клинок",
+  "biome.hoh_4_core.death_world_biome": "Death World Biome",
+  "item.hoh_4_core.moolightswordhalfworked": "Лунный клинок (Поврежден)",
+  "item.hoh_4_core.moolightswordhalfworked.description_0": "§nВторая атака: §rВолна Разрушения ",
+  "item.hoh_4_core.moolightswordhalfworked.description_1": "§nТрата: §9200 духа",
+  "item.hoh_4_core.moolightswordhalfworked.description_2": "§oИсточник: Чертова реинкарнация",
+  "item_group.hoh_4_core.hoh_4": "HOH 4",
   "block.hoh_4_core.back_crystal": "Back Crystal"
 }

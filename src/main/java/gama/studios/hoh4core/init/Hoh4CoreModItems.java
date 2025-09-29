@@ -15,6 +15,7 @@ import net.minecraft.world.item.BlockItem;
 import gama.studios.hoh4core.item.PrimordialPowerTalismanItem;
 import gama.studios.hoh4core.item.MoonlightSwordItem;
 import gama.studios.hoh4core.item.MoonlightDashItemItem;
+import gama.studios.hoh4core.item.MoolightswordhalfworkedItem;
 import gama.studios.hoh4core.Hoh4CoreMod;
 
 public class Hoh4CoreModItems {
@@ -23,6 +24,7 @@ public class Hoh4CoreModItems {
 	public static final RegistryObject<Item> MOONLIGHT_DASH_ITEM = REGISTRY.register("moonlight_dash_item", () -> new MoonlightDashItemItem());
 	public static final RegistryObject<Item> BACK_CRYSTAL = block(Hoh4CoreModBlocks.BACK_CRYSTAL);
 	public static final RegistryObject<Item> PRIMORDIAL_POWER_TALISMAN_CHESTPLATE = REGISTRY.register("primordial_power_talisman_chestplate", () -> new PrimordialPowerTalismanItem.Chestplate());
+	public static final RegistryObject<Item> MOOLIGHTSWORDHALFWORKED = REGISTRY.register("moolightswordhalfworked", () -> new MoolightswordhalfworkedItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

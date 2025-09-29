@@ -12,7 +12,7 @@
     "textureBoots": "",
     "creativeTabs": [
       {
-        "value": "COMBAT"
+        "value": "CUSTOM:HOH4"
       }
     ],
     "armorTextureFile": "amulet",
@@ -57,7 +57,7 @@
     "bootsItemRenderType": 0,
     "bootsItemCustomModelName": "Normal",
     "helmetImmuneToFire": false,
-    "bodyImmuneToFire": false,
+    "bodyImmuneToFire": true,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
     "helmetGlowCondition": {

@@ -2,8 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "lesvie",
-        "1": "sword1"
+        "0": "sword1"
       },
       "name": "default"
     }

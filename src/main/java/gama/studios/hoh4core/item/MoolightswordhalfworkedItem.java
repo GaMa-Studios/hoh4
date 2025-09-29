@@ -15,10 +15,10 @@ import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
-import gama.studios.hoh4core.procedures.MoonlightSwordPriShchielchkiePKMProcedure;
+import gama.studios.hoh4core.procedures.MoonLightCrackDashProcedure;
 
-public class MoonlightSwordItem extends SwordItem {
-	public MoonlightSwordItem() {
+public class MoolightswordhalfworkedItem extends SwordItem {
+	public MoolightswordhalfworkedItem() {
 		super(new Tier() {
 			public int getUses() {
 				return 100;
@@ -49,15 +49,14 @@ public class MoonlightSwordItem extends SwordItem {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		MoonlightSwordPriShchielchkiePKMProcedure.execute(world, entity);
+		MoonLightCrackDashProcedure.execute(world, entity);
 		return ar;
 	}
 
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.translatable("item.hoh_4_core.moonlight_sword.description_0"));
-		list.add(Component.translatable("item.hoh_4_core.moonlight_sword.description_1"));
-		list.add(Component.translatable("item.hoh_4_core.moonlight_sword.description_2"));
+		list.add(Component.translatable("item.hoh_4_core.moolightswordhalfworked.description_0"));
+		list.add(Component.translatable("item.hoh_4_core.moolightswordhalfworked.description_1"));
 	}
 }

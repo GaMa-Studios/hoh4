@@ -61,7 +61,7 @@ public abstract class PrimordialPowerTalismanItem extends ArmorItem {
 
 	public static class Chestplate extends PrimordialPowerTalismanItem {
 		public Chestplate() {
-			super(ArmorItem.Type.CHESTPLATE, new Item.Properties());
+			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant());
 		}
 
 		@Override
