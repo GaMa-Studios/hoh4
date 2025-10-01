@@ -1,8 +1,8 @@
 {
-  "parent": "hoh_4_core:custom/moon_sword",
+  "parent": "hoh_4_core:custom/sword1",
   "textures": {
-    "0": "hoh_4_core:block/lesvie",
-    "1": "hoh_4_core:block/sword1",
+    "0": "hoh_4_core:block/sword1",
+    "1": "hoh_4_core:block/lesvie",
     "particle": "minecraft:item/empty_slot_sword"
   }
 }

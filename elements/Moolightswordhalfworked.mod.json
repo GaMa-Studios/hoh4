@@ -6,9 +6,9 @@
     "renderType": 1,
     "blockingRenderType": 0,
     "texture": "minecraft:empty_slot_sword",
-    "customModelName": "moon_sworcracked:default",
+    "customModelName": "sword2:default",
     "blockingModelName": "Normal blocking",
-    "name": "Moonlight Sword Cracked",
+    "name": "Moonlight Sword (Cracked)",
     "specialInformation": {
       "fixedValue": [
         "§nВторая атака: §rВолна Разрушения ",
@@ -18,13 +18,13 @@
     },
     "creativeTabs": [
       {
-        "value": "TOOLS"
+        "value": "CUSTOM:HOH4"
       }
     ],
     "efficiency": 4.0,
     "attackSpeed": 1.0,
     "enchantability": 2,
-    "damageVsEntity": 18.0,
+    "damageVsEntity": 6.0,
     "usageCount": 100,
     "glowCondition": {
       "fixedValue": false

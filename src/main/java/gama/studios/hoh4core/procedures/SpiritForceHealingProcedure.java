@@ -10,20 +10,20 @@ public class SpiritForceHealingProcedure {
 			return;
 		if ((entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).SpiritForce < (entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new Hoh4CoreModVariables.PlayerVariables())).SpiritForceMax) {
-			if (0.8 < Math.random()) {
-				if (0.8 < Math.random()) {
-					if (0.8 < Math.random()) {
-						if (0.8 < Math.random()) {
-							{
-								double _setval = 1 + (entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).SpiritForce;
-								entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-									capability.SpiritForce = _setval;
-									capability.syncPlayerVariables(entity);
-								});
-							}
-						}
-					}
-				}
+			{
+				double _setval = Math.round(Math.random() * 15) + (entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).SpiritForce;
+				entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.SpiritForce = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		} else {
+			{
+				double _setval = (entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).SpiritForceMax;
+				entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.SpiritForce = _setval;
+					capability.syncPlayerVariables(entity);
+				});
 			}
 		}
 	}

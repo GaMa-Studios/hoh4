@@ -6,7 +6,7 @@
     "renderType": 1,
     "blockingRenderType": 0,
     "texture": "minecraft:empty_slot_sword",
-    "customModelName": "moon_sword:default",
+    "customModelName": "sword1:default",
     "blockingModelName": "Normal blocking",
     "name": "Moonlight Sword",
     "specialInformation": {

@@ -29,7 +29,7 @@ public class MoolightswordhalfworkedItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 14f;
+				return 2f;
 			}
 
 			public int getLevel() {

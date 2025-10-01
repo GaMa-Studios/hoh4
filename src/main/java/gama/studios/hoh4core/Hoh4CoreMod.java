@@ -27,6 +27,7 @@ import java.util.ArrayList;
 import java.util.AbstractMap;
 
 import gama.studios.hoh4core.init.Hoh4CoreModTabs;
+import gama.studios.hoh4core.init.Hoh4CoreModMobEffects;
 import gama.studios.hoh4core.init.Hoh4CoreModItems;
 import gama.studios.hoh4core.init.Hoh4CoreModEntities;
 import gama.studios.hoh4core.init.Hoh4CoreModBlocks;
@@ -48,6 +49,8 @@ public class Hoh4CoreMod {
 		Hoh4CoreModEntities.REGISTRY.register(bus);
 
 		Hoh4CoreModTabs.REGISTRY.register(bus);
+
+		Hoh4CoreModMobEffects.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init
