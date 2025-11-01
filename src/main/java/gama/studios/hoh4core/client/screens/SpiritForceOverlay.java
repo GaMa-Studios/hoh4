@@ -11,9 +11,14 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.Minecraft;
 
 import gama.studios.hoh4core.procedures.SpiritForceShowProcedure;
+
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.platform.GlStateManager;
 
 @Mod.EventBusSubscriber({Dist.CLIENT})
 public class SpiritForceOverlay {
@@ -32,10 +37,23 @@ public class SpiritForceOverlay {
 			y = entity.getY();
 			z = entity.getZ();
 		}
+		RenderSystem.disableDepthTest();
+		RenderSystem.depthMask(false);
+		RenderSystem.enableBlend();
+		RenderSystem.setShader(GameRenderer::getPositionTexShader);
+		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
+		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (true) {
+			event.getGuiGraphics().blit(new ResourceLocation("hoh_4_core:textures/screens/spirit.png"), 14, h - 31, 0, 0, 16, 16, 16, 16);
+
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					SpiritForceShowProcedure.execute(entity), w / 2 + -176, h / 2 + 99, -1, false);
+					SpiritForceShowProcedure.execute(entity), 33, h - 25, -1, false);
 		}
+		RenderSystem.depthMask(true);
+		RenderSystem.defaultBlendFunc();
+		RenderSystem.enableDepthTest();
+		RenderSystem.disableBlend();
+		RenderSystem.setShaderColor(1, 1, 1, 1);
 	}
 }

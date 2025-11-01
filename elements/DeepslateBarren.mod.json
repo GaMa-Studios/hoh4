@@ -2,15 +2,15 @@
   "_fv": 73,
   "_type": "biome",
   "definition": {
-    "name": "Basalt Barren",
+    "name": "Deepslate Barren",
     "groundBlock": {
-      "value": "Blocks.BASALT"
+      "value": "Blocks.DEEPSLATE"
     },
     "undergroundBlock": {
       "value": "Blocks.BLACKSTONE"
     },
     "underwaterBlock": {
-      "value": "Blocks.DEEPSLATE"
+      "value": "Blocks.BLACKSTONE"
     },
     "airColor": {
       "value": -13421773,
@@ -43,7 +43,7 @@
       "value": ""
     },
     "music": {
-      "value": "ambient.basalt_deltas.additions"
+      "value": "ambient.cave"
     },
     "moodSound": {
       "value": ""
@@ -51,11 +51,11 @@
     "moodSoundDelay": 6000,
     "spawnParticles": true,
     "particleToSpawn": {
-      "value": "ASH"
+      "value": "SOUL"
     },
     "particlesProbability": 0.05,
     "rainingPossibility": 0.0,
-    "temperature": 1.0,
+    "temperature": 0.5,
     "spawnBiome": false,
     "spawnInCaves": false,
     "spawnBiomeNether": false,
@@ -84,10 +84,10 @@
     "treeType": 0,
     "minHeight": 7,
     "treeStem": {
-      "value": "Blocks.VOID_AIR"
+      "value": ""
     },
     "treeBranch": {
-      "value": "Blocks.VOID_AIR"
+      "value": ""
     },
     "treeVines": {
       "value": ""
@@ -119,28 +119,28 @@
     "spawnEntries": [
       {
         "entity": {
-          "value": "EntitySkeleton"
+          "value": "EntityZombie"
         },
         "minGroup": 1,
-        "maxGroup": 4,
+        "maxGroup": 10,
         "weight": 20,
         "spawnType": "monster"
       },
       {
         "entity": {
-          "value": "EntityWitherSkeleton"
+          "value": "EntityHusk"
         },
         "minGroup": 1,
-        "maxGroup": 2,
+        "maxGroup": 4,
         "weight": 15,
         "spawnType": "monster"
       },
       {
         "entity": {
-          "value": "EntityStray"
+          "value": "EntityDrowned"
         },
         "minGroup": 1,
-        "maxGroup": 3,
+        "maxGroup": 1,
         "weight": 1,
         "spawnType": "monster"
       }

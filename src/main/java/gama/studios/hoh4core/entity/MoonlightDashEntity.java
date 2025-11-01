@@ -68,17 +68,17 @@ public class MoonlightDashEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void tick() {
 		super.tick();
-		MoonlightDashKazhdyiTikPriPoliotieSnariadaProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
+		MoonlightDashKazhdyiTikPriPoliotieSnariadaProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this.getOwner());
 		if (this.inGround)
 			this.discard();
 	}
 
 	public static MoonlightDashEntity shoot(Level world, LivingEntity entity, RandomSource source) {
-		return shoot(world, entity, source, 20f, 5, 5);
+		return shoot(world, entity, source, 1f, 5, 5);
 	}
 
 	public static MoonlightDashEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
-		return shoot(world, entity, source, pullingPower * 20f, 5, 5);
+		return shoot(world, entity, source, pullingPower * 1f, 5, 5);
 	}
 
 	public static MoonlightDashEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
@@ -98,7 +98,7 @@ public class MoonlightDashEntity extends AbstractArrow implements ItemSupplier {
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 20f * 2, 12.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 1f * 2, 12.0F);
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(5);
 		entityarrow.setKnockback(5);

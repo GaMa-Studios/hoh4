@@ -86,6 +86,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -122,15 +126,10 @@
       "type": "biome",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "death_world_biome",
+      "registry_name": "basalt_barren_biome",
       "metadata": {
         "files": [
-          "src/main/java/gama/studios/hoh4core/world/features/treedecorators/DeathWorldBiomeFruitDecorator.java",
-          "src/main/resources/data/hoh_4_core/worldgen/placed_feature/death_world_biome_tree.json",
-          "src/main/java/gama/studios/hoh4core/world/features/treedecorators/DeathWorldBiomeTrunkDecorator.java",
-          "src/main/resources/data/hoh_4_core/worldgen/configured_feature/death_world_biome_tree.json",
-          "src/main/java/gama/studios/hoh4core/world/features/treedecorators/DeathWorldBiomeLeaveDecorator.java",
-          "src/main/resources/data/hoh_4_core/worldgen/biome/death_world_biome.json"
+          "src/main/resources/data/hoh_4_core/worldgen/biome/basalt_barren_biome.json"
         ]
       }
     },
@@ -194,11 +193,11 @@
       "registry_name": "back_crystal",
       "metadata": {
         "files": [
+          "src/main/resources/assets/hoh_4_core/models/block/back_crystal.json",
+          "src/main/java/gama/studios/hoh4core/block/BackCrystalBlock.java",
           "src/main/resources/assets/hoh_4_core/models/item/back_crystal.json",
           "src/main/resources/assets/hoh_4_core/blockstates/back_crystal.json",
-          "src/main/java/gama/studios/hoh4core/block/BackCrystalBlock.java",
-          "src/main/resources/data/hoh_4_core/loot_tables/blocks/back_crystal.json",
-          "src/main/resources/assets/hoh_4_core/models/block/back_crystal.json"
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/back_crystal.json"
         ]
       }
     },
@@ -210,8 +209,8 @@
       "registry_name": "primordial_power_talisman",
       "metadata": {
         "files": [
-          "src/main/java/gama/studios/hoh4core/item/PrimordialPowerTalismanItem.java",
-          "src/main/resources/assets/hoh_4_core/models/item/primordial_power_talisman_chestplate.json"
+          "src/main/resources/assets/hoh_4_core/models/item/primordial_power_talisman_chestplate.json",
+          "src/main/java/gama/studios/hoh4core/item/PrimordialPowerTalismanItem.java"
         ]
       }
     },
@@ -223,8 +222,8 @@
       "registry_name": "moolightswordhalfworked",
       "metadata": {
         "files": [
-          "src/main/resources/assets/hoh_4_core/models/item/moolightswordhalfworked.json",
-          "src/main/java/gama/studios/hoh4core/item/MoolightswordhalfworkedItem.java"
+          "src/main/java/gama/studios/hoh4core/item/MoolightswordhalfworkedItem.java",
+          "src/main/resources/assets/hoh_4_core/models/item/moolightswordhalfworked.json"
         ]
       }
     },
@@ -347,8 +346,8 @@
       "registry_name": "moonlighswordbroken",
       "metadata": {
         "files": [
-          "src/main/java/gama/studios/hoh4core/item/MoonlighswordbrokenItem.java",
-          "src/main/resources/assets/hoh_4_core/models/item/moonlighswordbroken.json"
+          "src/main/resources/assets/hoh_4_core/models/item/moonlighswordbroken.json",
+          "src/main/java/gama/studios/hoh4core/item/MoonlighswordbrokenItem.java"
         ]
       }
     },
@@ -360,8 +359,8 @@
       "registry_name": "moon_sharp",
       "metadata": {
         "files": [
-          "src/main/java/gama/studios/hoh4core/item/MoonSharpItem.java",
-          "src/main/resources/assets/hoh_4_core/models/item/moon_sharp.json"
+          "src/main/resources/assets/hoh_4_core/models/item/moon_sharp.json",
+          "src/main/java/gama/studios/hoh4core/item/MoonSharpItem.java"
         ]
       }
     },
@@ -418,6 +417,18 @@
           }
         ]
       }
+    },
+    {
+      "name": "DeepslateBarren",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_barren",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/biome/deepslate_barren.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -466,20 +477,21 @@
   ],
   "sound_elements": [],
   "tag_elements": {
-    "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~Blocks.SMOOTH_BASALT",
-      "~Blocks.BLACKSTONE",
-      "~Blocks.BASALT"
-    ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:Moolightswordhalfworked",
       "~CUSTOM:MoonlightSword"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.BLACKSTONE",
+      "~Blocks.DEEPSLATE",
+      "~Blocks.BASALT"
     ]
   },
   "tab_element_order": {},
   "language_map": {
     "ru_ru": {
       "item.hoh_4_core.primordial_power_talisman_chestplate": "Оберег Первозданной силы",
+      "biome.hoh_4_core.basalt_barren_biome": "Basalt Barren",
       "item.hoh_4_core.moon_sharp.description_0": "§oИсточник: Чертова реинкарнация",
       "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: Волна Разрушения ",
       "key.hoh_4_core.spirit_force_more": "Сила духа",
@@ -491,7 +503,7 @@
       "item.hoh_4_core.moonlight_sword": "Лунный Клинок",
       "item.hoh_4_core.moonlighswordbroken": "Лунный клинок (Сломан)",
       "effect.hoh_4_core.spirit": "Дух",
-      "biome.hoh_4_core.death_world_biome": "Death World Biome",
+      "biome.hoh_4_core.deepslate_barren": "Deepslate Barren",
       "item.hoh_4_core.moolightswordhalfworked": "Лунный клинок (Поврежден)",
       "item.hoh_4_core.moonlighswordbroken.description_0": "§oИсточник: Чертова реинкарнация",
       "item.hoh_4_core.moolightswordhalfworked.description_0": "§nВторая атака: §rВолна Разрушения ",
@@ -502,25 +514,26 @@
     },
     "en_us": {
       "item.hoh_4_core.primordial_power_talisman_chestplate": "Primordial Power Talisman",
-      "item.hoh_4_core.moon_sharp.description_0": "§oSource: Damn Reincarnation",
-      "item.hoh_4_core.moonlight_sword.description_0": "§nSecond attack: §rDestruction Wave",
+      "biome.hoh_4_core.basalt_barren_biome": "Basalt Barren",
+      "item.hoh_4_core.moon_sharp.description_0": "§oИсточник: Чертова реинкарнация",
+      "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: §rВолна Разрушения ",
       "key.hoh_4_core.spirit_force_more": "Spirit Force ",
-      "item.hoh_4_core.moonlight_sword.description_2": "§oSource: Damn Reincarnation",
-      "item.hoh_4_core.moonlight_sword.description_1": "§nUse: §9200 spirit",
+      "item.hoh_4_core.moonlight_sword.description_2": "§oИсточник: Чертова реинкарнация",
+      "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
       "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
-      "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nBonus: §r200 spirit ",
+      "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nБонус: §r200 Духа",
       "item.hoh_4_core.moon_sharp": "Moon Sharp",
       "item.hoh_4_core.moonlight_sword": "Moonlight Sword",
       "item.hoh_4_core.moonlighswordbroken": "Moonlight Sword (Broken)",
       "effect.hoh_4_core.spirit": "Spirit",
-      "biome.hoh_4_core.death_world_biome": "Death World Biome",
+      "biome.hoh_4_core.deepslate_barren": "Deepslate Barren",
       "item.hoh_4_core.moolightswordhalfworked": "Moonlight Sword (Cracked)",
-      "item.hoh_4_core.moonlighswordbroken.description_0": "§oSource: Damn Reincarnation",
-      "item.hoh_4_core.moolightswordhalfworked.description_0": "§nSecond attack: §rDestruction Wave",
-      "item.hoh_4_core.moolightswordhalfworked.description_1": "§nUse: §950 spirit",
-      "item.hoh_4_core.moolightswordhalfworked.description_2": "§oSource: Damn Reincarnation",
+      "item.hoh_4_core.moonlighswordbroken.description_0": "§oИсточник: Чертова реинкарнация",
+      "item.hoh_4_core.moolightswordhalfworked.description_0": "§nВторая атака: §rВолна Разрушения ",
+      "item.hoh_4_core.moolightswordhalfworked.description_1": "§nТрата: §950 духа",
+      "item.hoh_4_core.moolightswordhalfworked.description_2": "§oИсточник: Чертова реинкарнация",
       "item_group.hoh_4_core.hoh_4": "HOH 4",
-      "block.hoh_4_core.back_crystal": "Spirirt Crystal"
+      "block.hoh_4_core.back_crystal": "Back Crystal"
     }
   },
   "foldersRoot": {

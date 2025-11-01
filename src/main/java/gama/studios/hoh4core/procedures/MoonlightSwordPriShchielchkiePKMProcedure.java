@@ -16,6 +16,7 @@ public class MoonlightSwordPriShchielchkiePKMProcedure {
 		if (entity == null)
 			return;
 		if ((entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).SpiritForce >= 200) {
+			entity.getPersistentData().putBoolean("moon", true);
 			if (world instanceof ServerLevel projectileLevel) {
 				Projectile _entityToSpawn = new Object() {
 					public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {

@@ -5,18 +5,21 @@
     "biomesInDimension": [
       {
         "value": "CUSTOM:DeathWorldBiome"
+      },
+      {
+        "value": "CUSTOM:DeepslateBarren"
       }
     ],
-    "worldGenType": "End like gen",
+    "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "Blocks.BASALT"
+      "value": "Blocks.DEEPSLATE"
     },
     "fluidBlock": {
-      "value": "Blocks.FLOWING_WATER"
+      "value": "Blocks.AIR"
     },
     "seaLevel": 0,
-    "generateOreVeins": true,
-    "generateAquifers": true,
+    "generateOreVeins": false,
+    "generateAquifers": false,
     "horizontalNoiseSize": 2,
     "verticalNoiseSize": 1,
     "defaultEffects": "overworld",

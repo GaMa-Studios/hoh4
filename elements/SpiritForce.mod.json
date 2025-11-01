@@ -16,9 +16,20 @@
             "value": -1,
             "falpha": 0.0
           },
-          "anchorPoint": "CENTER",
-          "x": 37,
-          "y": 219,
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 33,
+          "y": 215,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "spirit.png",
+          "use1Xscale": false,
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 14,
+          "y": 209,
           "locked": false
         }
       }
@@ -26,11 +37,11 @@
     "baseTexture": "",
     "overlayTarget": "Ingame",
     "gridSettings": {
-      "sx": 18,
+      "sx": 15,
       "sy": 18,
       "ox": 11,
-      "oy": 15,
-      "snapOnGrid": false
+      "oy": 2,
+      "snapOnGrid": true
     }
   }
 }

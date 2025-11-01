@@ -10,11 +10,13 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import gama.studios.hoh4core.client.model.Modelbladerush;
+import gama.studios.hoh4core.client.model.Modelamulet;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class Hoh4CoreModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
+		event.registerLayerDefinition(Modelamulet.LAYER_LOCATION, Modelamulet::createBodyLayer);
 		event.registerLayerDefinition(Modelbladerush.LAYER_LOCATION, Modelbladerush::createBodyLayer);
 	}
 }
