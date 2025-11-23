@@ -1,0 +1,21 @@
+{
+  "blend": {
+    "func": "add",
+    "srcfactor": "one",
+    "dstfactor": "zero"
+  },
+  "vertex": "ink_sky_vertex",
+  "fragment": "ink_sky_fragment",
+  "attributes": [ "Position" ],
+  "uniforms": [
+    {
+      "name": "ModelViewMat",
+      "type": "matrix4x4",
+      "count": 1,
+      "values": [ 1.0, 0.0, 0.0, 0.0,
+                 0.0, 1.0, 0.0, 0.0,
+                 0.0, 0.0, 1.0, 0.0,
+                 0.0, 0.0, 0.0, 1.0 ]
+    }
+  ]
+}

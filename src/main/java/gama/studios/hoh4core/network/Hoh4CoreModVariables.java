@@ -141,6 +141,7 @@ public class Hoh4CoreModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "hoh_4_core_mapvars";
 		public boolean deathworld = false;
+		public boolean ink = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -150,11 +151,13 @@ public class Hoh4CoreModVariables {
 
 		public void read(CompoundTag nbt) {
 			deathworld = nbt.getBoolean("deathworld");
+			ink = nbt.getBoolean("ink");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("deathworld", deathworld);
+			nbt.putBoolean("ink", ink);
 			return nbt;
 		}
 

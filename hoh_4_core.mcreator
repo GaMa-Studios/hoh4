@@ -714,6 +714,83 @@
           }
         ]
       }
+    },
+    {
+      "name": "InkWeather",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ink_weather",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/InkWeatherProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ink",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ink",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/command/InkCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "InkFalling",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ink_falling",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/InkFallingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "InkParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ink_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/client/particle/InkParticleParticle.java",
+          "src/main/resources/assets/hoh_4_core/particles/ink_particle.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -758,20 +835,26 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "ink",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
     }
   ],
   "sound_elements": [],
   "tag_elements": {
-    "ITEMS:minecraft:swords": [
-      "~CUSTOM:Moolightswordhalfworked",
-      "~CUSTOM:MoonlightSword"
-    ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~Blocks.COBBLED_DEEPSLATE",
       "~Blocks.MUD",
       "~Blocks.BLACKSTONE",
       "~Blocks.DEEPSLATE",
       "~Blocks.BASALT"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:Moolightswordhalfworked",
+      "~CUSTOM:MoonlightSword"
     ]
   },
   "tab_element_order": {},
