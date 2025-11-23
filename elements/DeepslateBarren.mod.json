@@ -7,7 +7,7 @@
       "value": "Blocks.DEEPSLATE"
     },
     "undergroundBlock": {
-      "value": "Blocks.BLACKSTONE"
+      "value": "Blocks.COBBLED_DEEPSLATE"
     },
     "underwaterBlock": {
       "value": "Blocks.BLACKSTONE"
@@ -29,11 +29,11 @@
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -12623506,
+      "value": -16764160,
       "falpha": 0.0
     },
     "waterFogColor": {
-      "value": -12623506,
+      "value": -16764160,
       "falpha": 0.0
     },
     "ambientSound": {

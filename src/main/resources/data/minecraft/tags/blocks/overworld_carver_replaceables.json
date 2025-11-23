@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "minecraft:cobbled_deepslate",
+    "minecraft:mud",
     "minecraft:blackstone",
     "minecraft:deepslate",
     "minecraft:basalt"

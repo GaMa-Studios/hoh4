@@ -21,7 +21,7 @@ public class MoonlightSwordItem extends SwordItem {
 	public MoonlightSwordItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 100;
+				return 0;
 			}
 
 			public float getSpeed() {

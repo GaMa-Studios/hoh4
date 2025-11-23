@@ -12,7 +12,7 @@ import java.util.List;
 
 public class MoonlighswordbrokenItem extends Item {
 	public MoonlighswordbrokenItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.RARE));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.RARE));
 	}
 
 	@Override

@@ -8,11 +8,14 @@
       },
       {
         "value": "CUSTOM:DeepslateBarren"
+      },
+      {
+        "value": "CUSTOM:MudBarren"
       }
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "Blocks.DEEPSLATE"
+      "value": "Blocks.BLACKSTONE"
     },
     "fluidBlock": {
       "value": "Blocks.AIR"
@@ -22,11 +25,15 @@
     "generateAquifers": false,
     "horizontalNoiseSize": 2,
     "verticalNoiseSize": 1,
-    "defaultEffects": "overworld",
+    "defaultEffects": "the_end",
     "useCustomEffects": false,
-    "hasClouds": true,
+    "hasClouds": false,
     "cloudHeight": 192.0,
-    "skyType": "NONE",
+    "skyType": "END",
+    "airColor": {
+      "value": -13421773,
+      "falpha": 0.0
+    },
     "sunHeightAffectsFog": false,
     "canRespawnHere": false,
     "hasFog": false,

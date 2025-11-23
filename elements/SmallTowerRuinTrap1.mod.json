@@ -1,0 +1,33 @@
+{
+  "_fv": 73,
+  "_type": "structure",
+  "definition": {
+    "structure": "smalltower_ruin_trap_1",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 30,
+    "separation": 2,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:DeathWorldBiome"
+      },
+      {
+        "value": "CUSTOM:DeepslateBarren"
+      }
+    ],
+    "terrainAdaptation": "encapsulate",
+    "generationStep": "UNDERGROUND_STRUCTURES",
+    "surfaceDetectionType": "WORLD_SURFACE",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
+  }
+}

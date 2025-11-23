@@ -153,10 +153,6 @@
             "type": "number"
           },
           {
-            "name": "y",
-            "type": "number"
-          },
-          {
             "name": "z",
             "type": "number"
           },
@@ -346,8 +342,8 @@
       "registry_name": "moonlighswordbroken",
       "metadata": {
         "files": [
-          "src/main/resources/assets/hoh_4_core/models/item/moonlighswordbroken.json",
-          "src/main/java/gama/studios/hoh4core/item/MoonlighswordbrokenItem.java"
+          "src/main/java/gama/studios/hoh4core/item/MoonlighswordbrokenItem.java",
+          "src/main/resources/assets/hoh_4_core/models/item/moonlighswordbroken.json"
         ]
       }
     },
@@ -429,6 +425,295 @@
           "src/main/resources/data/hoh_4_core/worldgen/biome/deepslate_barren.json"
         ]
       }
+    },
+    {
+      "name": "TetoAura",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teto_aura",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/TetoAuraProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AnonimGradBridge",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anonim_grad_bridge",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/structure/anonim_grad_bridge.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/anonim_grad_bridge.json",
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/anonim_grad_bridge.json"
+        ]
+      }
+    },
+    {
+      "name": "GregoryIsland",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gregory_island",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/gregory_island.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/gregory_island.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure/gregory_island.json"
+        ]
+      }
+    },
+    {
+      "name": "ArchangelFort",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "archangel_fort",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/structure/archangel_fort.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/archangel_fort.json",
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/archangel_fort.json"
+        ]
+      }
+    },
+    {
+      "name": "SmallRuin0",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_ruin_0",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_ruin_0.json",
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_ruin_0.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_ruin_0.json"
+        ]
+      }
+    },
+    {
+      "name": "SmallRuin1",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_ruin_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_ruin_1.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_ruin_1.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_ruin_1.json"
+        ]
+      }
+    },
+    {
+      "name": "SmallRuin2",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_ruin_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_ruin_2.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_ruin_2.json",
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_ruin_2.json"
+        ]
+      }
+    },
+    {
+      "name": "SmallTowerRuin0",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_tower_ruin_0",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_0.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_0.json",
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_0.json"
+        ]
+      }
+    },
+    {
+      "name": "SmallTowerRuin1",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_tower_ruin_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_1.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_1.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_1.json"
+        ]
+      }
+    },
+    {
+      "name": "SmallTowerRuin2",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_tower_ruin_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_2.json",
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_2.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_2.json"
+        ]
+      }
+    },
+    {
+      "name": "TowerRuin0",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_ruin_0",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/structure/tower_ruin_0.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/tower_ruin_0.json",
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/tower_ruin_0.json"
+        ]
+      }
+    },
+    {
+      "name": "TowerRuin1",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_ruin_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/tower_ruin_1.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure/tower_ruin_1.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/tower_ruin_1.json"
+        ]
+      }
+    },
+    {
+      "name": "TowerRuin2",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_ruin_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/structure/tower_ruin_2.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/tower_ruin_2.json",
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/tower_ruin_2.json"
+        ]
+      }
+    },
+    {
+      "name": "TowerRuin3",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_ruin_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/tower_ruin_3.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure/tower_ruin_3.json",
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/tower_ruin_3.json"
+        ]
+      }
+    },
+    {
+      "name": "SmallTowerRuinTrap0",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_tower_ruin_trap_0",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_trap_0.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_trap_0.json",
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_trap_0.json"
+        ]
+      }
+    },
+    {
+      "name": "SmallTowerRuinTrap1",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_tower_ruin_trap_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_trap_1.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_trap_1.json",
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_trap_1.json"
+        ]
+      }
+    },
+    {
+      "name": "SmallTowerRuinTrap2",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_tower_ruin_trap_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_trap_2.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_trap_2.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_trap_2.json"
+        ]
+      }
+    },
+    {
+      "name": "MudBarren",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_barren",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/biome/mud_barren.json"
+        ]
+      }
+    },
+    {
+      "name": "PlayerEntersDeadWorld",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_enters_dead_world",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/PlayerEntersDeadWorldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -482,6 +767,8 @@
       "~CUSTOM:MoonlightSword"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.COBBLED_DEEPSLATE",
+      "~Blocks.MUD",
       "~Blocks.BLACKSTONE",
       "~Blocks.DEEPSLATE",
       "~Blocks.BASALT"
@@ -499,6 +786,7 @@
       "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
       "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
       "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nБонус: §r200 Духа",
+      "biome.hoh_4_core.mud_barren": "Barren of mud",
       "item.hoh_4_core.moon_sharp": "Лунный фрагмент",
       "item.hoh_4_core.moonlight_sword": "Лунный Клинок",
       "item.hoh_4_core.moonlighswordbroken": "Лунный клинок (Сломан)",
@@ -522,12 +810,13 @@
       "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
       "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
       "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nБонус: §r200 Духа",
+      "biome.hoh_4_core.mud_barren": "Barren of mud",
       "item.hoh_4_core.moon_sharp": "Moon Sharp",
       "item.hoh_4_core.moonlight_sword": "Moonlight Sword",
       "item.hoh_4_core.moonlighswordbroken": "Moonlight Sword (Broken)",
       "effect.hoh_4_core.spirit": "Spirit",
       "biome.hoh_4_core.deepslate_barren": "Deepslate Barren",
-      "item.hoh_4_core.moolightswordhalfworked": "Moonlight Sword (Cracked)",
+      "item.hoh_4_core.moolightswordhalfworked": "Broken Moonlight Sword",
       "item.hoh_4_core.moonlighswordbroken.description_0": "§oИсточник: Чертова реинкарнация",
       "item.hoh_4_core.moolightswordhalfworked.description_0": "§nВторая атака: §rВолна Разрушения ",
       "item.hoh_4_core.moolightswordhalfworked.description_1": "§nТрата: §950 духа",
