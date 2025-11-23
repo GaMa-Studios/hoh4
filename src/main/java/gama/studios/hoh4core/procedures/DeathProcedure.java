@@ -70,7 +70,7 @@ public class DeathProcedure {
 				}
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, (int) (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) x, (int) z) * 20), 4, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, (int) ((300 - world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) x, (int) z)) * 3), 1, false, false));
 		}
 		if ((entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).status == -1) {
 			{
@@ -81,7 +81,7 @@ public class DeathProcedure {
 				}
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, (int) (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) x, (int) z) * 20), 4, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, (int) ((300 - world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) x, (int) z)) * 3), 1, false, false));
 		}
 	}
 }
