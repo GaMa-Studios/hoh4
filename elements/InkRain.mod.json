@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "particle",
   "definition": {
-    "texture": "ink_fall",
+    "texture": "ink_rain",
     "animate": false,
     "frameDuration": 1,
     "width": 0.2,
@@ -10,14 +10,17 @@
     "scale": {
       "fixedValue": 1.0
     },
-    "speedFactor": 0.1,
+    "speedFactor": 0.0,
     "gravity": 1.0,
-    "maxAge": 7,
-    "maxAgeDiff": 0,
+    "maxAge": 0,
+    "maxAgeDiff": 20000,
     "angularVelocity": 0.0,
     "angularAcceleration": 0.0,
     "canCollide": true,
-    "alwaysShow": true,
-    "renderType": "TRANSLUCENT"
+    "alwaysShow": false,
+    "renderType": "OPAQUE",
+    "additionalExpiryCondition": {
+      "name": "InkRainParticleExpiryCondition"
+    }
   }
 }

@@ -15,5 +15,5 @@ import gama.studios.hoh4core.Hoh4CoreMod;
 
 public class Hoh4CoreModParticleTypes {
 	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, Hoh4CoreMod.MODID);
-	public static final RegistryObject<SimpleParticleType> INK_PARTICLE = REGISTRY.register("ink_particle", () -> new SimpleParticleType(true));
+	public static final RegistryObject<SimpleParticleType> INK_RAIN = REGISTRY.register("ink_rain", () -> new SimpleParticleType(false));
 }

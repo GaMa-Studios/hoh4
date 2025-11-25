@@ -427,41 +427,6 @@
       }
     },
     {
-      "name": "TetoAura",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "teto_aura",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/gama/studios/hoh4core/procedures/TetoAuraProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "AnonimGradBridge",
       "type": "structure",
       "compiles": true,
@@ -727,6 +692,18 @@
         ],
         "dependencies": [
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -757,10 +734,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -780,15 +753,34 @@
       }
     },
     {
-      "name": "InkParticle",
+      "name": "InkRain",
       "type": "particle",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ink_particle",
+      "registry_name": "ink_rain",
       "metadata": {
         "files": [
-          "src/main/java/gama/studios/hoh4core/client/particle/InkParticleParticle.java",
-          "src/main/resources/assets/hoh_4_core/particles/ink_particle.json"
+          "src/main/java/gama/studios/hoh4core/client/particle/InkRainParticle.java",
+          "src/main/resources/assets/hoh_4_core/particles/ink_rain.json"
+        ]
+      }
+    },
+    {
+      "name": "InkRainParticleExpiryCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ink_rain_particle_expiry_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/InkRainParticleExpiryConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "onGround",
+            "type": "logic"
+          }
         ]
       }
     }
@@ -839,22 +831,22 @@
     {
       "name": "ink",
       "type": "logic",
-      "scope": "map",
+      "scope": "world",
       "value": "false"
     }
   ],
   "sound_elements": [],
   "tag_elements": {
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:Moolightswordhalfworked",
+      "~CUSTOM:MoonlightSword"
+    ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~Blocks.COBBLED_DEEPSLATE",
       "~Blocks.MUD",
       "~Blocks.BLACKSTONE",
       "~Blocks.DEEPSLATE",
       "~Blocks.BASALT"
-    ],
-    "ITEMS:minecraft:swords": [
-      "~CUSTOM:Moolightswordhalfworked",
-      "~CUSTOM:MoonlightSword"
     ]
   },
   "tab_element_order": {},
