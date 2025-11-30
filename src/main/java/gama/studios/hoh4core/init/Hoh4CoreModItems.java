@@ -29,7 +29,6 @@ public class Hoh4CoreModItems {
 	public static final RegistryObject<Item> MOOLIGHTSWORDHALFWORKED = REGISTRY.register("moolightswordhalfworked", () -> new MoolightswordhalfworkedItem());
 	public static final RegistryObject<Item> MOONLIGHSWORDBROKEN = REGISTRY.register("moonlighswordbroken", () -> new MoonlighswordbrokenItem());
 	public static final RegistryObject<Item> MOON_SHARP = REGISTRY.register("moon_sharp", () -> new MoonSharpItem());
-	public static final RegistryObject<Item> INKLAYER = block(Hoh4CoreModBlocks.INKLAYER);
 
 	// Start of user code block custom items
 	// End of user code block custom items

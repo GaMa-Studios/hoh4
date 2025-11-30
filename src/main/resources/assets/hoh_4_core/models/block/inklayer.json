@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "hoh_4_core:block/ink_block",
-    "particle": "hoh_4_core:block/ink_block"
-  },
-  "render_type": "solid"
-}

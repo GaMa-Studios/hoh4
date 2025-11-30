@@ -205,8 +205,8 @@
       "registry_name": "primordial_power_talisman",
       "metadata": {
         "files": [
-          "src/main/resources/assets/hoh_4_core/models/item/primordial_power_talisman_chestplate.json",
-          "src/main/java/gama/studios/hoh4core/item/PrimordialPowerTalismanItem.java"
+          "src/main/java/gama/studios/hoh4core/item/PrimordialPowerTalismanItem.java",
+          "src/main/resources/assets/hoh_4_core/models/item/primordial_power_talisman_chestplate.json"
         ]
       }
     },
@@ -218,8 +218,8 @@
       "registry_name": "moolightswordhalfworked",
       "metadata": {
         "files": [
-          "src/main/java/gama/studios/hoh4core/item/MoolightswordhalfworkedItem.java",
-          "src/main/resources/assets/hoh_4_core/models/item/moolightswordhalfworked.json"
+          "src/main/resources/assets/hoh_4_core/models/item/moolightswordhalfworked.json",
+          "src/main/java/gama/studios/hoh4core/item/MoolightswordhalfworkedItem.java"
         ]
       }
     },
@@ -355,8 +355,8 @@
       "registry_name": "moon_sharp",
       "metadata": {
         "files": [
-          "src/main/resources/assets/hoh_4_core/models/item/moon_sharp.json",
-          "src/main/java/gama/studios/hoh4core/item/MoonSharpItem.java"
+          "src/main/java/gama/studios/hoh4core/item/MoonSharpItem.java",
+          "src/main/resources/assets/hoh_4_core/models/item/moon_sharp.json"
         ]
       }
     },
@@ -462,9 +462,9 @@
       "registry_name": "archangel_fort",
       "metadata": {
         "files": [
-          "src/main/resources/data/hoh_4_core/worldgen/structure/archangel_fort.json",
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/archangel_fort.json",
           "src/main/resources/data/hoh_4_core/worldgen/structure_set/archangel_fort.json",
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/archangel_fort.json"
+          "src/main/resources/data/hoh_4_core/worldgen/structure/archangel_fort.json"
         ]
       }
     },
@@ -560,8 +560,8 @@
       "registry_name": "tower_ruin_0",
       "metadata": {
         "files": [
-          "src/main/resources/data/hoh_4_core/worldgen/structure/tower_ruin_0.json",
           "src/main/resources/data/hoh_4_core/worldgen/structure_set/tower_ruin_0.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure/tower_ruin_0.json",
           "src/main/resources/data/hoh_4_core/worldgen/template_pool/tower_ruin_0.json"
         ]
       }
@@ -785,22 +785,6 @@
       }
     },
     {
-      "name": "Inklayer",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inklayer",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/hoh_4_core/models/item/inklayer.json",
-          "src/main/resources/assets/hoh_4_core/models/block/inklayer.json",
-          "src/main/resources/data/hoh_4_core/loot_tables/blocks/inklayer.json",
-          "src/main/resources/assets/hoh_4_core/blockstates/inklayer.json",
-          "src/main/java/gama/studios/hoh4core/block/InklayerBlock.java"
-        ]
-      }
-    },
-    {
       "name": "InkMorph",
       "type": "procedure",
       "compiles": true,
@@ -815,18 +799,6 @@
             "name": "entity",
             "type": "entity"
           }
-        ]
-      }
-    },
-    {
-      "name": "Inkmorpher",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inkmorpher",
-      "metadata": {
-        "files": [
-          "src/main/java/gama/studios/hoh4core/command/InkmorpherCommand.java"
         ]
       }
     }
@@ -896,11 +868,11 @@
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~Blocks.COBBLED_DEEPSLATE",
       "~Blocks.MUD",
+      "~Blocks.BASALT",
       "~Blocks.BLACKSTONE",
-      "~Blocks.DEEPSLATE",
-      "~Blocks.BASALT"
+      "~Blocks.COBBLED_DEEPSLATE",
+      "~Blocks.DEEPSLATE"
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:Moolightswordhalfworked",
@@ -928,7 +900,6 @@
       "item.hoh_4_core.moolightswordhalfworked": "Лунный клинок (Поврежден)",
       "item.hoh_4_core.moonlighswordbroken.description_0": "§oИсточник: Чертова реинкарнация",
       "item.hoh_4_core.moolightswordhalfworked.description_0": "§nВторая атака: §rВолна Разрушения ",
-      "block.hoh_4_core.inklayer": "Ink layer",
       "item.hoh_4_core.moolightswordhalfworked.description_1": "§nТрата: §950 духа",
       "item.hoh_4_core.moolightswordhalfworked.description_2": "§oИсточник: Чертова реинкарнация",
       "item_group.hoh_4_core.hoh_4": "HOH 4",
@@ -953,7 +924,6 @@
       "item.hoh_4_core.moolightswordhalfworked": "Broken Moonlight Sword",
       "item.hoh_4_core.moonlighswordbroken.description_0": "§oИсточник: Чертова реинкарнация",
       "item.hoh_4_core.moolightswordhalfworked.description_0": "§nВторая атака: §rВолна Разрушения ",
-      "block.hoh_4_core.inklayer": "Ink layer",
       "item.hoh_4_core.moolightswordhalfworked.description_1": "§nТрата: §950 духа",
       "item.hoh_4_core.moolightswordhalfworked.description_2": "§oИсточник: Чертова реинкарнация",
       "item_group.hoh_4_core.hoh_4": "HOH 4",
