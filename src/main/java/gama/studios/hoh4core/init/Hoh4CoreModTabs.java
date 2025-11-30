@@ -24,5 +24,6 @@ public class Hoh4CoreModTabs {
 				tabData.accept(Hoh4CoreModItems.MOOLIGHTSWORDHALFWORKED.get());
 				tabData.accept(Hoh4CoreModItems.MOONLIGHSWORDBROKEN.get());
 				tabData.accept(Hoh4CoreModItems.MOON_SHARP.get());
+				tabData.accept(Hoh4CoreModBlocks.INKLAYER.get().asItem());
 			}).build());
 }

@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "particle",
   "definition": {
-    "texture": "ink_rain",
+    "texture": "ink_square",
     "animate": false,
     "frameDuration": 1,
     "width": 0.2,

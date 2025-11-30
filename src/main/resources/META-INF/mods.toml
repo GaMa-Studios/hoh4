@@ -22,6 +22,12 @@ authors="User, MCreator"
 
 
 [[dependencies.hoh_4_core]]
+    modId="pehkui"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.hoh_4_core]]
     modId="geckolib"
     mandatory=false
     versionRange="[0,)"

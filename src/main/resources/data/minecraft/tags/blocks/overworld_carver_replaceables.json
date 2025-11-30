@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "minecraft:cobbled_deepslate",
     "minecraft:mud",
+    "minecraft:basalt",
     "minecraft:blackstone",
-    "minecraft:deepslate",
-    "minecraft:basalt"
+    "minecraft:cobbled_deepslate",
+    "minecraft:deepslate"
   ]
 }
