@@ -34,8 +34,8 @@
       "registry_name": "moonlight_dash_item",
       "metadata": {
         "files": [
-          "src/main/java/gama/studios/hoh4core/item/MoonlightDashItemItem.java",
-          "src/main/resources/assets/hoh_4_core/models/item/moonlight_dash_item.json"
+          "src/main/resources/assets/hoh_4_core/models/item/moonlight_dash_item.json",
+          "src/main/java/gama/studios/hoh4core/item/MoonlightDashItemItem.java"
         ]
       }
     },
@@ -47,8 +47,8 @@
       "registry_name": "moonlight_dash",
       "metadata": {
         "files": [
-          "src/main/java/gama/studios/hoh4core/entity/MoonlightDashEntity.java",
-          "src/main/java/gama/studios/hoh4core/client/renderer/MoonlightDashRenderer.java"
+          "src/main/java/gama/studios/hoh4core/client/renderer/MoonlightDashRenderer.java",
+          "src/main/java/gama/studios/hoh4core/entity/MoonlightDashEntity.java"
         ]
       }
     },
@@ -189,11 +189,11 @@
       "registry_name": "back_crystal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/hoh_4_core/models/block/back_crystal.json",
           "src/main/java/gama/studios/hoh4core/block/BackCrystalBlock.java",
           "src/main/resources/assets/hoh_4_core/models/item/back_crystal.json",
-          "src/main/resources/assets/hoh_4_core/blockstates/back_crystal.json",
-          "src/main/resources/data/hoh_4_core/loot_tables/blocks/back_crystal.json"
+          "src/main/resources/assets/hoh_4_core/models/block/back_crystal.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/back_crystal.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/back_crystal.json"
         ]
       }
     },
@@ -434,9 +434,9 @@
       "registry_name": "anonim_grad_bridge",
       "metadata": {
         "files": [
-          "src/main/resources/data/hoh_4_core/worldgen/structure/anonim_grad_bridge.json",
           "src/main/resources/data/hoh_4_core/worldgen/structure_set/anonim_grad_bridge.json",
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/anonim_grad_bridge.json"
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/anonim_grad_bridge.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure/anonim_grad_bridge.json"
         ]
       }
     },
@@ -449,8 +449,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/hoh_4_core/worldgen/template_pool/gregory_island.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure_set/gregory_island.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure/gregory_island.json"
+          "src/main/resources/data/hoh_4_core/worldgen/structure/gregory_island.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/gregory_island.json"
         ]
       }
     },
@@ -477,8 +477,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_ruin_0.json",
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_ruin_0.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure/small_ruin_0.json"
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_ruin_0.json",
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_ruin_0.json"
         ]
       }
     },
@@ -490,9 +490,9 @@
       "registry_name": "small_ruin_1",
       "metadata": {
         "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_ruin_1.json",
           "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_ruin_1.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure/small_ruin_1.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_ruin_1.json"
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_ruin_1.json"
         ]
       }
     },
@@ -504,9 +504,9 @@
       "registry_name": "small_ruin_2",
       "metadata": {
         "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_ruin_2.json",
           "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_ruin_2.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure/small_ruin_2.json",
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_ruin_2.json"
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_ruin_2.json"
         ]
       }
     },
@@ -518,8 +518,8 @@
       "registry_name": "small_tower_ruin_0",
       "metadata": {
         "files": [
-          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_0.json",
           "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_0.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_0.json",
           "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_0.json"
         ]
       }
@@ -532,9 +532,9 @@
       "registry_name": "small_tower_ruin_1",
       "metadata": {
         "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_1.json",
           "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_1.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_1.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_1.json"
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_1.json"
         ]
       }
     },
@@ -546,9 +546,9 @@
       "registry_name": "small_tower_ruin_2",
       "metadata": {
         "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_2.json",
           "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_2.json",
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_2.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_2.json"
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_2.json"
         ]
       }
     },
@@ -575,8 +575,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/hoh_4_core/worldgen/template_pool/tower_ruin_1.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure/tower_ruin_1.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure_set/tower_ruin_1.json"
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/tower_ruin_1.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure/tower_ruin_1.json"
         ]
       }
     },
@@ -588,9 +588,9 @@
       "registry_name": "tower_ruin_2",
       "metadata": {
         "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/tower_ruin_2.json",
           "src/main/resources/data/hoh_4_core/worldgen/structure/tower_ruin_2.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure_set/tower_ruin_2.json",
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/tower_ruin_2.json"
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/tower_ruin_2.json"
         ]
       }
     },
@@ -602,9 +602,9 @@
       "registry_name": "tower_ruin_3",
       "metadata": {
         "files": [
-          "src/main/resources/data/hoh_4_core/worldgen/structure_set/tower_ruin_3.json",
           "src/main/resources/data/hoh_4_core/worldgen/structure/tower_ruin_3.json",
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/tower_ruin_3.json"
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/tower_ruin_3.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/tower_ruin_3.json"
         ]
       }
     },
@@ -616,9 +616,9 @@
       "registry_name": "small_tower_ruin_trap_0",
       "metadata": {
         "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_trap_0.json",
           "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_trap_0.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_trap_0.json",
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_trap_0.json"
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_trap_0.json"
         ]
       }
     },
@@ -630,9 +630,9 @@
       "registry_name": "small_tower_ruin_trap_1",
       "metadata": {
         "files": [
-          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_trap_1.json",
           "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_trap_1.json",
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_trap_1.json"
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_trap_1.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_trap_1.json"
         ]
       }
     },
@@ -645,8 +645,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_trap_2.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_trap_2.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_trap_2.json"
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_trap_2.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_trap_2.json"
         ]
       }
     },
@@ -842,11 +842,11 @@
       "~CUSTOM:MoonlightSword"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~Blocks.COBBLED_DEEPSLATE",
       "~Blocks.MUD",
+      "~Blocks.BASALT",
       "~Blocks.BLACKSTONE",
-      "~Blocks.DEEPSLATE",
-      "~Blocks.BASALT"
+      "~Blocks.COBBLED_DEEPSLATE",
+      "~Blocks.DEEPSLATE"
     ]
   },
   "tab_element_order": {},
@@ -916,6 +916,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
+      "pehkui",
       "geckolib"
     ],
     "currentGenerator": "forge-1.20.1",
