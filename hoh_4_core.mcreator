@@ -801,6 +801,18 @@
           }
         ]
       }
+    },
+    {
+      "name": "InlMorpher",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inl_morpher",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/command/InlMorpherCommand.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
