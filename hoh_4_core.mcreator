@@ -205,8 +205,8 @@
       "registry_name": "primordial_power_talisman",
       "metadata": {
         "files": [
-          "src/main/java/gama/studios/hoh4core/item/PrimordialPowerTalismanItem.java",
-          "src/main/resources/assets/hoh_4_core/models/item/primordial_power_talisman_chestplate.json"
+          "src/main/resources/assets/hoh_4_core/models/item/primordial_power_talisman_chestplate.json",
+          "src/main/java/gama/studios/hoh4core/item/PrimordialPowerTalismanItem.java"
         ]
       }
     },
@@ -218,8 +218,8 @@
       "registry_name": "moolightswordhalfworked",
       "metadata": {
         "files": [
-          "src/main/resources/assets/hoh_4_core/models/item/moolightswordhalfworked.json",
-          "src/main/java/gama/studios/hoh4core/item/MoolightswordhalfworkedItem.java"
+          "src/main/java/gama/studios/hoh4core/item/MoolightswordhalfworkedItem.java",
+          "src/main/resources/assets/hoh_4_core/models/item/moolightswordhalfworked.json"
         ]
       }
     },
@@ -355,8 +355,8 @@
       "registry_name": "moon_sharp",
       "metadata": {
         "files": [
-          "src/main/java/gama/studios/hoh4core/item/MoonSharpItem.java",
-          "src/main/resources/assets/hoh_4_core/models/item/moon_sharp.json"
+          "src/main/resources/assets/hoh_4_core/models/item/moon_sharp.json",
+          "src/main/java/gama/studios/hoh4core/item/MoonSharpItem.java"
         ]
       }
     },
@@ -462,9 +462,9 @@
       "registry_name": "archangel_fort",
       "metadata": {
         "files": [
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/archangel_fort.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure/archangel_fort.json",
           "src/main/resources/data/hoh_4_core/worldgen/structure_set/archangel_fort.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure/archangel_fort.json"
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/archangel_fort.json"
         ]
       }
     },
@@ -560,8 +560,8 @@
       "registry_name": "tower_ruin_0",
       "metadata": {
         "files": [
-          "src/main/resources/data/hoh_4_core/worldgen/structure_set/tower_ruin_0.json",
           "src/main/resources/data/hoh_4_core/worldgen/structure/tower_ruin_0.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/tower_ruin_0.json",
           "src/main/resources/data/hoh_4_core/worldgen/template_pool/tower_ruin_0.json"
         ]
       }
@@ -896,11 +896,11 @@
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~Blocks.MUD",
-      "~Blocks.BASALT",
-      "~Blocks.BLACKSTONE",
       "~Blocks.COBBLED_DEEPSLATE",
-      "~Blocks.DEEPSLATE"
+      "~Blocks.MUD",
+      "~Blocks.BLACKSTONE",
+      "~Blocks.DEEPSLATE",
+      "~Blocks.BASALT"
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:Moolightswordhalfworked",
