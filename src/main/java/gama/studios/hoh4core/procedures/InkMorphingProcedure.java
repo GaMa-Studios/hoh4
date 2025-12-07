@@ -15,6 +15,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
@@ -83,6 +84,15 @@ public class InkMorphingProcedure {
 						if (entity instanceof Mob _entity)
 							_entity.getNavigation().moveTo(x1, y1, z1, 3);
 					}
+				}
+			}
+			if (world.isEmptyBlock(BlockPos.containing(x, y - 1, z))) {
+				if (entity instanceof InkblotchEntity) {
+					((InkblotchEntity) entity).setAnimation("fall");
+				}
+			} else {
+				if (entity instanceof InkblotchEntity) {
+					((InkblotchEntity) entity).setAnimation("empty");
 				}
 			}
 		}
