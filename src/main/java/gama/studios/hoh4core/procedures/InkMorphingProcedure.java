@@ -95,6 +95,10 @@ public class InkMorphingProcedure {
 					((InkblotchEntity) entity).setAnimation("empty");
 				}
 			}
+			if (900 > (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)) {
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 60, 255, true, true));
+			}
 		}
 	}
 }
