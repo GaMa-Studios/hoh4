@@ -798,6 +798,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -811,6 +827,88 @@
       "metadata": {
         "files": [
           "src/main/java/gama/studios/hoh4core/command/InlMorpherCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "Inkblotch",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inkblotch",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/client/renderer/InkblotchRenderer.java",
+          "src/main/java/gama/studios/hoh4core/entity/InkblotchEntity.java",
+          "src/main/java/gama/studios/hoh4core/entity/model/InkblotchModel.java"
+        ]
+      }
+    },
+    {
+      "name": "InkDeath",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ink_death",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/InkDeathProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "InkMorphing",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ink_morphing",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/InkMorphingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
@@ -897,48 +995,52 @@
       "item.hoh_4_core.primordial_power_talisman_chestplate": "Оберег Первозданной силы",
       "biome.hoh_4_core.basalt_barren_biome": "Basalt Barren",
       "item.hoh_4_core.moon_sharp.description_0": "§oИсточник: Чертова реинкарнация",
-      "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: Волна Разрушения ",
       "key.hoh_4_core.spirit_force_more": "Сила духа",
-      "item.hoh_4_core.moonlight_sword.description_2": "§oИсточник: Чертова реинкарнация",
-      "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
-      "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
-      "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nБонус: §r200 Духа",
       "biome.hoh_4_core.mud_barren": "Barren of mud",
-      "item.hoh_4_core.moon_sharp": "Лунный фрагмент",
-      "item.hoh_4_core.moonlight_sword": "Лунный Клинок",
       "item.hoh_4_core.moonlighswordbroken": "Лунный клинок (Сломан)",
-      "effect.hoh_4_core.spirit": "Дух",
       "biome.hoh_4_core.deepslate_barren": "Deepslate Barren",
-      "item.hoh_4_core.moolightswordhalfworked": "Лунный клинок (Поврежден)",
-      "item.hoh_4_core.moonlighswordbroken.description_0": "§oИсточник: Чертова реинкарнация",
       "item.hoh_4_core.moolightswordhalfworked.description_0": "§nВторая атака: §rВолна Разрушения ",
       "item.hoh_4_core.moolightswordhalfworked.description_1": "§nТрата: §950 духа",
       "item.hoh_4_core.moolightswordhalfworked.description_2": "§oИсточник: Чертова реинкарнация",
       "item_group.hoh_4_core.hoh_4": "HOH 4",
+      "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: Волна Разрушения ",
+      "item.hoh_4_core.moonlight_sword.description_2": "§oИсточник: Чертова реинкарнация",
+      "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
+      "entity.hoh_4_core.inkblotch": "Ink_blotch",
+      "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
+      "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nБонус: §r200 Духа",
+      "item.hoh_4_core.inkblotch_spawn_egg": "Ink_blotch Spawn Egg",
+      "item.hoh_4_core.moon_sharp": "Лунный фрагмент",
+      "item.hoh_4_core.moonlight_sword": "Лунный Клинок",
+      "effect.hoh_4_core.spirit": "Дух",
+      "item.hoh_4_core.moolightswordhalfworked": "Лунный клинок (Поврежден)",
+      "item.hoh_4_core.moonlighswordbroken.description_0": "§oИсточник: Чертова реинкарнация",
       "block.hoh_4_core.back_crystal": "Кристалл Духа"
     },
     "en_us": {
       "item.hoh_4_core.primordial_power_talisman_chestplate": "Primordial Power Talisman",
       "biome.hoh_4_core.basalt_barren_biome": "Basalt Barren",
       "item.hoh_4_core.moon_sharp.description_0": "§oИсточник: Чертова реинкарнация",
-      "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: §rВолна Разрушения ",
       "key.hoh_4_core.spirit_force_more": "Spirit Force ",
-      "item.hoh_4_core.moonlight_sword.description_2": "§oИсточник: Чертова реинкарнация",
-      "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
-      "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
-      "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nБонус: §r200 Духа",
       "biome.hoh_4_core.mud_barren": "Barren of mud",
-      "item.hoh_4_core.moon_sharp": "Moon Sharp",
-      "item.hoh_4_core.moonlight_sword": "Moonlight Sword",
       "item.hoh_4_core.moonlighswordbroken": "Moonlight Sword (Broken)",
-      "effect.hoh_4_core.spirit": "Spirit",
       "biome.hoh_4_core.deepslate_barren": "Deepslate Barren",
-      "item.hoh_4_core.moolightswordhalfworked": "Broken Moonlight Sword",
-      "item.hoh_4_core.moonlighswordbroken.description_0": "§oИсточник: Чертова реинкарнация",
       "item.hoh_4_core.moolightswordhalfworked.description_0": "§nВторая атака: §rВолна Разрушения ",
       "item.hoh_4_core.moolightswordhalfworked.description_1": "§nТрата: §950 духа",
       "item.hoh_4_core.moolightswordhalfworked.description_2": "§oИсточник: Чертова реинкарнация",
       "item_group.hoh_4_core.hoh_4": "HOH 4",
+      "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: §rВолна Разрушения ",
+      "item.hoh_4_core.moonlight_sword.description_2": "§oИсточник: Чертова реинкарнация",
+      "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
+      "entity.hoh_4_core.inkblotch": "Ink_blotch",
+      "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
+      "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nБонус: §r200 Духа",
+      "item.hoh_4_core.inkblotch_spawn_egg": "Ink_blotch Spawn Egg",
+      "item.hoh_4_core.moon_sharp": "Moon Sharp",
+      "item.hoh_4_core.moonlight_sword": "Moonlight Sword",
+      "effect.hoh_4_core.spirit": "Spirit",
+      "item.hoh_4_core.moolightswordhalfworked": "Broken Moonlight Sword",
+      "item.hoh_4_core.moonlighswordbroken.description_0": "§oИсточник: Чертова реинкарнация",
       "block.hoh_4_core.back_crystal": "Back Crystal"
     }
   },

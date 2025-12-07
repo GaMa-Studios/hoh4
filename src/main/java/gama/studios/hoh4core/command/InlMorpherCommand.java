@@ -32,7 +32,7 @@ public class InlMorpherCommand {
 			if (entity != null)
 				direction = entity.getDirection();
 
-			InkMorphProcedure.execute(entity);
+			InkMorphProcedure.execute(world, x, y, z, entity);
 			return 0;
 		}));
 	}

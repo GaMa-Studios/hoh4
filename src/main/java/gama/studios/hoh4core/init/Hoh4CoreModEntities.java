@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import gama.studios.hoh4core.entity.MoonlightDashEntity;
+import gama.studios.hoh4core.entity.InkblotchEntity;
 import gama.studios.hoh4core.Hoh4CoreMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -24,6 +25,8 @@ public class Hoh4CoreModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, Hoh4CoreMod.MODID);
 	public static final RegistryObject<EntityType<MoonlightDashEntity>> MOONLIGHT_DASH = register("moonlight_dash",
 			EntityType.Builder.<MoonlightDashEntity>of(MoonlightDashEntity::new, MobCategory.MISC).setCustomClientFactory(MoonlightDashEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<InkblotchEntity>> INKBLOTCH = register("inkblotch", EntityType.Builder.<InkblotchEntity>of(InkblotchEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+			.setUpdateInterval(3).setCustomClientFactory(InkblotchEntity::new).fireImmune().sized(0.2f, 0.2f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -34,10 +37,12 @@ public class Hoh4CoreModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
+			InkblotchEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
+		event.put(INKBLOTCH.get(), InkblotchEntity.createAttributes().build());
 	}
 }
