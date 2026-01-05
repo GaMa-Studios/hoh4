@@ -15,7 +15,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
@@ -26,6 +25,7 @@ import java.util.Comparator;
 
 import gama.studios.hoh4core.network.Hoh4CoreModVariables;
 import gama.studios.hoh4core.entity.InkblotchEntity;
+import gama.studios.hoh4core.Hoh4CoreMod;
 
 @Mod.EventBusSubscriber
 public class InkMorphingProcedure {
@@ -54,6 +54,20 @@ public class InkMorphingProcedure {
 					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
 						_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
 								_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("tp @e[tag=" + entity.getDisplayName().getString() + "] " + entity.getDisplayName().getString()));
+					}
+				}
+				if (entity.isInWater()) {
+					Hoh4CoreMod.LOGGER.info("\u0412\u041E\u0414\u0410");
+					if (Math.random() > 0.8) {
+						if (Math.random() > 0.8) {
+							{
+								Entity _ent = entity;
+								if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+									_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null,
+											4, _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "damage @s 1 minecraft:drown");
+								}
+							}
+						}
 					}
 				}
 			}
@@ -86,7 +100,7 @@ public class InkMorphingProcedure {
 					}
 				}
 			}
-			if (world.isEmptyBlock(BlockPos.containing(x, y - 1, z))) {
+			if (0 > entity.getDeltaMovement().y()) {
 				if (entity instanceof InkblotchEntity) {
 					((InkblotchEntity) entity).setAnimation("fall");
 				}
