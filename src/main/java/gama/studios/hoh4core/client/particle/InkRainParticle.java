@@ -39,6 +39,7 @@ public class InkRainParticle extends TextureSheetParticle {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
+		this.quadSize *= 1.5f;
 		this.lifetime = (int) Math.max(1, 0 + (this.random.nextInt(40000) - 20000));
 		this.gravity = 1f;
 		this.hasPhysics = true;
@@ -57,7 +58,7 @@ public class InkRainParticle extends TextureSheetParticle {
 	public void tick() {
 		super.tick();
 		Level world = this.level;
-		if (InkRainParticleExpiryConditionProcedure.execute(onGround))
+		if (InkRainParticleExpiryConditionProcedure.execute(world, onGround))
 			this.remove();
 	}
 }

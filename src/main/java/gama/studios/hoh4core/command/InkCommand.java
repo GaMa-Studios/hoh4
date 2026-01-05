@@ -32,7 +32,7 @@ public class InkCommand {
 			if (entity != null)
 				direction = entity.getDirection();
 
-			InkWeatherProcedure.execute(world, x, y, z);
+			InkWeatherProcedure.execute(world);
 			return 0;
 		}));
 	}

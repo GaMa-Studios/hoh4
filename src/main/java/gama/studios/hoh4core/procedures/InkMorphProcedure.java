@@ -9,7 +9,9 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
@@ -63,9 +65,12 @@ public class InkMorphProcedure {
 				final Vec3 _center = new Vec3(x, y, z);
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(0.5 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
-					entityiterator.getPersistentData().putString("owner", (entity.getDisplayName().getString()));
+					if (!(entityiterator == entity)) {
+						entityiterator.getPersistentData().putString("owner", (entity.getDisplayName().getString()));
+					}
 				}
 			}
+			ScaleTypes.THIRD_PERSON.getScaleData(entity).setTargetScale((float) ScaleOperations.DIVIDE.applyAsDouble(ScaleTypes.THIRD_PERSON.getScaleData(entity).getTargetScale(), 2));
 		} else {
 			{
 				Entity _ent = entity;
@@ -81,6 +86,8 @@ public class InkMorphProcedure {
 							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "/scale persist set pehkui:eye_height true");
 				}
 			}
+			if (entity instanceof LivingEntity _entity)
+				_entity.removeEffect(MobEffects.INVISIBILITY);
 			{
 				boolean _setval = false;
 				entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -97,6 +104,7 @@ public class InkMorphProcedure {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 						("/kill @e[tag=" + entity.getDisplayName().getString() + "]"));
+			ScaleTypes.THIRD_PERSON.getScaleData(entity).setTargetScale((float) ScaleOperations.DIVIDE.applyAsDouble(ScaleTypes.THIRD_PERSON.getScaleData(entity).getTargetScale(), 1));
 		}
 	}
 }

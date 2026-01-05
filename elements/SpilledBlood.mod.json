@@ -1,0 +1,26 @@
+{
+  "_fv": 73,
+  "_type": "particle",
+  "definition": {
+    "texture": "blood_from_enemy",
+    "animate": true,
+    "frameDuration": 10,
+    "width": 0.2,
+    "height": 0.2,
+    "scale": {
+      "fixedValue": 1.0
+    },
+    "speedFactor": 1.0,
+    "gravity": 0.5,
+    "maxAge": 0,
+    "maxAgeDiff": 100000,
+    "angularVelocity": 5.0,
+    "angularAcceleration": 0.0,
+    "canCollide": true,
+    "alwaysShow": true,
+    "renderType": "OPAQUE",
+    "additionalExpiryCondition": {
+      "name": "SpilledBloodExpire"
+    }
+  }
+}
