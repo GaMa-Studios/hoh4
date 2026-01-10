@@ -1055,16 +1055,16 @@
   ],
   "sound_elements": [],
   "tag_elements": {
-    "ITEMS:minecraft:swords": [
-      "~CUSTOM:Moolightswordhalfworked",
-      "~CUSTOM:MoonlightSword"
-    ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~Blocks.MUD",
       "~Blocks.BASALT",
       "~Blocks.BLACKSTONE",
       "~Blocks.COBBLED_DEEPSLATE",
       "~Blocks.DEEPSLATE"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:Moolightswordhalfworked",
+      "~CUSTOM:MoonlightSword"
     ]
   },
   "tab_element_order": {},
