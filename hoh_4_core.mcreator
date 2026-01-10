@@ -989,6 +989,19 @@
           }
         ]
       }
+    },
+    {
+      "name": "DungeonMatrixTest",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dungeon_matrix_test",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/DungeonMatrixTestProcedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
