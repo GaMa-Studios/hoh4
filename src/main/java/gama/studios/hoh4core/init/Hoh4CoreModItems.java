@@ -7,6 +7,7 @@ package gama.studios.hoh4core.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -29,6 +30,10 @@ public class Hoh4CoreModItems {
 	public static final RegistryObject<Item> MOOLIGHTSWORDHALFWORKED = REGISTRY.register("moolightswordhalfworked", () -> new MoolightswordhalfworkedItem());
 	public static final RegistryObject<Item> MOONLIGHSWORDBROKEN = REGISTRY.register("moonlighswordbroken", () -> new MoonlighswordbrokenItem());
 	public static final RegistryObject<Item> MOON_SHARP = REGISTRY.register("moon_sharp", () -> new MoonSharpItem());
+	public static final RegistryObject<Item> PURPLE_CRYSTAL_SPAWN_EGG = REGISTRY.register("purple_crystal_spawn_egg", () -> new ForgeSpawnEggItem(Hoh4CoreModEntities.PURPLE_CRYSTAL, -10092442, -13421773, new Item.Properties()));
+	public static final RegistryObject<Item> RED_CRYSTAL_SPAWN_EGG = REGISTRY.register("red_crystal_spawn_egg", () -> new ForgeSpawnEggItem(Hoh4CoreModEntities.RED_CRYSTAL, -6750208, -13421773, new Item.Properties()));
+	public static final RegistryObject<Item> BLUE_CRYSTAL_SPAWN_EGG = REGISTRY.register("blue_crystal_spawn_egg", () -> new ForgeSpawnEggItem(Hoh4CoreModEntities.BLUE_CRYSTAL, -10066177, -13421773, new Item.Properties()));
+	public static final RegistryObject<Item> GREEN_CRYSTAL_SPAWN_EGG = REGISTRY.register("green_crystal_spawn_egg", () -> new ForgeSpawnEggItem(Hoh4CoreModEntities.GREEN_CRYSTAL, -13395712, -13421773, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

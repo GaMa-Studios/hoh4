@@ -1002,6 +1002,138 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "PurpleCrystal",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_crystal",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/client/renderer/PurpleCrystalRenderer.java",
+          "src/main/resources/assets/hoh_4_core/models/item/purple_crystal_spawn_egg.json",
+          "src/main/java/gama/studios/hoh4core/entity/model/PurpleCrystalModel.java",
+          "src/main/java/gama/studios/hoh4core/entity/PurpleCrystalEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "RedCrystal",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_crystal",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/entity/model/RedCrystalModel.java",
+          "src/main/java/gama/studios/hoh4core/entity/RedCrystalEntity.java",
+          "src/main/resources/assets/hoh_4_core/models/item/red_crystal_spawn_egg.json",
+          "src/main/java/gama/studios/hoh4core/client/renderer/RedCrystalRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "BlueCrystal",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_crystal",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/client/renderer/BlueCrystalRenderer.java",
+          "src/main/java/gama/studios/hoh4core/entity/BlueCrystalEntity.java",
+          "src/main/java/gama/studios/hoh4core/entity/model/BlueCrystalModel.java",
+          "src/main/resources/assets/hoh_4_core/models/item/blue_crystal_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "GreenCrystal",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_crystal",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/entity/GreenCrystalEntity.java",
+          "src/main/java/gama/studios/hoh4core/entity/model/GreenCrystalModel.java",
+          "src/main/java/gama/studios/hoh4core/client/renderer/GreenCrystalRenderer.java",
+          "src/main/resources/assets/hoh_4_core/models/item/green_crystal_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "SetCrystalTp",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_crystal_tp",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/command/SetCrystalTpCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SetCrystalTpProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_crystal_tp_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/SetCrystalTpProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurpleCrystalPriShchielchkiePKMPoSushchnosti",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_crystal_pri_shchielchkie_pkm_po_sushchnosti",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/PurpleCrystalPriShchielchkiePKMPoSushchnostiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1093,25 +1225,33 @@
       "biome.hoh_4_core.basalt_barren_biome": "Basalt Barren",
       "item.hoh_4_core.moon_sharp.description_0": "§oИсточник: Чертова реинкарнация",
       "key.hoh_4_core.spirit_force_more": "Сила духа",
+      "item.hoh_4_core.purple_crystal_spawn_egg": "Purple Crystal Spawn Egg",
+      "entity.hoh_4_core.red_crystal": "Purple Crystal",
       "biome.hoh_4_core.mud_barren": "Barren of mud",
       "item.hoh_4_core.moonlighswordbroken": "Лунный клинок (Сломан)",
+      "item.hoh_4_core.red_crystal_spawn_egg": "Purple Crystal Spawn Egg",
       "biome.hoh_4_core.deepslate_barren": "Deepslate Barren",
       "item.hoh_4_core.moolightswordhalfworked.description_0": "§nВторая атака: §rВолна Разрушения ",
       "item.hoh_4_core.moolightswordhalfworked.description_1": "§nТрата: §950 духа",
       "item.hoh_4_core.moolightswordhalfworked.description_2": "§oИсточник: Чертова реинкарнация",
       "item_group.hoh_4_core.hoh_4": "HOH 4",
+      "entity.hoh_4_core.purple_crystal": "Purple Crystal",
       "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: Волна Разрушения ",
+      "item.hoh_4_core.blue_crystal_spawn_egg": "Red Crystal Spawn Egg",
       "item.hoh_4_core.moonlight_sword.description_2": "§oИсточник: Чертова реинкарнация",
       "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
       "entity.hoh_4_core.inkblotch": "Ink_blotch",
       "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
       "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nБонус: §r200 Духа",
       "item.hoh_4_core.inkblotch_spawn_egg": "Ink_blotch Spawn Egg",
+      "entity.hoh_4_core.green_crystal": "Blue Crystal",
       "item.hoh_4_core.moon_sharp": "Лунный фрагмент",
       "item.hoh_4_core.moonlight_sword": "Лунный Клинок",
       "effect.hoh_4_core.spirit": "Дух",
+      "item.hoh_4_core.green_crystal_spawn_egg": "Blue Crystal Spawn Egg",
       "item.hoh_4_core.moolightswordhalfworked": "Лунный клинок (Поврежден)",
       "item.hoh_4_core.moonlighswordbroken.description_0": "§oИсточник: Чертова реинкарнация",
+      "entity.hoh_4_core.blue_crystal": "Red Crystal",
       "block.hoh_4_core.back_crystal": "Кристалл Духа"
     },
     "en_us": {
@@ -1119,25 +1259,33 @@
       "biome.hoh_4_core.basalt_barren_biome": "Basalt Barren",
       "item.hoh_4_core.moon_sharp.description_0": "§oИсточник: Чертова реинкарнация",
       "key.hoh_4_core.spirit_force_more": "Spirit Force ",
+      "item.hoh_4_core.purple_crystal_spawn_egg": "Purple Crystal Spawn Egg",
+      "entity.hoh_4_core.red_crystal": "Red Crystal",
       "biome.hoh_4_core.mud_barren": "Barren of mud",
       "item.hoh_4_core.moonlighswordbroken": "Moonlight Sword (Broken)",
+      "item.hoh_4_core.red_crystal_spawn_egg": "Red Crystal Spawn Egg",
       "biome.hoh_4_core.deepslate_barren": "Deepslate Barren",
       "item.hoh_4_core.moolightswordhalfworked.description_0": "§nВторая атака: §rВолна Разрушения ",
       "item.hoh_4_core.moolightswordhalfworked.description_1": "§nТрата: §950 духа",
       "item.hoh_4_core.moolightswordhalfworked.description_2": "§oИсточник: Чертова реинкарнация",
       "item_group.hoh_4_core.hoh_4": "HOH 4",
+      "entity.hoh_4_core.purple_crystal": "Purple Crystal",
       "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: §rВолна Разрушения ",
+      "item.hoh_4_core.blue_crystal_spawn_egg": "Blue Crystal Spawn Egg",
       "item.hoh_4_core.moonlight_sword.description_2": "§oИсточник: Чертова реинкарнация",
       "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
       "entity.hoh_4_core.inkblotch": "Ink_blotch",
       "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
       "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nБонус: §r200 Духа",
       "item.hoh_4_core.inkblotch_spawn_egg": "Ink_blotch Spawn Egg",
+      "entity.hoh_4_core.green_crystal": "Green Crystal",
       "item.hoh_4_core.moon_sharp": "Moon Sharp",
       "item.hoh_4_core.moonlight_sword": "Moonlight Sword",
       "effect.hoh_4_core.spirit": "Spirit",
+      "item.hoh_4_core.green_crystal_spawn_egg": "Green Crystal Spawn Egg",
       "item.hoh_4_core.moolightswordhalfworked": "Broken Moonlight Sword",
       "item.hoh_4_core.moonlighswordbroken.description_0": "§oИсточник: Чертова реинкарнация",
+      "entity.hoh_4_core.blue_crystal": "Blue Crystal",
       "block.hoh_4_core.back_crystal": "Back Crystal"
     }
   },
