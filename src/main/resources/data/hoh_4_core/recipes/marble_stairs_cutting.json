@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "marble_stairs",
+  "count": 1,
+  "ingredient": {
+    "item": "hoh_4_core:marble_block"
+  },
+  "result": "hoh_4_core:marble_stairs"
+}

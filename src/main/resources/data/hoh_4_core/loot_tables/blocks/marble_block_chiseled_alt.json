@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "hoh_4_core:blocks/marble_block_chiseled_alt",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "hoh_4_core:marble_block_chiseled_alt"
+        }
+      ]
+    }
+  ]
+}

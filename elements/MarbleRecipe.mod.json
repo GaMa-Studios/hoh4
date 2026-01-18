@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "marble_block",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.CALCITE"
+      },
+      {
+        "value": "Items.DYE#15"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.DYE#15"
+      },
+      {
+        "value": "Blocks.CALCITE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MarbleBlock"
+    },
+    "name": "marble_recipe",
+    "namespace": "mod"
+  }
+}

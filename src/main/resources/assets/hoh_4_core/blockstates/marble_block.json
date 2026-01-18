@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "hoh_4_core:block/marble_block"
+    }
+  }
+}

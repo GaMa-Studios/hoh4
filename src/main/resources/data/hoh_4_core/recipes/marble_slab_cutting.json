@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "marble_slab",
+  "count": 2,
+  "ingredient": {
+    "item": "hoh_4_core:marble_block"
+  },
+  "result": "hoh_4_core:marble_slab"
+}

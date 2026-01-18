@@ -30,10 +30,25 @@ public class Hoh4CoreModItems {
 	public static final RegistryObject<Item> MOOLIGHTSWORDHALFWORKED = REGISTRY.register("moolightswordhalfworked", () -> new MoolightswordhalfworkedItem());
 	public static final RegistryObject<Item> MOONLIGHSWORDBROKEN = REGISTRY.register("moonlighswordbroken", () -> new MoonlighswordbrokenItem());
 	public static final RegistryObject<Item> MOON_SHARP = REGISTRY.register("moon_sharp", () -> new MoonSharpItem());
-	public static final RegistryObject<Item> PURPLE_CRYSTAL_SPAWN_EGG = REGISTRY.register("purple_crystal_spawn_egg", () -> new ForgeSpawnEggItem(Hoh4CoreModEntities.PURPLE_CRYSTAL, -10092442, -13421773, new Item.Properties()));
-	public static final RegistryObject<Item> RED_CRYSTAL_SPAWN_EGG = REGISTRY.register("red_crystal_spawn_egg", () -> new ForgeSpawnEggItem(Hoh4CoreModEntities.RED_CRYSTAL, -6750208, -13421773, new Item.Properties()));
-	public static final RegistryObject<Item> BLUE_CRYSTAL_SPAWN_EGG = REGISTRY.register("blue_crystal_spawn_egg", () -> new ForgeSpawnEggItem(Hoh4CoreModEntities.BLUE_CRYSTAL, -10066177, -13421773, new Item.Properties()));
-	public static final RegistryObject<Item> GREEN_CRYSTAL_SPAWN_EGG = REGISTRY.register("green_crystal_spawn_egg", () -> new ForgeSpawnEggItem(Hoh4CoreModEntities.GREEN_CRYSTAL, -13395712, -13421773, new Item.Properties()));
+	public static final RegistryObject<Item> MARBLE_BLOCK = block(Hoh4CoreModBlocks.MARBLE_BLOCK);
+	public static final RegistryObject<Item> MARBLE_BLOCK_CHISELED = block(Hoh4CoreModBlocks.MARBLE_BLOCK_CHISELED);
+	public static final RegistryObject<Item> MARBLE_BLOCK_CHISELED_ALT = block(Hoh4CoreModBlocks.MARBLE_BLOCK_CHISELED_ALT);
+	public static final RegistryObject<Item> MARBLE_PILLAR = block(Hoh4CoreModBlocks.MARBLE_PILLAR);
+	public static final RegistryObject<Item> MARBLECOLLUMN = block(Hoh4CoreModBlocks.MARBLECOLLUMN);
+	public static final RegistryObject<Item> JUNGLE_COLLUMN = block(Hoh4CoreModBlocks.JUNGLE_COLLUMN);
+	public static final RegistryObject<Item> OAK_COLLUMN = block(Hoh4CoreModBlocks.OAK_COLLUMN);
+	public static final RegistryObject<Item> MANGROOVE_COLLUMN = block(Hoh4CoreModBlocks.MANGROOVE_COLLUMN);
+	public static final RegistryObject<Item> ACACIA_COLLUMN = block(Hoh4CoreModBlocks.ACACIA_COLLUMN);
+	public static final RegistryObject<Item> BIRCH_COLLUMN = block(Hoh4CoreModBlocks.BIRCH_COLLUMN);
+	public static final RegistryObject<Item> CHERRY_COLLUMN = block(Hoh4CoreModBlocks.CHERRY_COLLUMN);
+	public static final RegistryObject<Item> CRIMSON_COLLUMN = block(Hoh4CoreModBlocks.CRIMSON_COLLUMN);
+	public static final RegistryObject<Item> DARK_OAK_COLLUMN = block(Hoh4CoreModBlocks.DARK_OAK_COLLUMN);
+	public static final RegistryObject<Item> SPRUCE_COLLUMN = block(Hoh4CoreModBlocks.SPRUCE_COLLUMN);
+	public static final RegistryObject<Item> WARPED_COLLUMN = block(Hoh4CoreModBlocks.WARPED_COLLUMN);
+	public static final RegistryObject<Item> MARBLE_TILE = block(Hoh4CoreModBlocks.MARBLE_TILE);
+	public static final RegistryObject<Item> MARBLE_SLAB = block(Hoh4CoreModBlocks.MARBLE_SLAB);
+	public static final RegistryObject<Item> MARBLE_STAIRS = block(Hoh4CoreModBlocks.MARBLE_STAIRS);
+	public static final RegistryObject<Item> CRYSTAL_SPAWN_EGG = REGISTRY.register("crystal_spawn_egg", () -> new ForgeSpawnEggItem(Hoh4CoreModEntities.CRYSTAL, -65332, -16711681, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

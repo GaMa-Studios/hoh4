@@ -1,0 +1,57 @@
+{
+  "variants": {
+    "face=floor,facing=north": {
+      "model": "hoh_4_core:block/cherry_collumn"
+    },
+    "face=floor,facing=east": {
+      "model": "hoh_4_core:block/cherry_collumn",
+      "y": 90
+    },
+    "face=floor,facing=south": {
+      "model": "hoh_4_core:block/cherry_collumn",
+      "y": 180
+    },
+    "face=floor,facing=west": {
+      "model": "hoh_4_core:block/cherry_collumn",
+      "y": 270
+    },
+    "face=wall,facing=north": {
+      "model": "hoh_4_core:block/cherry_collumn",
+      "x": 90
+    },
+    "face=wall,facing=east": {
+      "model": "hoh_4_core:block/cherry_collumn",
+      "x": 90,
+      "y": 90
+    },
+    "face=wall,facing=south": {
+      "model": "hoh_4_core:block/cherry_collumn",
+      "x": 90,
+      "y": 180
+    },
+    "face=wall,facing=west": {
+      "model": "hoh_4_core:block/cherry_collumn",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=north": {
+      "model": "hoh_4_core:block/cherry_collumn",
+      "x": 180,
+      "y": 180
+    },
+    "face=ceiling,facing=east": {
+      "model": "hoh_4_core:block/cherry_collumn",
+      "x": 180,
+      "y": 270
+    },
+    "face=ceiling,facing=south": {
+      "model": "hoh_4_core:block/cherry_collumn",
+      "x": 180
+    },
+    "face=ceiling,facing=west": {
+      "model": "hoh_4_core:block/cherry_collumn",
+      "x": 180,
+      "y": 90
+    }
+  }
+}

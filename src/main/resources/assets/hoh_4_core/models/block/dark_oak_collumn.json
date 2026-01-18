@@ -1,0 +1,9 @@
+{
+  "parent": "hoh_4_core:custom/extended_collumn",
+  "textures": {
+    "all": "hoh_4_core:block/dark_oak_collumn",
+    "particle": "hoh_4_core:block/dark_oak_collumn",
+    "0": "hoh_4_core:block/dark_oak_collumn"
+  },
+  "render_type": "solid"
+}

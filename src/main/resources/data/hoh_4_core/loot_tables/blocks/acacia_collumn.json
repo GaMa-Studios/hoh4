@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "hoh_4_core:blocks/acacia_collumn",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "hoh_4_core:acacia_collumn"
+        }
+      ]
+    }
+  ]
+}

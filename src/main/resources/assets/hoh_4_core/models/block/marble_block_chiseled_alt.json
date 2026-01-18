@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "hoh_4_core:block/marble_chiseled_alt",
+    "particle": "hoh_4_core:block/marble_chiseled_alt"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "hoh_4_core:warped_collumn",
+    "hoh_4_core:spruce_collumn",
+    "hoh_4_core:dark_oak_collumn",
+    "hoh_4_core:crimson_collumn",
+    "hoh_4_core:cherry_collumn",
+    "hoh_4_core:birch_collumn",
+    "hoh_4_core:acacia_collumn",
+    "hoh_4_core:mangroove_collumn",
+    "hoh_4_core:oak_collumn",
+    "hoh_4_core:jungle_collumn"
+  ]
+}

@@ -21,7 +21,7 @@ public class PurpleCrystalPriShchielchkiePKMPoSushchnostiProcedure {
 								+ ("" + entity.getPersistentData().getDouble("z"))));
 			}
 		}
-		Hoh4CoreMod.LOGGER.info("execute as @s in " + entity.getPersistentData().getString("dimension") + " run tp @s " + ("" + entity.getPersistentData().getDouble("x")) + " " + ("" + entity.getPersistentData().getDouble("y")) + " "
-				+ ("" + entity.getPersistentData().getDouble("z")));
+		Hoh4CoreMod.LOGGER.info("execute as @s in " + entity.getPersistentData().getString("modid") + ":" + entity.getPersistentData().getString("dimension") + " run tp @s " + ("" + entity.getPersistentData().getDouble("x")) + " "
+				+ ("" + entity.getPersistentData().getDouble("y")) + " " + ("" + entity.getPersistentData().getDouble("z")));
 	}
 }

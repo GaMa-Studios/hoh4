@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "hoh_4_core:block/marble_tile",
+    "particle": "hoh_4_core:block/marble_tile"
+  },
+  "render_type": "solid"
+}

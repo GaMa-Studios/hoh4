@@ -21,8 +21,8 @@
       "registry_name": "moonlight_sword",
       "metadata": {
         "files": [
-          "src/main/resources/assets/hoh_4_core/models/item/moonlight_sword.json",
-          "src/main/java/gama/studios/hoh4core/item/MoonlightSwordItem.java"
+          "src/main/java/gama/studios/hoh4core/item/MoonlightSwordItem.java",
+          "src/main/resources/assets/hoh_4_core/models/item/moonlight_sword.json"
         ]
       }
     },
@@ -116,8 +116,8 @@
       "registry_name": "death_world",
       "metadata": {
         "files": [
-          "src/main/resources/data/hoh_4_core/dimension/death_world.json",
-          "src/main/resources/data/hoh_4_core/dimension_type/death_world.json"
+          "src/main/resources/data/hoh_4_core/dimension_type/death_world.json",
+          "src/main/resources/data/hoh_4_core/dimension/death_world.json"
         ]
       }
     },
@@ -190,10 +190,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/hoh_4_core/models/block/back_crystal.json",
-          "src/main/java/gama/studios/hoh4core/block/BackCrystalBlock.java",
+          "src/main/resources/assets/hoh_4_core/blockstates/back_crystal.json",
           "src/main/resources/data/hoh_4_core/loot_tables/blocks/back_crystal.json",
-          "src/main/resources/assets/hoh_4_core/models/item/back_crystal.json",
-          "src/main/resources/assets/hoh_4_core/blockstates/back_crystal.json"
+          "src/main/java/gama/studios/hoh4core/block/BackCrystalBlock.java",
+          "src/main/resources/assets/hoh_4_core/models/item/back_crystal.json"
         ]
       }
     },
@@ -342,8 +342,8 @@
       "registry_name": "moonlighswordbroken",
       "metadata": {
         "files": [
-          "src/main/java/gama/studios/hoh4core/item/MoonlighswordbrokenItem.java",
-          "src/main/resources/assets/hoh_4_core/models/item/moonlighswordbroken.json"
+          "src/main/resources/assets/hoh_4_core/models/item/moonlighswordbroken.json",
+          "src/main/java/gama/studios/hoh4core/item/MoonlighswordbrokenItem.java"
         ]
       }
     },
@@ -355,8 +355,8 @@
       "registry_name": "moon_sharp",
       "metadata": {
         "files": [
-          "src/main/resources/assets/hoh_4_core/models/item/moon_sharp.json",
-          "src/main/java/gama/studios/hoh4core/item/MoonSharpItem.java"
+          "src/main/java/gama/studios/hoh4core/item/MoonSharpItem.java",
+          "src/main/resources/assets/hoh_4_core/models/item/moon_sharp.json"
         ]
       }
     },
@@ -434,9 +434,9 @@
       "registry_name": "anonim_grad_bridge",
       "metadata": {
         "files": [
-          "src/main/resources/data/hoh_4_core/worldgen/structure/anonim_grad_bridge.json",
           "src/main/resources/data/hoh_4_core/worldgen/structure_set/anonim_grad_bridge.json",
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/anonim_grad_bridge.json"
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/anonim_grad_bridge.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure/anonim_grad_bridge.json"
         ]
       }
     },
@@ -448,9 +448,9 @@
       "registry_name": "gregory_island",
       "metadata": {
         "files": [
-          "src/main/resources/data/hoh_4_core/worldgen/structure_set/gregory_island.json",
           "src/main/resources/data/hoh_4_core/worldgen/structure/gregory_island.json",
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/gregory_island.json"
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/gregory_island.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/gregory_island.json"
         ]
       }
     },
@@ -463,8 +463,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/hoh_4_core/worldgen/structure/archangel_fort.json",
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/archangel_fort.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure_set/archangel_fort.json"
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/archangel_fort.json",
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/archangel_fort.json"
         ]
       }
     },
@@ -476,9 +476,9 @@
       "registry_name": "small_ruin_0",
       "metadata": {
         "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_ruin_0.json",
           "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_ruin_0.json",
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_ruin_0.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure/small_ruin_0.json"
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_ruin_0.json"
         ]
       }
     },
@@ -490,9 +490,9 @@
       "registry_name": "small_ruin_1",
       "metadata": {
         "files": [
-          "src/main/resources/data/hoh_4_core/worldgen/structure/small_ruin_1.json",
           "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_ruin_1.json",
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_ruin_1.json"
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_ruin_1.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_ruin_1.json"
         ]
       }
     },
@@ -504,9 +504,9 @@
       "registry_name": "small_ruin_2",
       "metadata": {
         "files": [
-          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_ruin_2.json",
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_ruin_2.json",
           "src/main/resources/data/hoh_4_core/worldgen/structure/small_ruin_2.json",
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_ruin_2.json"
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_ruin_2.json"
         ]
       }
     },
@@ -518,9 +518,9 @@
       "registry_name": "small_tower_ruin_0",
       "metadata": {
         "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_0.json",
           "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_0.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_0.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_0.json"
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_0.json"
         ]
       }
     },
@@ -533,8 +533,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_1.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_1.json",
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_1.json"
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_1.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_1.json"
         ]
       }
     },
@@ -547,8 +547,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_2.json",
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_2.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_2.json"
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_2.json",
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_2.json"
         ]
       }
     },
@@ -560,9 +560,9 @@
       "registry_name": "tower_ruin_0",
       "metadata": {
         "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/tower_ruin_0.json",
           "src/main/resources/data/hoh_4_core/worldgen/template_pool/tower_ruin_0.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure/tower_ruin_0.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure_set/tower_ruin_0.json"
+          "src/main/resources/data/hoh_4_core/worldgen/structure/tower_ruin_0.json"
         ]
       }
     },
@@ -575,8 +575,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/hoh_4_core/worldgen/structure/tower_ruin_1.json",
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/tower_ruin_1.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure_set/tower_ruin_1.json"
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/tower_ruin_1.json",
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/tower_ruin_1.json"
         ]
       }
     },
@@ -603,8 +603,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/hoh_4_core/worldgen/template_pool/tower_ruin_3.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure_set/tower_ruin_3.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure/tower_ruin_3.json"
+          "src/main/resources/data/hoh_4_core/worldgen/structure/tower_ruin_3.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/tower_ruin_3.json"
         ]
       }
     },
@@ -617,8 +617,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_trap_0.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_trap_0.json",
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_trap_0.json"
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_trap_0.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_trap_0.json"
         ]
       }
     },
@@ -631,8 +631,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_trap_1.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_trap_1.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_trap_1.json"
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_trap_1.json",
+          "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_trap_1.json"
         ]
       }
     },
@@ -644,9 +644,9 @@
       "registry_name": "small_tower_ruin_trap_2",
       "metadata": {
         "files": [
-          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_trap_2.json",
           "src/main/resources/data/hoh_4_core/worldgen/structure/small_tower_ruin_trap_2.json",
-          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_trap_2.json"
+          "src/main/resources/data/hoh_4_core/worldgen/structure_set/small_tower_ruin_trap_2.json",
+          "src/main/resources/data/hoh_4_core/worldgen/template_pool/small_tower_ruin_trap_2.json"
         ]
       }
     },
@@ -752,8 +752,8 @@
       "registry_name": "ink_rain",
       "metadata": {
         "files": [
-          "src/main/resources/assets/hoh_4_core/particles/ink_rain.json",
-          "src/main/java/gama/studios/hoh4core/client/particle/InkRainParticle.java"
+          "src/main/java/gama/studios/hoh4core/client/particle/InkRainParticle.java",
+          "src/main/resources/assets/hoh_4_core/particles/ink_rain.json"
         ]
       }
     },
@@ -834,8 +834,8 @@
       "registry_name": "inkblotch",
       "metadata": {
         "files": [
-          "src/main/java/gama/studios/hoh4core/entity/InkblotchEntity.java",
           "src/main/java/gama/studios/hoh4core/entity/model/InkblotchModel.java",
+          "src/main/java/gama/studios/hoh4core/entity/InkblotchEntity.java",
           "src/main/java/gama/studios/hoh4core/client/renderer/InkblotchRenderer.java"
         ]
       }
@@ -1004,66 +1004,6 @@
       }
     },
     {
-      "name": "PurpleCrystal",
-      "type": "animatedentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purple_crystal",
-      "metadata": {
-        "files": [
-          "src/main/java/gama/studios/hoh4core/client/renderer/PurpleCrystalRenderer.java",
-          "src/main/resources/assets/hoh_4_core/models/item/purple_crystal_spawn_egg.json",
-          "src/main/java/gama/studios/hoh4core/entity/model/PurpleCrystalModel.java",
-          "src/main/java/gama/studios/hoh4core/entity/PurpleCrystalEntity.java"
-        ]
-      }
-    },
-    {
-      "name": "RedCrystal",
-      "type": "animatedentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "red_crystal",
-      "metadata": {
-        "files": [
-          "src/main/java/gama/studios/hoh4core/entity/model/RedCrystalModel.java",
-          "src/main/java/gama/studios/hoh4core/entity/RedCrystalEntity.java",
-          "src/main/resources/assets/hoh_4_core/models/item/red_crystal_spawn_egg.json",
-          "src/main/java/gama/studios/hoh4core/client/renderer/RedCrystalRenderer.java"
-        ]
-      }
-    },
-    {
-      "name": "BlueCrystal",
-      "type": "animatedentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_crystal",
-      "metadata": {
-        "files": [
-          "src/main/java/gama/studios/hoh4core/client/renderer/BlueCrystalRenderer.java",
-          "src/main/java/gama/studios/hoh4core/entity/BlueCrystalEntity.java",
-          "src/main/java/gama/studios/hoh4core/entity/model/BlueCrystalModel.java",
-          "src/main/resources/assets/hoh_4_core/models/item/blue_crystal_spawn_egg.json"
-        ]
-      }
-    },
-    {
-      "name": "GreenCrystal",
-      "type": "animatedentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "green_crystal",
-      "metadata": {
-        "files": [
-          "src/main/java/gama/studios/hoh4core/entity/GreenCrystalEntity.java",
-          "src/main/java/gama/studios/hoh4core/entity/model/GreenCrystalModel.java",
-          "src/main/java/gama/studios/hoh4core/client/renderer/GreenCrystalRenderer.java",
-          "src/main/resources/assets/hoh_4_core/models/item/green_crystal_spawn_egg.json"
-        ]
-      }
-    },
-    {
       "name": "SetCrystalTp",
       "type": "command",
       "compiles": true,
@@ -1080,7 +1020,7 @@
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "set_crystal_tp_procedure",
+      "registry_name": "set_crystal_tp",
       "metadata": {
         "files": [
           "src/main/java/gama/studios/hoh4core/procedures/SetCrystalTpProcedureProcedure.java"
@@ -1132,6 +1072,523 @@
             "name": "sourceentity",
             "type": "entity"
           }
+        ]
+      }
+    },
+    {
+      "name": "MarbleBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marble_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/block/marble_block.json",
+          "src/main/java/gama/studios/hoh4core/block/MarbleBlockBlock.java",
+          "src/main/resources/assets/hoh_4_core/models/item/marble_block.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/marble_block.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/marble_block.json"
+        ]
+      }
+    },
+    {
+      "name": "MarbleBlockChiseled",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marble_block_chiseled",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/item/marble_block_chiseled.json",
+          "src/main/java/gama/studios/hoh4core/block/MarbleBlockChiseledBlock.java",
+          "src/main/resources/assets/hoh_4_core/blockstates/marble_block_chiseled.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/marble_block_chiseled.json",
+          "src/main/resources/assets/hoh_4_core/models/block/marble_block_chiseled.json"
+        ]
+      }
+    },
+    {
+      "name": "MarbleBlockChiseledALT",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marble_block_chiseled_alt",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/block/MarbleBlockChiseledALTBlock.java",
+          "src/main/resources/assets/hoh_4_core/blockstates/marble_block_chiseled_alt.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/marble_block_chiseled_alt.json",
+          "src/main/resources/assets/hoh_4_core/models/item/marble_block_chiseled_alt.json",
+          "src/main/resources/assets/hoh_4_core/models/block/marble_block_chiseled_alt.json"
+        ]
+      }
+    },
+    {
+      "name": "MarblePillar",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marble_pillar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/item/marble_pillar.json",
+          "src/main/java/gama/studios/hoh4core/block/MarblePillarBlock.java",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/marble_pillar.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/marble_pillar.json",
+          "src/main/resources/assets/hoh_4_core/models/block/marble_pillar.json"
+        ]
+      }
+    },
+    {
+      "name": "Marblecollumn",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marblecollumn",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/marblecollumn.json",
+          "src/main/resources/assets/hoh_4_core/models/block/marblecollumn.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/marblecollumn.json",
+          "src/main/resources/assets/hoh_4_core/models/item/marblecollumn.json",
+          "src/main/java/gama/studios/hoh4core/block/MarblecollumnBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "JungleCollumn",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jungle_collumn",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/block/jungle_collumn.json",
+          "src/main/resources/assets/hoh_4_core/models/item/jungle_collumn.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/jungle_collumn.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/jungle_collumn.json",
+          "src/main/java/gama/studios/hoh4core/block/JungleCollumnBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "OakCollumn",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_collumn",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/item/oak_collumn.json",
+          "src/main/java/gama/studios/hoh4core/block/OakCollumnBlock.java",
+          "src/main/resources/assets/hoh_4_core/models/block/oak_collumn.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/oak_collumn.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/oak_collumn.json"
+        ]
+      }
+    },
+    {
+      "name": "MangrooveCollumn",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mangroove_collumn",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/item/mangroove_collumn.json",
+          "src/main/resources/assets/hoh_4_core/models/block/mangroove_collumn.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/mangroove_collumn.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/mangroove_collumn.json",
+          "src/main/java/gama/studios/hoh4core/block/MangrooveCollumnBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "AcaciaCollumn",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acacia_collumn",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/block/AcaciaCollumnBlock.java",
+          "src/main/resources/assets/hoh_4_core/models/block/acacia_collumn.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/acacia_collumn.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/acacia_collumn.json",
+          "src/main/resources/assets/hoh_4_core/models/item/acacia_collumn.json"
+        ]
+      }
+    },
+    {
+      "name": "BirchCollumn",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_collumn",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/blockstates/birch_collumn.json",
+          "src/main/resources/assets/hoh_4_core/models/item/birch_collumn.json",
+          "src/main/java/gama/studios/hoh4core/block/BirchCollumnBlock.java",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/birch_collumn.json",
+          "src/main/resources/assets/hoh_4_core/models/block/birch_collumn.json"
+        ]
+      }
+    },
+    {
+      "name": "CherryCollumn",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cherry_collumn",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/block/cherry_collumn.json",
+          "src/main/java/gama/studios/hoh4core/block/CherryCollumnBlock.java",
+          "src/main/resources/assets/hoh_4_core/models/item/cherry_collumn.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/cherry_collumn.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/cherry_collumn.json"
+        ]
+      }
+    },
+    {
+      "name": "CrimsonCollumn",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_collumn",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/crimson_collumn.json",
+          "src/main/resources/assets/hoh_4_core/models/item/crimson_collumn.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/crimson_collumn.json",
+          "src/main/java/gama/studios/hoh4core/block/CrimsonCollumnBlock.java",
+          "src/main/resources/assets/hoh_4_core/models/block/crimson_collumn.json"
+        ]
+      }
+    },
+    {
+      "name": "DarkOakCollumn",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_oak_collumn",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/dark_oak_collumn.json",
+          "src/main/resources/assets/hoh_4_core/models/item/dark_oak_collumn.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/dark_oak_collumn.json",
+          "src/main/resources/assets/hoh_4_core/models/block/dark_oak_collumn.json",
+          "src/main/java/gama/studios/hoh4core/block/DarkOakCollumnBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "SpruceCollumn",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spruce_collumn",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/item/spruce_collumn.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/spruce_collumn.json",
+          "src/main/resources/assets/hoh_4_core/models/block/spruce_collumn.json",
+          "src/main/java/gama/studios/hoh4core/block/SpruceCollumnBlock.java",
+          "src/main/resources/assets/hoh_4_core/blockstates/spruce_collumn.json"
+        ]
+      }
+    },
+    {
+      "name": "WarpedCollumn",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warped_collumn",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/block/WarpedCollumnBlock.java",
+          "src/main/resources/assets/hoh_4_core/models/item/warped_collumn.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/warped_collumn.json",
+          "src/main/resources/assets/hoh_4_core/models/block/warped_collumn.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/warped_collumn.json"
+        ]
+      }
+    },
+    {
+      "name": "MarbleTile",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marble_tile",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/block/marble_tile.json",
+          "src/main/java/gama/studios/hoh4core/block/MarbleTileBlock.java",
+          "src/main/resources/assets/hoh_4_core/blockstates/marble_tile.json",
+          "src/main/resources/assets/hoh_4_core/models/item/marble_tile.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/marble_tile.json"
+        ]
+      }
+    },
+    {
+      "name": "MarbleCollumnRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marble_collumn_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/marble_collumn_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "JungleCollumnRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jungle_collumn_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/jungle_collumn_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "OakCollumnRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_collumn_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/oak_collumn_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MangrooveCollumnRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mangroove_collumn_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/mangroove_collumn_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "AcaciaCollumnRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acacia_collumn_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/acacia_collumn_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BirchCollumnRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_collumn_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/birch_collumn_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CherryCollumnRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cherry_collumn_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/cherry_collumn_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CrimsonCollumnRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_collumn_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/crimson_collumn_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "DarkOakCollumnRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_oak_collumn_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/dark_oak_collumn_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SpruceCollumnRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spruce_collumn_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/spruce_collumn_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "WarpedCollumnRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warped_collumn_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/warped_collumn_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MarbleRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marble_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/marble_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MarbleSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marble_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/blockstates/marble_slab.json",
+          "src/main/resources/assets/hoh_4_core/models/item/marble_slab.json",
+          "src/main/resources/assets/hoh_4_core/models/block/marble_slab_top.json",
+          "src/main/java/gama/studios/hoh4core/block/MarbleSlabBlock.java",
+          "src/main/resources/assets/hoh_4_core/models/block/marble_slab.json",
+          "src/main/resources/assets/hoh_4_core/models/block/marble_slab_full.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/marble_slab.json"
+        ]
+      }
+    },
+    {
+      "name": "MarbleSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marble_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/marble_slab_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MarbleSlabCutting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marble_slab_cutting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/marble_slab_cutting.json"
+        ]
+      }
+    },
+    {
+      "name": "MarbleStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marble_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/item/marble_stairs.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/marble_stairs.json",
+          "src/main/resources/assets/hoh_4_core/models/block/marble_stairs_outer.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/marble_stairs.json",
+          "src/main/resources/assets/hoh_4_core/models/block/marble_stairs_inner.json",
+          "src/main/resources/assets/hoh_4_core/models/block/marble_stairs.json",
+          "src/main/java/gama/studios/hoh4core/block/MarbleStairsBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "MarbleStairsrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marble_stairsrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/marble_stairs_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MarbleStairsCutting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marble_stairs_cutting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/marble_stairs_cutting.json"
+        ]
+      }
+    },
+    {
+      "name": "PurpleCrystalHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_crystal_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/PurpleCrystalHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Crystal",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/entity/model/CrystalModel.java",
+          "src/main/java/gama/studios/hoh4core/entity/CrystalEntity.java",
+          "src/main/resources/assets/hoh_4_core/models/item/crystal_spawn_egg.json",
+          "src/main/java/gama/studios/hoh4core/client/renderer/CrystalRenderer.java"
         ]
       }
     }
@@ -1206,86 +1663,174 @@
   ],
   "sound_elements": [],
   "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:MarbleStairs",
+      "~CUSTOM:MarbleSlab",
+      "~CUSTOM:MarbleTile",
+      "~CUSTOM:Marblecollumn",
+      "~CUSTOM:MarblePillar",
+      "~CUSTOM:MarbleBlockChiseledALT",
+      "~CUSTOM:MarbleBlockChiseled",
+      "~CUSTOM:MarbleBlock"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:WarpedCollumn",
+      "~CUSTOM:SpruceCollumn",
+      "~CUSTOM:DarkOakCollumn",
+      "~CUSTOM:CrimsonCollumn",
+      "~CUSTOM:CherryCollumn",
+      "~CUSTOM:BirchCollumn",
+      "~CUSTOM:AcaciaCollumn",
+      "~CUSTOM:MangrooveCollumn",
+      "~CUSTOM:OakCollumn",
+      "~CUSTOM:JungleCollumn"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:MarbleSlab"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:MarbleStairs",
+      "~CUSTOM:MarbleSlab",
+      "~CUSTOM:MarbleTile",
+      "~CUSTOM:MarblePillar",
+      "~CUSTOM:MarbleBlockChiseledALT",
+      "~CUSTOM:MarbleBlockChiseled",
+      "~CUSTOM:MarbleBlock"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:MarbleStairs"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:Moolightswordhalfworked",
+      "~CUSTOM:MoonlightSword"
+    ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~Blocks.MUD",
       "~Blocks.BASALT",
       "~Blocks.BLACKSTONE",
       "~Blocks.COBBLED_DEEPSLATE",
       "~Blocks.DEEPSLATE"
-    ],
-    "ITEMS:minecraft:swords": [
-      "~CUSTOM:Moolightswordhalfworked",
-      "~CUSTOM:MoonlightSword"
     ]
   },
-  "tab_element_order": {},
+  "tab_element_order": {
+    "CUSTOM:HOH4": [
+      "MarbleBlock",
+      "MarbleTile",
+      "MarbleBlockChiseled",
+      "MarbleBlockChiseledALT",
+      "MarblePillar",
+      "Marblecollumn",
+      "PrimordialPowerTalisman",
+      "MoonlightSword",
+      "Moolightswordhalfworked",
+      "Moonlighswordbroken",
+      "MoonSharp",
+      "JungleCollumn",
+      "OakCollumn",
+      "MangrooveCollumn",
+      "AcaciaCollumn",
+      "BirchCollumn",
+      "CherryCollumn",
+      "CrimsonCollumn",
+      "DarkOakCollumn",
+      "SpruceCollumn",
+      "WarpedCollumn",
+      "MarbleStairs",
+      "MarbleSlab",
+      "Crystal"
+    ]
+  },
   "language_map": {
     "ru_ru": {
+      "item.hoh_4_core.moon_sharp.description_0": "§oИсточник: Чертова реинкарнация",
+      "block.hoh_4_core.spruce_collumn": "Dark Oak Collumn",
+      "block.hoh_4_core.marblecollumn": "Marblecollumn",
+      "key.hoh_4_core.spirit_force_more": "Сила духа",
+      "entity.hoh_4_core.crystal": "Crystal",
+      "block.hoh_4_core.mangroove_collumn": "Oak Collumn",
+      "biome.hoh_4_core.mud_barren": "Barren of mud",
+      "biome.hoh_4_core.deepslate_barren": "Deepslate Barren",
+      "block.hoh_4_core.marble_slab": "Marble Slab",
+      "block.hoh_4_core.marble_pillar": "Marble Pillar",
+      "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nБонус: §r200 Духа",
+      "item.hoh_4_core.inkblotch_spawn_egg": "Ink_blotch Spawn Egg",
+      "item.hoh_4_core.moonlight_sword": "Лунный Клинок",
+      "effect.hoh_4_core.spirit": "Дух",
+      "block.hoh_4_core.oak_collumn": "Jungle Collumn",
+      "block.hoh_4_core.marble_block": "Marble Block",
+      "block.hoh_4_core.cherry_collumn": "Birch Collumn",
+      "block.hoh_4_core.marble_tile": "Marble Tile",
       "item.hoh_4_core.primordial_power_talisman_chestplate": "Оберег Первозданной силы",
       "biome.hoh_4_core.basalt_barren_biome": "Basalt Barren",
-      "item.hoh_4_core.moon_sharp.description_0": "§oИсточник: Чертова реинкарнация",
-      "key.hoh_4_core.spirit_force_more": "Сила духа",
-      "item.hoh_4_core.purple_crystal_spawn_egg": "Purple Crystal Spawn Egg",
-      "entity.hoh_4_core.red_crystal": "Purple Crystal",
-      "biome.hoh_4_core.mud_barren": "Barren of mud",
+      "block.hoh_4_core.dark_oak_collumn": "Crimson Collumn",
+      "item.hoh_4_core.crystal_spawn_egg": "Crystal Spawn Egg",
+      "block.hoh_4_core.warped_collumn": "Spruce Collumn",
       "item.hoh_4_core.moonlighswordbroken": "Лунный клинок (Сломан)",
-      "item.hoh_4_core.red_crystal_spawn_egg": "Purple Crystal Spawn Egg",
-      "biome.hoh_4_core.deepslate_barren": "Deepslate Barren",
+      "block.hoh_4_core.marble_block_chiseled": "Chiseled Marble Block",
       "item.hoh_4_core.moolightswordhalfworked.description_0": "§nВторая атака: §rВолна Разрушения ",
       "item.hoh_4_core.moolightswordhalfworked.description_1": "§nТрата: §950 духа",
       "item.hoh_4_core.moolightswordhalfworked.description_2": "§oИсточник: Чертова реинкарнация",
       "item_group.hoh_4_core.hoh_4": "HOH 4",
-      "entity.hoh_4_core.purple_crystal": "Purple Crystal",
       "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: Волна Разрушения ",
-      "item.hoh_4_core.blue_crystal_spawn_egg": "Red Crystal Spawn Egg",
       "item.hoh_4_core.moonlight_sword.description_2": "§oИсточник: Чертова реинкарнация",
+      "block.hoh_4_core.marble_block_chiseled_alt": "Chiseled Marble Block ALT",
+      "block.hoh_4_core.jungle_collumn": "Marble Collumn",
       "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
       "entity.hoh_4_core.inkblotch": "Ink_blotch",
       "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
-      "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nБонус: §r200 Духа",
-      "item.hoh_4_core.inkblotch_spawn_egg": "Ink_blotch Spawn Egg",
-      "entity.hoh_4_core.green_crystal": "Blue Crystal",
+      "block.hoh_4_core.acacia_collumn": "Mangroove Collumn",
       "item.hoh_4_core.moon_sharp": "Лунный фрагмент",
-      "item.hoh_4_core.moonlight_sword": "Лунный Клинок",
-      "effect.hoh_4_core.spirit": "Дух",
-      "item.hoh_4_core.green_crystal_spawn_egg": "Blue Crystal Spawn Egg",
+      "block.hoh_4_core.marble_stairs": "Marble Stairs",
       "item.hoh_4_core.moolightswordhalfworked": "Лунный клинок (Поврежден)",
       "item.hoh_4_core.moonlighswordbroken.description_0": "§oИсточник: Чертова реинкарнация",
-      "entity.hoh_4_core.blue_crystal": "Red Crystal",
+      "block.hoh_4_core.birch_collumn": "Acacia Collumn",
+      "block.hoh_4_core.crimson_collumn": "Cherry Collumn",
       "block.hoh_4_core.back_crystal": "Кристалл Духа"
     },
     "en_us": {
+      "item.hoh_4_core.moon_sharp.description_0": "§oИсточник: Чертова реинкарнация",
+      "block.hoh_4_core.spruce_collumn": "Spruce Collumn",
+      "block.hoh_4_core.marblecollumn": "Marble Collumn",
+      "key.hoh_4_core.spirit_force_more": "Spirit Force ",
+      "entity.hoh_4_core.crystal": "Crystal",
+      "block.hoh_4_core.mangroove_collumn": "Mangroove Collumn",
+      "biome.hoh_4_core.mud_barren": "Barren of mud",
+      "biome.hoh_4_core.deepslate_barren": "Deepslate Barren",
+      "block.hoh_4_core.marble_slab": "Marble Slab",
+      "block.hoh_4_core.marble_pillar": "Marble Pillar",
+      "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nБонус: §r200 Духа",
+      "item.hoh_4_core.inkblotch_spawn_egg": "Ink_blotch Spawn Egg",
+      "item.hoh_4_core.moonlight_sword": "Moonlight Sword",
+      "effect.hoh_4_core.spirit": "Spirit",
+      "block.hoh_4_core.oak_collumn": "Oak Collumn",
+      "block.hoh_4_core.marble_block": "Marble Block",
+      "block.hoh_4_core.cherry_collumn": "Cherry Collumn",
+      "block.hoh_4_core.marble_tile": "Marble Tile",
       "item.hoh_4_core.primordial_power_talisman_chestplate": "Primordial Power Talisman",
       "biome.hoh_4_core.basalt_barren_biome": "Basalt Barren",
-      "item.hoh_4_core.moon_sharp.description_0": "§oИсточник: Чертова реинкарнация",
-      "key.hoh_4_core.spirit_force_more": "Spirit Force ",
-      "item.hoh_4_core.purple_crystal_spawn_egg": "Purple Crystal Spawn Egg",
-      "entity.hoh_4_core.red_crystal": "Red Crystal",
-      "biome.hoh_4_core.mud_barren": "Barren of mud",
+      "block.hoh_4_core.dark_oak_collumn": "Dark Oak Collumn",
+      "item.hoh_4_core.crystal_spawn_egg": "Crystal Spawn Egg",
+      "block.hoh_4_core.warped_collumn": "Warped Collumn",
       "item.hoh_4_core.moonlighswordbroken": "Moonlight Sword (Broken)",
-      "item.hoh_4_core.red_crystal_spawn_egg": "Red Crystal Spawn Egg",
-      "biome.hoh_4_core.deepslate_barren": "Deepslate Barren",
+      "block.hoh_4_core.marble_block_chiseled": "Chiseled Marble Block",
       "item.hoh_4_core.moolightswordhalfworked.description_0": "§nВторая атака: §rВолна Разрушения ",
       "item.hoh_4_core.moolightswordhalfworked.description_1": "§nТрата: §950 духа",
       "item.hoh_4_core.moolightswordhalfworked.description_2": "§oИсточник: Чертова реинкарнация",
       "item_group.hoh_4_core.hoh_4": "HOH 4",
-      "entity.hoh_4_core.purple_crystal": "Purple Crystal",
       "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: §rВолна Разрушения ",
-      "item.hoh_4_core.blue_crystal_spawn_egg": "Blue Crystal Spawn Egg",
       "item.hoh_4_core.moonlight_sword.description_2": "§oИсточник: Чертова реинкарнация",
+      "block.hoh_4_core.marble_block_chiseled_alt": "Chiseled Marble Block ALT",
+      "block.hoh_4_core.jungle_collumn": "Jungle Collumn",
       "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
       "entity.hoh_4_core.inkblotch": "Ink_blotch",
       "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
-      "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nБонус: §r200 Духа",
-      "item.hoh_4_core.inkblotch_spawn_egg": "Ink_blotch Spawn Egg",
-      "entity.hoh_4_core.green_crystal": "Green Crystal",
+      "block.hoh_4_core.acacia_collumn": "Acacia Collumn",
       "item.hoh_4_core.moon_sharp": "Moon Sharp",
-      "item.hoh_4_core.moonlight_sword": "Moonlight Sword",
-      "effect.hoh_4_core.spirit": "Spirit",
-      "item.hoh_4_core.green_crystal_spawn_egg": "Green Crystal Spawn Egg",
+      "block.hoh_4_core.marble_stairs": "Marble Stairs",
       "item.hoh_4_core.moolightswordhalfworked": "Broken Moonlight Sword",
       "item.hoh_4_core.moonlighswordbroken.description_0": "§oИсточник: Чертова реинкарнация",
-      "entity.hoh_4_core.blue_crystal": "Blue Crystal",
+      "block.hoh_4_core.birch_collumn": "Birch Collumn",
+      "block.hoh_4_core.crimson_collumn": "Crimson Collumn",
       "block.hoh_4_core.back_crystal": "Back Crystal"
     }
   },

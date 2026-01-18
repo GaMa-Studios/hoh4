@@ -1,0 +1,9 @@
+{
+  "parent": "hoh_4_core:custom/extended_collumn",
+  "textures": {
+    "all": "hoh_4_core:block/birch_collumn",
+    "particle": "hoh_4_core:block/birch_collumn",
+    "0": "hoh_4_core:block/birch_collumn"
+  },
+  "render_type": "solid"
+}

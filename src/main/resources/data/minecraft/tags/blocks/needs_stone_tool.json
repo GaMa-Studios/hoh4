@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "hoh_4_core:marble_stairs",
+    "hoh_4_core:marble_slab",
+    "hoh_4_core:marble_tile",
+    "hoh_4_core:marble_pillar",
+    "hoh_4_core:marble_block_chiseled_alt",
+    "hoh_4_core:marble_block_chiseled",
+    "hoh_4_core:marble_block"
+  ]
+}

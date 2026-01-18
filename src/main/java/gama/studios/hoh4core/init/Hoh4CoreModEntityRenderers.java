@@ -9,12 +9,9 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
-import gama.studios.hoh4core.client.renderer.RedCrystalRenderer;
-import gama.studios.hoh4core.client.renderer.PurpleCrystalRenderer;
 import gama.studios.hoh4core.client.renderer.MoonlightDashRenderer;
 import gama.studios.hoh4core.client.renderer.InkblotchRenderer;
-import gama.studios.hoh4core.client.renderer.GreenCrystalRenderer;
-import gama.studios.hoh4core.client.renderer.BlueCrystalRenderer;
+import gama.studios.hoh4core.client.renderer.CrystalRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class Hoh4CoreModEntityRenderers {
@@ -22,9 +19,6 @@ public class Hoh4CoreModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(Hoh4CoreModEntities.MOONLIGHT_DASH.get(), MoonlightDashRenderer::new);
 		event.registerEntityRenderer(Hoh4CoreModEntities.INKBLOTCH.get(), InkblotchRenderer::new);
-		event.registerEntityRenderer(Hoh4CoreModEntities.PURPLE_CRYSTAL.get(), PurpleCrystalRenderer::new);
-		event.registerEntityRenderer(Hoh4CoreModEntities.RED_CRYSTAL.get(), RedCrystalRenderer::new);
-		event.registerEntityRenderer(Hoh4CoreModEntities.BLUE_CRYSTAL.get(), BlueCrystalRenderer::new);
-		event.registerEntityRenderer(Hoh4CoreModEntities.GREEN_CRYSTAL.get(), GreenCrystalRenderer::new);
+		event.registerEntityRenderer(Hoh4CoreModEntities.CRYSTAL.get(), CrystalRenderer::new);
 	}
 }

@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "recipeRetstackSize": 2,
+    "group": "marble_slab",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:MarbleBlock"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:MarbleSlab"
+    },
+    "name": "marble_slab_cutting",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "collumn_recipe",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "   ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "hoh_4_core:marble_block"
+    }
+  },
+  "result": {
+    "item": "hoh_4_core:marblecollumn",
+    "count": 6
+  }
+}

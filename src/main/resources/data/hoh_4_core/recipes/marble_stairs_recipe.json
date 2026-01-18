@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "marble_stairs",
+  "category": "building",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "hoh_4_core:marble_block"
+    }
+  },
+  "result": {
+    "item": "hoh_4_core:marble_stairs",
+    "count": 4
+  }
+}

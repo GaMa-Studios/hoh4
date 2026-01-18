@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "collumn_recipe",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "   ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stripped_mangrove_log"
+    }
+  },
+  "result": {
+    "item": "hoh_4_core:mangroove_collumn",
+    "count": 6
+  }
+}
