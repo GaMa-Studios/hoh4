@@ -274,18 +274,6 @@
       }
     },
     {
-      "name": "SpiritForceMore",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spirit_force_more",
-      "metadata": {
-        "files": [
-          "src/main/java/gama/studios/hoh4core/network/SpiritForceMoreMessage.java"
-        ]
-      }
-    },
-    {
       "name": "SpiritForceShow",
       "type": "procedure",
       "compiles": true,
@@ -1677,6 +1665,16 @@
   ],
   "sound_elements": [],
   "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.MUD",
+      "~Blocks.BASALT",
+      "~Blocks.BLACKSTONE",
+      "~Blocks.COBBLED_DEEPSLATE",
+      "~Blocks.DEEPSLATE"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:MarbleSlab"
+    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MarbleStairs",
       "~CUSTOM:MarbleSlab",
@@ -1699,8 +1697,8 @@
       "~CUSTOM:OakCollumn",
       "~CUSTOM:JungleCollumn"
     ],
-    "BLOCKS:minecraft:slabs": [
-      "~CUSTOM:MarbleSlab"
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:MarbleStairs"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:MarbleStairs",
@@ -1711,19 +1709,9 @@
       "~CUSTOM:MarbleBlockChiseled",
       "~CUSTOM:MarbleBlock"
     ],
-    "BLOCKS:minecraft:stairs": [
-      "~CUSTOM:MarbleStairs"
-    ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:Moolightswordhalfworked",
       "~CUSTOM:MoonlightSword"
-    ],
-    "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~Blocks.MUD",
-      "~Blocks.BASALT",
-      "~Blocks.BLACKSTONE",
-      "~Blocks.COBBLED_DEEPSLATE",
-      "~Blocks.DEEPSLATE"
     ]
   },
   "tab_element_order": {
@@ -1763,7 +1751,6 @@
       "block.hoh_4_core.spruce_collumn": "Dark Oak Collumn",
       "block.hoh_4_core.marblecollumn": "Marblecollumn",
       "item.hoh_4_core.crystal_spawn_egg": "Crystal Spawn Egg",
-      "key.hoh_4_core.spirit_force_more": "Сила духа",
       "entity.hoh_4_core.crystal": "Crystal",
       "block.hoh_4_core.mangroove_collumn": "Oak Collumn",
       "block.hoh_4_core.warped_collumn": "Spruce Collumn",
@@ -1809,7 +1796,6 @@
       "block.hoh_4_core.spruce_collumn": "Spruce Collumn",
       "block.hoh_4_core.marblecollumn": "Marble Collumn",
       "item.hoh_4_core.crystal_spawn_egg": "Crystal Spawn Egg",
-      "key.hoh_4_core.spirit_force_more": "Spirit Force ",
       "entity.hoh_4_core.crystal": "Crystal",
       "block.hoh_4_core.mangroove_collumn": "Mangroove Collumn",
       "block.hoh_4_core.warped_collumn": "Warped Collumn",
