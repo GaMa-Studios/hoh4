@@ -79,15 +79,15 @@
       "min": -1.0,
       "max": 1.0
     },
-    "treesPerChunk": 0,
-    "vanillaTreeType": "Default",
-    "treeType": 0,
-    "minHeight": 7,
+    "treesPerChunk": 1,
+    "vanillaTreeType": "Savanna trees",
+    "treeType": 1,
+    "minHeight": 20,
     "treeStem": {
-      "value": ""
+      "value": "Blocks.BASALT"
     },
     "treeBranch": {
-      "value": ""
+      "value": "Blocks.BASALT"
     },
     "treeVines": {
       "value": ""

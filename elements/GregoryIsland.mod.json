@@ -10,7 +10,7 @@
       }
     ],
     "spacing": 200,
-    "separation": 2,
+    "separation": 5,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:DeathWorldBiome"

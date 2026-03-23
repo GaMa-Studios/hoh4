@@ -43,5 +43,6 @@ public class Hoh4CoreModTabs {
 				tabData.accept(Hoh4CoreModBlocks.MARBLE_STAIRS.get().asItem());
 				tabData.accept(Hoh4CoreModBlocks.MARBLE_SLAB.get().asItem());
 				tabData.accept(Hoh4CoreModItems.CRYSTAL_SPAWN_EGG.get());
+				tabData.accept(Hoh4CoreModBlocks.LUNAR_SOIL.get().asItem());
 			}).build());
 }

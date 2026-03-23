@@ -38,7 +38,7 @@ public class BackCrystalBlock extends FallingBlock {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		BackCrystalPriShchielchkiePKMPoBlokuProcedure.execute(entity);
+		BackCrystalPriShchielchkiePKMPoBlokuProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}
 }

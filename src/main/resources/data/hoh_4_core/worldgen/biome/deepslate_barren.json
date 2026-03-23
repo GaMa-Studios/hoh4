@@ -64,7 +64,9 @@
     [],
     [],
     [],
-    [],
+    [
+      "hoh_4_core:deepslate_barren_tree"
+    ],
     []
   ]
 }

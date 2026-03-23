@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "hoh_4_core:lunar_soil",
     "hoh_4_core:marble_stairs",
     "hoh_4_core:marble_slab",
     "hoh_4_core:marble_tile",

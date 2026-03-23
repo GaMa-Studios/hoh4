@@ -22,6 +22,7 @@ import gama.studios.hoh4core.block.MarbleBlockChiseledBlock;
 import gama.studios.hoh4core.block.MarbleBlockChiseledALTBlock;
 import gama.studios.hoh4core.block.MarbleBlockBlock;
 import gama.studios.hoh4core.block.MangrooveCollumnBlock;
+import gama.studios.hoh4core.block.LunarSoilBlock;
 import gama.studios.hoh4core.block.JungleCollumnBlock;
 import gama.studios.hoh4core.block.DarkOakCollumnBlock;
 import gama.studios.hoh4core.block.CrimsonCollumnBlock;
@@ -52,6 +53,7 @@ public class Hoh4CoreModBlocks {
 	public static final RegistryObject<Block> MARBLE_TILE = REGISTRY.register("marble_tile", () -> new MarbleTileBlock());
 	public static final RegistryObject<Block> MARBLE_SLAB = REGISTRY.register("marble_slab", () -> new MarbleSlabBlock());
 	public static final RegistryObject<Block> MARBLE_STAIRS = REGISTRY.register("marble_stairs", () -> new MarbleStairsBlock());
+	public static final RegistryObject<Block> LUNAR_SOIL = REGISTRY.register("lunar_soil", () -> new LunarSoilBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
