@@ -1689,6 +1689,126 @@
           "src/main/resources/data/hoh_4_core/worldgen/biome/moon_biome.json"
         ]
       }
+    },
+    {
+      "name": "TimerProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/TimerProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TimerStartprocedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_startprocedure",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/TimerStartprocedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TimerStop",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_stop",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/TimerStopProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TimerGetDay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_get_day",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/TimerGetDayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Timerstart",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timerstart",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/command/TimerstartCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "TimerStopCom",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_stop_com",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/command/TimerStopComCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "TimerOutputCom",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_output_com",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/command/TimerOutputComCommand.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1757,6 +1877,30 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "DayTimer",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "TimerStartDay",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "isTodayCount",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "isTimerActive",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
     }
   ],
   "sound_elements": [],

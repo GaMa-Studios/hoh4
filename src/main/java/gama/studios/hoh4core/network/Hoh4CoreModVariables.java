@@ -147,6 +147,10 @@ public class Hoh4CoreModVariables {
 		public static final String DATA_NAME = "hoh_4_core_mapvars";
 		public boolean deathworld = false;
 		public double CurrentScenario = 0;
+		public double DayTimer = 0;
+		public double TimerStartDay = 0;
+		public boolean isTodayCount = false;
+		public boolean isTimerActive = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -157,12 +161,20 @@ public class Hoh4CoreModVariables {
 		public void read(CompoundTag nbt) {
 			deathworld = nbt.getBoolean("deathworld");
 			CurrentScenario = nbt.getDouble("CurrentScenario");
+			DayTimer = nbt.getDouble("DayTimer");
+			TimerStartDay = nbt.getDouble("TimerStartDay");
+			isTodayCount = nbt.getBoolean("isTodayCount");
+			isTimerActive = nbt.getBoolean("isTimerActive");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("deathworld", deathworld);
 			nbt.putDouble("CurrentScenario", CurrentScenario);
+			nbt.putDouble("DayTimer", DayTimer);
+			nbt.putDouble("TimerStartDay", TimerStartDay);
+			nbt.putBoolean("isTodayCount", isTodayCount);
+			nbt.putBoolean("isTimerActive", isTimerActive);
 			return nbt;
 		}
 
