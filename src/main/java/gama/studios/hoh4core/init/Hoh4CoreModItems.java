@@ -50,6 +50,7 @@ public class Hoh4CoreModItems {
 	public static final RegistryObject<Item> MARBLE_STAIRS = block(Hoh4CoreModBlocks.MARBLE_STAIRS);
 	public static final RegistryObject<Item> CRYSTAL_SPAWN_EGG = REGISTRY.register("crystal_spawn_egg", () -> new ForgeSpawnEggItem(Hoh4CoreModEntities.CRYSTAL, -65332, -16711681, new Item.Properties()));
 	public static final RegistryObject<Item> LUNAR_SOIL = block(Hoh4CoreModBlocks.LUNAR_SOIL);
+	public static final RegistryObject<Item> ANVIL_OF_GODS = block(Hoh4CoreModBlocks.ANVIL_OF_GODS);
 
 	// Start of user code block custom items
 	// End of user code block custom items

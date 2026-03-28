@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "hoh_4_core:block/anvil_of_gods"
+    },
+    "facing=east": {
+      "model": "hoh_4_core:block/anvil_of_gods",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "hoh_4_core:block/anvil_of_gods",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "hoh_4_core:block/anvil_of_gods",
+      "y": 270
+    }
+  }
+}

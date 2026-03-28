@@ -29,9 +29,11 @@ import java.util.AbstractMap;
 import gama.studios.hoh4core.init.Hoh4CoreModTabs;
 import gama.studios.hoh4core.init.Hoh4CoreModParticleTypes;
 import gama.studios.hoh4core.init.Hoh4CoreModMobEffects;
+import gama.studios.hoh4core.init.Hoh4CoreModMenus;
 import gama.studios.hoh4core.init.Hoh4CoreModItems;
 import gama.studios.hoh4core.init.Hoh4CoreModEntities;
 import gama.studios.hoh4core.init.Hoh4CoreModBlocks;
+import gama.studios.hoh4core.init.Hoh4CoreModBlockEntities;
 
 @Mod("hoh_4_core")
 public class Hoh4CoreMod {
@@ -45,7 +47,7 @@ public class Hoh4CoreMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		Hoh4CoreModBlocks.REGISTRY.register(bus);
-
+		Hoh4CoreModBlockEntities.REGISTRY.register(bus);
 		Hoh4CoreModItems.REGISTRY.register(bus);
 		Hoh4CoreModEntities.REGISTRY.register(bus);
 
@@ -54,6 +56,8 @@ public class Hoh4CoreMod {
 		Hoh4CoreModMobEffects.REGISTRY.register(bus);
 
 		Hoh4CoreModParticleTypes.REGISTRY.register(bus);
+
+		Hoh4CoreModMenus.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

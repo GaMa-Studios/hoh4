@@ -365,30 +365,6 @@
       }
     },
     {
-      "name": "Moon1",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "moon_1",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/hoh_4_core/recipes/moon_1.json"
-        ]
-      }
-    },
-    {
-      "name": "Moon2",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "moon_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/hoh_4_core/recipes/moon_2.json"
-        ]
-      }
-    },
-    {
       "name": "Spirit",
       "type": "potioneffect",
       "compiles": true,
@@ -1809,6 +1785,82 @@
           "src/main/java/gama/studios/hoh4core/command/TimerOutputComCommand.java"
         ]
       }
+    },
+    {
+      "name": "AnvilOfGods",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anvil_of_gods",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/block/entity/AnvilOfGodsBlockEntity.java",
+          "src/main/resources/assets/hoh_4_core/models/item/anvil_of_gods.json",
+          "src/main/resources/assets/hoh_4_core/models/block/anvil_of_gods.json",
+          "src/main/java/gama/studios/hoh4core/block/AnvilOfGodsBlock.java",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/anvil_of_gods.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/anvil_of_gods.json"
+        ]
+      }
+    },
+    {
+      "name": "GodsAnvilGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gods_anvil_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/client/gui/GodsAnvilGuiScreen.java",
+          "src/main/java/gama/studios/hoh4core/world/inventory/GodsAnvilGuiMenu.java",
+          "src/main/java/gama/studios/hoh4core/network/GodsAnvilGuiButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "AnvilOfGodsProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anvil_of_gods_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/AnvilOfGodsProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DebugMode",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug_mode",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
     }
   ],
   "variable_elements": [
@@ -1983,102 +2035,141 @@
       "MarbleStairs",
       "MarbleSlab",
       "Crystal",
-      "LunarSoil"
+      "LunarSoil",
+      "AnvilOfGods"
     ]
   },
   "language_map": {
     "ru_ru": {
-      "item.hoh_4_core.primordial_power_talisman_chestplate": "Оберег Первозданной силы",
-      "biome.hoh_4_core.basalt_barren_biome": "Basalt Barren",
-      "block.hoh_4_core.dark_oak_collumn": "Crimson Collumn",
+      "gamerule.debugMode.description": "HohCoreDebugMode",
       "item.hoh_4_core.moon_sharp.description_0": "§oИсточник: Чертова реинкарнация",
       "block.hoh_4_core.spruce_collumn": "Dark Oak Collumn",
       "block.hoh_4_core.marblecollumn": "Marblecollumn",
-      "item.hoh_4_core.crystal_spawn_egg": "Crystal Spawn Egg",
       "entity.hoh_4_core.crystal": "Crystal",
       "block.hoh_4_core.mangroove_collumn": "Oak Collumn",
-      "block.hoh_4_core.warped_collumn": "Spruce Collumn",
       "biome.hoh_4_core.mud_barren": "Barren of mud",
-      "item.hoh_4_core.moonlighswordbroken": "Лунный клинок (Сломан)",
-      "block.hoh_4_core.marble_block_chiseled": "Chiseled Marble Block",
-      "biome.hoh_4_core.moon_biome": "Moon Biome",
+      "block.hoh_4_core.anvil_of_gods": "Наковальня Богов",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty15": "-",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty14": "-",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty13": "-",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty12": "-",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty11": "|",
       "biome.hoh_4_core.deepslate_barren": "Deepslate Barren",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty10": "|",
+      "block.hoh_4_core.marble_slab": "Marble Slab",
+      "block.hoh_4_core.marble_pillar": "Marble Pillar",
+      "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nБонус: §r200 Духа",
+      "item.hoh_4_core.inkblotch_spawn_egg": "Ink_blotch Spawn Egg",
+      "item.hoh_4_core.moonlight_sword": "Лунный Клинок",
+      "effect.hoh_4_core.spirit": "Дух",
+      "block.hoh_4_core.oak_collumn": "Jungle Collumn",
+      "block.hoh_4_core.lunar_soil": "Lunar Soil",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty": "+",
+      "block.hoh_4_core.marble_block": "Marble Block",
+      "block.hoh_4_core.cherry_collumn": "Birch Collumn",
+      "block.hoh_4_core.marble_tile": "Marble Tile",
+      "item.hoh_4_core.primordial_power_talisman_chestplate": "Оберег Первозданной силы",
+      "biome.hoh_4_core.basalt_barren_biome": "Basalt Barren",
+      "block.hoh_4_core.dark_oak_collumn": "Crimson Collumn",
+      "item.hoh_4_core.crystal_spawn_egg": "Crystal Spawn Egg",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty9": "-",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty7": "+",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty8": "-",
+      "block.hoh_4_core.warped_collumn": "Spruce Collumn",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty1": "+",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty2": "+",
+      "item.hoh_4_core.moonlighswordbroken": "Лунный клинок (Сломан)",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty5": "+",
+      "block.hoh_4_core.marble_block_chiseled": "Chiseled Marble Block",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty6": "+",
+      "biome.hoh_4_core.moon_biome": "Moon Biome",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty3": "+",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty4": "+",
       "item.hoh_4_core.moolightswordhalfworked.description_0": "§nВторая атака: §rВолна Разрушения ",
       "item.hoh_4_core.moolightswordhalfworked.description_1": "§nТрата: §950 духа",
       "item.hoh_4_core.moolightswordhalfworked.description_2": "§oИсточник: Чертова реинкарнация",
       "item_group.hoh_4_core.hoh_4": "HOH 4",
-      "block.hoh_4_core.marble_slab": "Marble Slab",
       "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: Волна Разрушения ",
-      "block.hoh_4_core.marble_pillar": "Marble Pillar",
       "item.hoh_4_core.moonlight_sword.description_2": "§oИсточник: Чертова реинкарнация",
       "block.hoh_4_core.marble_block_chiseled_alt": "Chiseled Marble Block ALT",
       "block.hoh_4_core.jungle_collumn": "Marble Collumn",
       "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
       "entity.hoh_4_core.inkblotch": "Ink_blotch",
       "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
-      "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nБонус: §r200 Духа",
-      "item.hoh_4_core.inkblotch_spawn_egg": "Ink_blotch Spawn Egg",
       "block.hoh_4_core.acacia_collumn": "Mangroove Collumn",
       "item.hoh_4_core.moon_sharp": "Лунный фрагмент",
       "block.hoh_4_core.marble_stairs": "Marble Stairs",
-      "item.hoh_4_core.moonlight_sword": "Лунный Клинок",
-      "effect.hoh_4_core.spirit": "Дух",
-      "block.hoh_4_core.oak_collumn": "Jungle Collumn",
-      "item.hoh_4_core.moolightswordhalfworked": "Лунный клинок (Поврежден)",
       "item.hoh_4_core.moonlighswordbroken.description_0": "§oИсточник: Чертова реинкарнация",
-      "block.hoh_4_core.lunar_soil": "Lunar Soil",
-      "block.hoh_4_core.marble_block": "Marble Block",
-      "block.hoh_4_core.cherry_collumn": "Birch Collumn",
+      "item.hoh_4_core.moolightswordhalfworked": "Лунный клинок (Поврежден)",
       "block.hoh_4_core.birch_collumn": "Acacia Collumn",
+      "gamerule.debugMode": "HohCoreDebugMode",
       "block.hoh_4_core.crimson_collumn": "Cherry Collumn",
-      "block.hoh_4_core.marble_tile": "Marble Tile",
       "block.hoh_4_core.back_crystal": "Кристалл Духа"
     },
     "en_us": {
-      "item.hoh_4_core.primordial_power_talisman_chestplate": "Primordial Power Talisman",
-      "biome.hoh_4_core.basalt_barren_biome": "Basalt Barren",
-      "block.hoh_4_core.dark_oak_collumn": "Dark Oak Collumn",
-      "item.hoh_4_core.moon_sharp.description_0": "§oИсточник: Чертова реинкарнация",
+      "gamerule.debugMode.description": "HohCoreDebugMode",
+      "item.hoh_4_core.moon_sharp.description_0": "§oSource: Damn Reincarnation",
       "block.hoh_4_core.spruce_collumn": "Spruce Collumn",
       "block.hoh_4_core.marblecollumn": "Marble Collumn",
-      "item.hoh_4_core.crystal_spawn_egg": "Crystal Spawn Egg",
       "entity.hoh_4_core.crystal": "Crystal",
       "block.hoh_4_core.mangroove_collumn": "Mangroove Collumn",
-      "block.hoh_4_core.warped_collumn": "Warped Collumn",
       "biome.hoh_4_core.mud_barren": "Barren of mud",
-      "item.hoh_4_core.moonlighswordbroken": "Moonlight Sword (Broken)",
-      "block.hoh_4_core.marble_block_chiseled": "Chiseled Marble Block",
-      "biome.hoh_4_core.moon_biome": "Moon Biome",
+      "block.hoh_4_core.anvil_of_gods": "Anvil Of Gods",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty15": "-",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty14": "-",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty13": "-",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty12": "-",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty11": "|",
       "biome.hoh_4_core.deepslate_barren": "Deepslate Barren",
-      "item.hoh_4_core.moolightswordhalfworked.description_0": "§nВторая атака: §rВолна Разрушения ",
-      "item.hoh_4_core.moolightswordhalfworked.description_1": "§nТрата: §950 духа",
-      "item.hoh_4_core.moolightswordhalfworked.description_2": "§oИсточник: Чертова реинкарнация",
-      "item_group.hoh_4_core.hoh_4": "HOH 4",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty10": "|",
       "block.hoh_4_core.marble_slab": "Marble Slab",
-      "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: §rВолна Разрушения ",
       "block.hoh_4_core.marble_pillar": "Marble Pillar",
-      "item.hoh_4_core.moonlight_sword.description_2": "§oИсточник: Чертова реинкарнация",
-      "block.hoh_4_core.marble_block_chiseled_alt": "Chiseled Marble Block ALT",
-      "block.hoh_4_core.jungle_collumn": "Jungle Collumn",
-      "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
-      "entity.hoh_4_core.inkblotch": "Ink_blotch",
-      "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
-      "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nБонус: §r200 Духа",
+      "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nBonus: §r200 Spirit Force",
       "item.hoh_4_core.inkblotch_spawn_egg": "Ink_blotch Spawn Egg",
-      "block.hoh_4_core.acacia_collumn": "Acacia Collumn",
-      "item.hoh_4_core.moon_sharp": "Moon Sharp",
-      "block.hoh_4_core.marble_stairs": "Marble Stairs",
       "item.hoh_4_core.moonlight_sword": "Moonlight Sword",
       "effect.hoh_4_core.spirit": "Spirit",
       "block.hoh_4_core.oak_collumn": "Oak Collumn",
-      "item.hoh_4_core.moolightswordhalfworked": "Broken Moonlight Sword",
-      "item.hoh_4_core.moonlighswordbroken.description_0": "§oИсточник: Чертова реинкарнация",
       "block.hoh_4_core.lunar_soil": "Lunar Soil",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty": "+",
       "block.hoh_4_core.marble_block": "Marble Block",
       "block.hoh_4_core.cherry_collumn": "Cherry Collumn",
-      "block.hoh_4_core.birch_collumn": "Birch Collumn",
-      "block.hoh_4_core.crimson_collumn": "Crimson Collumn",
       "block.hoh_4_core.marble_tile": "Marble Tile",
+      "item.hoh_4_core.primordial_power_talisman_chestplate": "Primordial Power Talisman",
+      "biome.hoh_4_core.basalt_barren_biome": "Basalt Barren",
+      "block.hoh_4_core.dark_oak_collumn": "Dark Oak Collumn",
+      "item.hoh_4_core.crystal_spawn_egg": "Crystal Spawn Egg",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty9": "-",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty7": "+",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty8": "-",
+      "block.hoh_4_core.warped_collumn": "Warped Collumn",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty1": "+",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty2": "+",
+      "item.hoh_4_core.moonlighswordbroken": "Moonlight Sword (Broken)",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty5": "+",
+      "block.hoh_4_core.marble_block_chiseled": "Chiseled Marble Block",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty6": "+",
+      "biome.hoh_4_core.moon_biome": "Moon Biome",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty3": "+",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty4": "+",
+      "item.hoh_4_core.moolightswordhalfworked.description_0": "§nSecond attack: §rWave of Destruction",
+      "item.hoh_4_core.moolightswordhalfworked.description_1": "§nUse: §950 Spirit Force",
+      "item.hoh_4_core.moolightswordhalfworked.description_2": "§oSource: Damn Reincarnation",
+      "item_group.hoh_4_core.hoh_4": "HOH 4",
+      "item.hoh_4_core.moonlight_sword.description_0": "§nSecond attack: §rWave of Destruction",
+      "item.hoh_4_core.moonlight_sword.description_2": "§oSource: Damn Reincarnation",
+      "block.hoh_4_core.marble_block_chiseled_alt": "Chiseled Marble Block ALT",
+      "block.hoh_4_core.jungle_collumn": "Jungle Collumn",
+      "item.hoh_4_core.moonlight_sword.description_1": "§nUse: §9200 Spirit Force",
+      "entity.hoh_4_core.inkblotch": "Ink_blotch",
+      "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
+      "block.hoh_4_core.acacia_collumn": "Acacia Collumn",
+      "item.hoh_4_core.moon_sharp": "Moon Sharp",
+      "block.hoh_4_core.marble_stairs": "Marble Stairs",
+      "item.hoh_4_core.moonlighswordbroken.description_0": "§oSource: Damn Reincarnation",
+      "item.hoh_4_core.moolightswordhalfworked": "Broken Moonlight Sword",
+      "block.hoh_4_core.birch_collumn": "Birch Collumn",
+      "gamerule.debugMode": "HohCoreDebugMode",
+      "block.hoh_4_core.crimson_collumn": "Crimson Collumn",
       "block.hoh_4_core.back_crystal": "Back Crystal"
     }
   },

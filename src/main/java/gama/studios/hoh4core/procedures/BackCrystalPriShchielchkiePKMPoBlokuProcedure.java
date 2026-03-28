@@ -77,36 +77,38 @@ public class BackCrystalPriShchielchkiePKMPoBlokuProcedure {
 		if (entity == null)
 			return;
 		if (!world.getEntitiesOfClass(CrystalEntity.class, AABB.ofSize(new Vec3(x, y, z), 2, 2, 2), e -> true).isEmpty()) {
-			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-				ResourceKey<Level> destinationType = Level.OVERWORLD;
-				if (_player.level().dimension() == destinationType)
-					return;
-				ServerLevel nextLevel = _player.server.getLevel(destinationType);
-				if (nextLevel != null) {
-					_player.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.WIN_GAME, 0));
-					_player.teleportTo(nextLevel, _player.getX(), _player.getY(), _player.getZ(), _player.getYRot(), _player.getXRot());
-					_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
-					for (MobEffectInstance _effectinstance : _player.getActiveEffects())
-						_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance));
-					_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
+			if ((entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).status == -1) {
+				if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
+					ResourceKey<Level> destinationType = Level.OVERWORLD;
+					if (_player.level().dimension() == destinationType)
+						return;
+					ServerLevel nextLevel = _player.server.getLevel(destinationType);
+					if (nextLevel != null) {
+						_player.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.WIN_GAME, 0));
+						_player.teleportTo(nextLevel, _player.getX(), _player.getY(), _player.getZ(), _player.getYRot(), _player.getXRot());
+						_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
+						for (MobEffectInstance _effectinstance : _player.getActiveEffects())
+							_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance));
+						_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
+					}
 				}
-			}
-			{
-				Entity _ent = entity;
-				_ent.teleportTo(((entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).respx),
-						((entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).respy),
-						((entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).respz));
-				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport(((entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).respx),
+				{
+					Entity _ent = entity;
+					_ent.teleportTo(((entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).respx),
 							((entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).respy),
-							((entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).respz), _ent.getYRot(), _ent.getXRot());
-			}
-			{
-				double _setval = 0;
-				entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.status = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+							((entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).respz));
+					if (_ent instanceof ServerPlayer _serverPlayer)
+						_serverPlayer.connection.teleport(((entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).respx),
+								((entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).respy),
+								((entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).respz), _ent.getYRot(), _ent.getXRot());
+				}
+				{
+					double _setval = 0;
+					entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.status = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 			}
 		}
 	}

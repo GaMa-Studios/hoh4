@@ -4,12 +4,15 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
@@ -32,6 +35,15 @@ public class MoonlightDashKazhdyiTikPriPoliotieSnariadaProcedure {
 				Hoh4CoreMod.queueServerWork(10, () -> {
 					entity.getPersistentData().putBoolean("moon", false);
 				});
+			}
+		}
+		world.addParticle(ParticleTypes.SCULK_SOUL, x, y, z, 0, 0, 0);
+		if (!(!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 2, 2, 2), e -> true).isEmpty())) {
+			{
+				Entity _ent = entity;
+				_ent.teleportTo(x, (y + 1), z);
+				if (_ent instanceof ServerPlayer _serverPlayer)
+					_serverPlayer.connection.teleport(x, (y + 1), z, _ent.getYRot(), _ent.getXRot());
 			}
 		}
 	}

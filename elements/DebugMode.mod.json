@@ -1,0 +1,12 @@
+{
+  "_fv": 73,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "HohCoreDebugMode",
+    "description": "HohCoreDebugMode",
+    "category": "UPDATES",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 0
+  }
+}

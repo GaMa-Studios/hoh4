@@ -29,6 +29,7 @@ import gama.studios.hoh4core.block.CrimsonCollumnBlock;
 import gama.studios.hoh4core.block.CherryCollumnBlock;
 import gama.studios.hoh4core.block.BirchCollumnBlock;
 import gama.studios.hoh4core.block.BackCrystalBlock;
+import gama.studios.hoh4core.block.AnvilOfGodsBlock;
 import gama.studios.hoh4core.block.AcaciaCollumnBlock;
 import gama.studios.hoh4core.Hoh4CoreMod;
 
@@ -54,6 +55,7 @@ public class Hoh4CoreModBlocks {
 	public static final RegistryObject<Block> MARBLE_SLAB = REGISTRY.register("marble_slab", () -> new MarbleSlabBlock());
 	public static final RegistryObject<Block> MARBLE_STAIRS = REGISTRY.register("marble_stairs", () -> new MarbleStairsBlock());
 	public static final RegistryObject<Block> LUNAR_SOIL = REGISTRY.register("lunar_soil", () -> new LunarSoilBlock());
+	public static final RegistryObject<Block> ANVIL_OF_GODS = REGISTRY.register("anvil_of_gods", () -> new AnvilOfGodsBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
