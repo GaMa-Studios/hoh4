@@ -18,16 +18,15 @@ public class MoonLightCrackDashProcedure {
 		if ((entity.getCapability(Hoh4CoreModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Hoh4CoreModVariables.PlayerVariables())).SpiritForce >= 50) {
 			if (world instanceof ServerLevel projectileLevel) {
 				Projectile _entityToSpawn = new Object() {
-					public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
+					public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
 						AbstractArrow entityToSpawn = new MoonlightDashEntity(Hoh4CoreModEntities.MOONLIGHT_DASH.get(), level);
 						entityToSpawn.setOwner(shooter);
 						entityToSpawn.setBaseDamage(damage);
 						entityToSpawn.setKnockback(knockback);
 						entityToSpawn.setSilent(true);
-						entityToSpawn.setPierceLevel(piercing);
 						return entityToSpawn;
 					}
-				}.getArrow(projectileLevel, entity, 9, 0, (byte) 5);
+				}.getArrow(projectileLevel, entity, 9, 0);
 				_entityToSpawn.setPos((entity.getX()), (entity.getY() + 1.5), (entity.getZ()));
 				_entityToSpawn.shoot((entity.getLookAngle().x), (entity.getLookAngle().y), (entity.getLookAngle().z), 1, 0);
 				projectileLevel.addFreshEntity(_entityToSpawn);

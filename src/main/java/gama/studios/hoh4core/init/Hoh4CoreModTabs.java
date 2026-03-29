@@ -45,5 +45,6 @@ public class Hoh4CoreModTabs {
 				tabData.accept(Hoh4CoreModItems.CRYSTAL_SPAWN_EGG.get());
 				tabData.accept(Hoh4CoreModBlocks.LUNAR_SOIL.get().asItem());
 				tabData.accept(Hoh4CoreModBlocks.ANVIL_OF_GODS.get().asItem());
+				tabData.accept(Hoh4CoreModItems.ADAPTATION_WHEEL_HELMET.get());
 			}).build());
 }

@@ -4,11 +4,9 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
@@ -28,22 +26,22 @@ public class MoonlightDashKazhdyiTikPriPoliotieSnariadaProcedure {
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 					"fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air replace #minecraft:leaves");
-		for (Entity entityiterator : world.getEntities(null, new AABB((x + 1), y, (z + 1), (x + 1), y, (z + 1)))) {
+		entity.getPersistentData().putDouble("timer", (entity.getPersistentData().getDouble("timer") + 1));
+		for (Entity entityiterator : world.getEntities(entity, new AABB((x + 1), y, (z + 1), (x + 1), y, (z + 1)))) {
 			if (entityiterator.getPersistentData().getBoolean("moon") == false) {
 				entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.PLAYER_ATTACK)), 1);
 			} else {
 				Hoh4CoreMod.queueServerWork(10, () -> {
-					entity.getPersistentData().putBoolean("moon", false);
+					entityiterator.getPersistentData().putBoolean("moon", false);
 				});
 			}
 		}
 		world.addParticle(ParticleTypes.SCULK_SOUL, x, y, z, 0, 0, 0);
-		if (!(!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 2, 2, 2), e -> true).isEmpty())) {
-			{
-				Entity _ent = entity;
-				_ent.teleportTo(x, (y + 1), z);
-				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport(x, (y + 1), z, _ent.getYRot(), _ent.getXRot());
+		{
+			Entity _ent = entity;
+			if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+						_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "data modify entity @e[type=hoh_4_core:moonlight_dash, limit=1] NoGravity set value 1b");
 			}
 		}
 	}

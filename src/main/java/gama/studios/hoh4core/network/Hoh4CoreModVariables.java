@@ -79,6 +79,7 @@ public class Hoh4CoreModVariables {
 			clone.SpiritForceMax = original.SpiritForceMax;
 			clone.ink_morph = original.ink_morph;
 			clone.defaultHeight = original.defaultHeight;
+			clone.adpatationWheelTimer = original.adpatationWheelTimer;
 			if (!event.isWasDeath()) {
 				clone.SpiritForce = original.SpiritForce;
 			}
@@ -275,6 +276,7 @@ public class Hoh4CoreModVariables {
 		public double SpiritForce = 0;
 		public boolean ink_morph = false;
 		public double defaultHeight = 0;
+		public double adpatationWheelTimer = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -291,6 +293,7 @@ public class Hoh4CoreModVariables {
 			nbt.putDouble("SpiritForce", SpiritForce);
 			nbt.putBoolean("ink_morph", ink_morph);
 			nbt.putDouble("defaultHeight", defaultHeight);
+			nbt.putDouble("adpatationWheelTimer", adpatationWheelTimer);
 			return nbt;
 		}
 
@@ -304,6 +307,7 @@ public class Hoh4CoreModVariables {
 			SpiritForce = nbt.getDouble("SpiritForce");
 			ink_morph = nbt.getBoolean("ink_morph");
 			defaultHeight = nbt.getDouble("defaultHeight");
+			adpatationWheelTimer = nbt.getDouble("adpatationWheelTimer");
 		}
 	}
 
@@ -336,6 +340,7 @@ public class Hoh4CoreModVariables {
 					variables.SpiritForce = message.data.SpiritForce;
 					variables.ink_morph = message.data.ink_morph;
 					variables.defaultHeight = message.data.defaultHeight;
+					variables.adpatationWheelTimer = message.data.adpatationWheelTimer;
 				}
 			});
 			context.setPacketHandled(true);

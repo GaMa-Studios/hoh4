@@ -12,6 +12,7 @@ import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.ArmorItem;
 
 import gama.studios.hoh4core.item.PrimordialPowerTalismanItem;
 import gama.studios.hoh4core.item.MoonlightSwordItem;
@@ -19,6 +20,7 @@ import gama.studios.hoh4core.item.MoonlightDashItemItem;
 import gama.studios.hoh4core.item.MoonlighswordbrokenItem;
 import gama.studios.hoh4core.item.MoonSharpItem;
 import gama.studios.hoh4core.item.MoolightswordhalfworkedItem;
+import gama.studios.hoh4core.item.AdaptationWheelItem;
 import gama.studios.hoh4core.Hoh4CoreMod;
 
 public class Hoh4CoreModItems {
@@ -51,6 +53,7 @@ public class Hoh4CoreModItems {
 	public static final RegistryObject<Item> CRYSTAL_SPAWN_EGG = REGISTRY.register("crystal_spawn_egg", () -> new ForgeSpawnEggItem(Hoh4CoreModEntities.CRYSTAL, -65332, -16711681, new Item.Properties()));
 	public static final RegistryObject<Item> LUNAR_SOIL = block(Hoh4CoreModBlocks.LUNAR_SOIL);
 	public static final RegistryObject<Item> ANVIL_OF_GODS = block(Hoh4CoreModBlocks.ANVIL_OF_GODS);
+	public static final RegistryObject<AdaptationWheelItem> ADAPTATION_WHEEL_HELMET = REGISTRY.register("adaptation_wheel_helmet", () -> new AdaptationWheelItem(ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

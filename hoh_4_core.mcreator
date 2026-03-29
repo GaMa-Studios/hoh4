@@ -1861,6 +1861,43 @@
         "files": [],
         "type": "logic"
       }
+    },
+    {
+      "name": "AdaptationWheel",
+      "type": "animatedarmor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adaptation_wheel",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/item/AdaptationWheelItem.java",
+          "src/main/java/gama/studios/hoh4core/item/model/AdaptationWheelModel.java",
+          "src/main/resources/assets/hoh_4_core/models/item/adaptation_wheel_helmet.json",
+          "src/main/java/gama/studios/hoh4core/client/renderer/AdaptationWheelArmorRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "AdaptationWheelTimer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adaptation_wheel_timer",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/AdaptationWheelTimerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1953,6 +1990,12 @@
       "type": "logic",
       "scope": "map",
       "value": "false"
+    },
+    {
+      "name": "adpatationWheelTimer",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -2036,7 +2079,8 @@
       "MarbleSlab",
       "Crystal",
       "LunarSoil",
-      "AnvilOfGods"
+      "AnvilOfGods",
+      "AdaptationWheel"
     ]
   },
   "language_map": {
@@ -2046,6 +2090,7 @@
       "block.hoh_4_core.spruce_collumn": "Dark Oak Collumn",
       "block.hoh_4_core.marblecollumn": "Marblecollumn",
       "entity.hoh_4_core.crystal": "Crystal",
+      "item.hoh_4_core.adaptation_wheel_chestplate": "Нагрудник Adaptation Wheel",
       "block.hoh_4_core.mangroove_collumn": "Oak Collumn",
       "biome.hoh_4_core.mud_barren": "Barren of mud",
       "block.hoh_4_core.anvil_of_gods": "Наковальня Богов",
@@ -2062,8 +2107,10 @@
       "item.hoh_4_core.inkblotch_spawn_egg": "Ink_blotch Spawn Egg",
       "item.hoh_4_core.moonlight_sword": "Лунный Клинок",
       "effect.hoh_4_core.spirit": "Дух",
+      "item.hoh_4_core.adaptation_wheel_boots": "Ботинки Adaptation Wheel",
       "block.hoh_4_core.oak_collumn": "Jungle Collumn",
       "block.hoh_4_core.lunar_soil": "Lunar Soil",
+      "item.hoh_4_core.adaptation_wheel_helmet": "Adaptation Wheel",
       "gui.hoh_4_core.gods_anvil_gui.label_empty": "+",
       "block.hoh_4_core.marble_block": "Marble Block",
       "block.hoh_4_core.cherry_collumn": "Birch Collumn",
@@ -2089,6 +2136,7 @@
       "item.hoh_4_core.moolightswordhalfworked.description_1": "§nТрата: §950 духа",
       "item.hoh_4_core.moolightswordhalfworked.description_2": "§oИсточник: Чертова реинкарнация",
       "item_group.hoh_4_core.hoh_4": "HOH 4",
+      "item.hoh_4_core.adaptation_wheel_leggings": "Поножи Adaptation Wheel",
       "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: Волна Разрушения ",
       "item.hoh_4_core.moonlight_sword.description_2": "§oИсточник: Чертова реинкарнация",
       "block.hoh_4_core.marble_block_chiseled_alt": "Chiseled Marble Block ALT",
@@ -2112,6 +2160,7 @@
       "block.hoh_4_core.spruce_collumn": "Spruce Collumn",
       "block.hoh_4_core.marblecollumn": "Marble Collumn",
       "entity.hoh_4_core.crystal": "Crystal",
+      "item.hoh_4_core.adaptation_wheel_chestplate": "Нагрудник Adaptation Wheel",
       "block.hoh_4_core.mangroove_collumn": "Mangroove Collumn",
       "biome.hoh_4_core.mud_barren": "Barren of mud",
       "block.hoh_4_core.anvil_of_gods": "Anvil Of Gods",
@@ -2128,8 +2177,10 @@
       "item.hoh_4_core.inkblotch_spawn_egg": "Ink_blotch Spawn Egg",
       "item.hoh_4_core.moonlight_sword": "Moonlight Sword",
       "effect.hoh_4_core.spirit": "Spirit",
+      "item.hoh_4_core.adaptation_wheel_boots": "Ботинки Adaptation Wheel",
       "block.hoh_4_core.oak_collumn": "Oak Collumn",
       "block.hoh_4_core.lunar_soil": "Lunar Soil",
+      "item.hoh_4_core.adaptation_wheel_helmet": "Adaptation Wheel",
       "gui.hoh_4_core.gods_anvil_gui.label_empty": "+",
       "block.hoh_4_core.marble_block": "Marble Block",
       "block.hoh_4_core.cherry_collumn": "Cherry Collumn",
@@ -2151,15 +2202,16 @@
       "biome.hoh_4_core.moon_biome": "Moon Biome",
       "gui.hoh_4_core.gods_anvil_gui.label_empty3": "+",
       "gui.hoh_4_core.gods_anvil_gui.label_empty4": "+",
-      "item.hoh_4_core.moolightswordhalfworked.description_0": "§nSecond attack: §rWave of Destruction",
-      "item.hoh_4_core.moolightswordhalfworked.description_1": "§nUse: §950 Spirit Force",
-      "item.hoh_4_core.moolightswordhalfworked.description_2": "§oSource: Damn Reincarnation",
+      "item.hoh_4_core.moolightswordhalfworked.description_0": "§nВторая атака: §rВолна Разрушения ",
+      "item.hoh_4_core.moolightswordhalfworked.description_1": "§nТрата: §950 духа",
+      "item.hoh_4_core.moolightswordhalfworked.description_2": "§oИсточник: Чертова реинкарнация",
       "item_group.hoh_4_core.hoh_4": "HOH 4",
-      "item.hoh_4_core.moonlight_sword.description_0": "§nSecond attack: §rWave of Destruction",
-      "item.hoh_4_core.moonlight_sword.description_2": "§oSource: Damn Reincarnation",
+      "item.hoh_4_core.adaptation_wheel_leggings": "Поножи Adaptation Wheel",
+      "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: §rВолна Разрушения ",
+      "item.hoh_4_core.moonlight_sword.description_2": "§oИсточник: Чертова реинкарнация",
       "block.hoh_4_core.marble_block_chiseled_alt": "Chiseled Marble Block ALT",
       "block.hoh_4_core.jungle_collumn": "Jungle Collumn",
-      "item.hoh_4_core.moonlight_sword.description_1": "§nUse: §9200 Spirit Force",
+      "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
       "entity.hoh_4_core.inkblotch": "Ink_blotch",
       "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
       "block.hoh_4_core.acacia_collumn": "Acacia Collumn",
