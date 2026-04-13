@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "hoh_4_core:mifril_ignot"
+    }
+  },
+  "result": {
+    "item": "hoh_4_core:mifril_block",
+    "count": 1
+  }
+}

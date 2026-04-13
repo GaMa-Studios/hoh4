@@ -13,6 +13,8 @@ import net.minecraft.world.level.block.Block;
 import gama.studios.hoh4core.block.WarpedCollumnBlock;
 import gama.studios.hoh4core.block.SpruceCollumnBlock;
 import gama.studios.hoh4core.block.OakCollumnBlock;
+import gama.studios.hoh4core.block.MifrilOreBlock;
+import gama.studios.hoh4core.block.MifrilBlockBlock;
 import gama.studios.hoh4core.block.MarblecollumnBlock;
 import gama.studios.hoh4core.block.MarbleTileBlock;
 import gama.studios.hoh4core.block.MarbleStairsBlock;
@@ -24,6 +26,8 @@ import gama.studios.hoh4core.block.MarbleBlockBlock;
 import gama.studios.hoh4core.block.MangrooveCollumnBlock;
 import gama.studios.hoh4core.block.LunarSoilBlock;
 import gama.studios.hoh4core.block.JungleCollumnBlock;
+import gama.studios.hoh4core.block.DemoniteOreBlock;
+import gama.studios.hoh4core.block.DemoniteBlockBlock;
 import gama.studios.hoh4core.block.DarkOakCollumnBlock;
 import gama.studios.hoh4core.block.CrimsonCollumnBlock;
 import gama.studios.hoh4core.block.CherryCollumnBlock;
@@ -56,6 +60,10 @@ public class Hoh4CoreModBlocks {
 	public static final RegistryObject<Block> MARBLE_STAIRS = REGISTRY.register("marble_stairs", () -> new MarbleStairsBlock());
 	public static final RegistryObject<Block> LUNAR_SOIL = REGISTRY.register("lunar_soil", () -> new LunarSoilBlock());
 	public static final RegistryObject<Block> ANVIL_OF_GODS = REGISTRY.register("anvil_of_gods", () -> new AnvilOfGodsBlock());
+	public static final RegistryObject<Block> DEMONITE_BLOCK = REGISTRY.register("demonite_block", () -> new DemoniteBlockBlock());
+	public static final RegistryObject<Block> DEMONITE_ORE = REGISTRY.register("demonite_ore", () -> new DemoniteOreBlock());
+	public static final RegistryObject<Block> MIFRIL_BLOCK = REGISTRY.register("mifril_block", () -> new MifrilBlockBlock());
+	public static final RegistryObject<Block> MIFRIL_ORE = REGISTRY.register("mifril_ore", () -> new MifrilOreBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

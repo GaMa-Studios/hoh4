@@ -1,0 +1,11 @@
+
+package gama.studios.hoh4core.item;
+
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.Item;
+
+public class DemoniteItem extends Item {
+	public DemoniteItem() {
+		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.UNCOMMON));
+	}
+}

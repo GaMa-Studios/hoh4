@@ -46,5 +46,13 @@ public class Hoh4CoreModTabs {
 				tabData.accept(Hoh4CoreModBlocks.LUNAR_SOIL.get().asItem());
 				tabData.accept(Hoh4CoreModBlocks.ANVIL_OF_GODS.get().asItem());
 				tabData.accept(Hoh4CoreModItems.ADAPTATION_WHEEL_HELMET.get());
+				tabData.accept(Hoh4CoreModBlocks.DEMONITE_BLOCK.get().asItem());
+				tabData.accept(Hoh4CoreModItems.DEMONITE_IGNOT.get());
+				tabData.accept(Hoh4CoreModItems.DEMONITE.get());
+				tabData.accept(Hoh4CoreModBlocks.DEMONITE_ORE.get().asItem());
+				tabData.accept(Hoh4CoreModItems.MIFRIL.get());
+				tabData.accept(Hoh4CoreModBlocks.MIFRIL_BLOCK.get().asItem());
+				tabData.accept(Hoh4CoreModItems.MIFRIL_IGNOT.get());
+				tabData.accept(Hoh4CoreModBlocks.MIFRIL_ORE.get().asItem());
 			}).build());
 }

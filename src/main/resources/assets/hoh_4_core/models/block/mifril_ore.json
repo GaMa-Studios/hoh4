@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "hoh_4_core:block/mifril_ore",
+    "particle": "hoh_4_core:block/mifril_ore"
+  },
+  "render_type": "solid"
+}

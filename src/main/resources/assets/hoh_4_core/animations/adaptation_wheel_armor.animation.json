@@ -34,9 +34,7 @@
 							"vector": [0, 0, 0]
 						},
 						"3.0": {
-							"vector": [0, -90, 0],
-							"easing": "easeInOutBack",
-							"easingArgs": [2]
+							"vector": [0, -90, 0]
 						}
 					}
 				}

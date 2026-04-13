@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "hoh_4_core:mifril_ore",
+    "hoh_4_core:mifril_block",
+    "hoh_4_core:demonite_ore",
+    "hoh_4_core:demonite_block"
+  ]
+}

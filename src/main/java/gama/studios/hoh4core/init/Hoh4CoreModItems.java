@@ -20,6 +20,10 @@ import gama.studios.hoh4core.item.MoonlightDashItemItem;
 import gama.studios.hoh4core.item.MoonlighswordbrokenItem;
 import gama.studios.hoh4core.item.MoonSharpItem;
 import gama.studios.hoh4core.item.MoolightswordhalfworkedItem;
+import gama.studios.hoh4core.item.MifrilItem;
+import gama.studios.hoh4core.item.MifrilIgnotItem;
+import gama.studios.hoh4core.item.DemoniteItem;
+import gama.studios.hoh4core.item.DemoniteIgnotItem;
 import gama.studios.hoh4core.item.AdaptationWheelItem;
 import gama.studios.hoh4core.Hoh4CoreMod;
 
@@ -54,6 +58,14 @@ public class Hoh4CoreModItems {
 	public static final RegistryObject<Item> LUNAR_SOIL = block(Hoh4CoreModBlocks.LUNAR_SOIL);
 	public static final RegistryObject<Item> ANVIL_OF_GODS = block(Hoh4CoreModBlocks.ANVIL_OF_GODS);
 	public static final RegistryObject<AdaptationWheelItem> ADAPTATION_WHEEL_HELMET = REGISTRY.register("adaptation_wheel_helmet", () -> new AdaptationWheelItem(ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
+	public static final RegistryObject<Item> DEMONITE = REGISTRY.register("demonite", () -> new DemoniteItem());
+	public static final RegistryObject<Item> DEMONITE_IGNOT = REGISTRY.register("demonite_ignot", () -> new DemoniteIgnotItem());
+	public static final RegistryObject<Item> DEMONITE_BLOCK = block(Hoh4CoreModBlocks.DEMONITE_BLOCK);
+	public static final RegistryObject<Item> DEMONITE_ORE = block(Hoh4CoreModBlocks.DEMONITE_ORE);
+	public static final RegistryObject<Item> MIFRIL = REGISTRY.register("mifril", () -> new MifrilItem());
+	public static final RegistryObject<Item> MIFRIL_BLOCK = block(Hoh4CoreModBlocks.MIFRIL_BLOCK);
+	public static final RegistryObject<Item> MIFRIL_IGNOT = REGISTRY.register("mifril_ignot", () -> new MifrilIgnotItem());
+	public static final RegistryObject<Item> MIFRIL_ORE = block(Hoh4CoreModBlocks.MIFRIL_ORE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

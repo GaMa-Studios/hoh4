@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hoh_4_core:demonite_block"
+    }
+  ],
+  "result": {
+    "item": "hoh_4_core:demonite_ignot",
+    "count": 9
+  }
+}

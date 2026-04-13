@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "hoh_4_core:mifril_ore",
+    "hoh_4_core:mifril_block",
+    "hoh_4_core:demonite_ore",
+    "hoh_4_core:demonite_block",
     "hoh_4_core:lunar_soil",
     "hoh_4_core:marble_stairs",
     "hoh_4_core:marble_slab",

@@ -1898,6 +1898,188 @@
           }
         ]
       }
+    },
+    {
+      "name": "Demonite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demonite",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/item/DemoniteItem.java",
+          "src/main/resources/assets/hoh_4_core/models/item/demonite.json"
+        ]
+      }
+    },
+    {
+      "name": "DemoniteIgnot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demonite_ignot",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/item/DemoniteIgnotItem.java",
+          "src/main/resources/assets/hoh_4_core/models/item/demonite_ignot.json"
+        ]
+      }
+    },
+    {
+      "name": "DemoniteBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demonite_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/item/demonite_block.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/demonite_block.json",
+          "src/main/resources/assets/hoh_4_core/models/block/demonite_block.json",
+          "src/main/java/gama/studios/hoh4core/block/DemoniteBlockBlock.java",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/demonite_block.json"
+        ]
+      }
+    },
+    {
+      "name": "DemoniteOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demonite_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/worldgen/configured_feature/demonite_ore.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/demonite_ore.json",
+          "src/main/resources/data/hoh_4_core/worldgen/placed_feature/demonite_ore.json",
+          "src/main/java/gama/studios/hoh4core/block/DemoniteOreBlock.java",
+          "src/main/resources/assets/hoh_4_core/models/block/demonite_ore.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/demonite_ore.json",
+          "src/main/resources/assets/hoh_4_core/models/item/demonite_ore.json",
+          "src/main/resources/data/hoh_4_core/forge/biome_modifier/demonite_ore_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "DemoniteBlockCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demonite_block_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/demonite_block_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "DemoniteBlockDecraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demonite_block_decraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/demonite_block_decraft.json"
+        ]
+      }
+    },
+    {
+      "name": "DemoniteIgnotCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demonite_ignot_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/demonite_ignot_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "Mifril",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mifril",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/item/MifrilItem.java",
+          "src/main/resources/assets/hoh_4_core/models/item/mifril.json"
+        ]
+      }
+    },
+    {
+      "name": "MifrilBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mifril_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/mifril_block.json",
+          "src/main/java/gama/studios/hoh4core/block/MifrilBlockBlock.java",
+          "src/main/resources/assets/hoh_4_core/models/item/mifril_block.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/mifril_block.json",
+          "src/main/resources/assets/hoh_4_core/models/block/mifril_block.json"
+        ]
+      }
+    },
+    {
+      "name": "MifrilIgnot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mifril_ignot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/item/mifril_ignot.json",
+          "src/main/java/gama/studios/hoh4core/item/MifrilIgnotItem.java"
+        ]
+      }
+    },
+    {
+      "name": "MifrilOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mifril_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/item/mifril_ore.json",
+          "src/main/resources/assets/hoh_4_core/models/block/mifril_ore.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/mifril_ore.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/mifril_ore.json",
+          "src/main/resources/data/hoh_4_core/forge/biome_modifier/mifril_ore_biome_modifier.json",
+          "src/main/java/gama/studios/hoh4core/block/MifrilOreBlock.java",
+          "src/main/resources/data/hoh_4_core/worldgen/placed_feature/mifril_ore.json",
+          "src/main/resources/data/hoh_4_core/worldgen/configured_feature/mifril_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "MifrilBlockCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mifril_block_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/mifril_block_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "MifrilBlockDecraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mifril_block_decraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/mifril_block_decraft.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2012,6 +2194,10 @@
       "~CUSTOM:MarbleSlab"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:MifrilOre",
+      "~CUSTOM:MifrilBlock",
+      "~CUSTOM:DemoniteOre",
+      "~CUSTOM:DemoniteBlock",
       "~CUSTOM:LunarSoil",
       "~CUSTOM:MarbleStairs",
       "~CUSTOM:MarbleSlab",
@@ -2036,6 +2222,12 @@
     ],
     "BLOCKS:minecraft:stairs": [
       "~CUSTOM:MarbleStairs"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:MifrilOre",
+      "~CUSTOM:MifrilBlock",
+      "~CUSTOM:DemoniteOre",
+      "~CUSTOM:DemoniteBlock"
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:Moolightswordhalfworked",
@@ -2080,7 +2272,15 @@
       "Crystal",
       "LunarSoil",
       "AnvilOfGods",
-      "AdaptationWheel"
+      "AdaptationWheel",
+      "DemoniteBlock",
+      "DemoniteIgnot",
+      "Demonite",
+      "DemoniteOre",
+      "Mifril",
+      "MifrilBlock",
+      "MifrilIgnot",
+      "MifrilOre"
     ]
   },
   "language_map": {
@@ -2088,21 +2288,27 @@
       "gamerule.debugMode.description": "HohCoreDebugMode",
       "item.hoh_4_core.moon_sharp.description_0": "§oИсточник: Чертова реинкарнация",
       "block.hoh_4_core.spruce_collumn": "Dark Oak Collumn",
+      "block.hoh_4_core.demonite_block": "Demonite Block",
       "block.hoh_4_core.marblecollumn": "Marblecollumn",
+      "block.hoh_4_core.mifril_ore": "Demonite Ore",
       "entity.hoh_4_core.crystal": "Crystal",
       "item.hoh_4_core.adaptation_wheel_chestplate": "Нагрудник Adaptation Wheel",
       "block.hoh_4_core.mangroove_collumn": "Oak Collumn",
+      "block.hoh_4_core.mifril_block": "Demonite Block",
       "biome.hoh_4_core.mud_barren": "Barren of mud",
-      "block.hoh_4_core.anvil_of_gods": "Наковальня Богов",
       "gui.hoh_4_core.gods_anvil_gui.label_empty15": "-",
+      "block.hoh_4_core.anvil_of_gods": "Наковальня Богов",
       "gui.hoh_4_core.gods_anvil_gui.label_empty14": "-",
       "gui.hoh_4_core.gods_anvil_gui.label_empty13": "-",
       "gui.hoh_4_core.gods_anvil_gui.label_empty12": "-",
+      "block.hoh_4_core.demonite_ore": "Demonite Ore",
       "gui.hoh_4_core.gods_anvil_gui.label_empty11": "|",
       "biome.hoh_4_core.deepslate_barren": "Deepslate Barren",
       "gui.hoh_4_core.gods_anvil_gui.label_empty10": "|",
+      "item.hoh_4_core.mifril_ignot": "Demonite Ignot",
       "block.hoh_4_core.marble_slab": "Marble Slab",
       "block.hoh_4_core.marble_pillar": "Marble Pillar",
+      "item.hoh_4_core.demonite_ignot": "Demonite Ignot",
       "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nБонус: §r200 Духа",
       "item.hoh_4_core.inkblotch_spawn_egg": "Ink_blotch Spawn Egg",
       "item.hoh_4_core.moonlight_sword": "Лунный Клинок",
@@ -2136,8 +2342,10 @@
       "item.hoh_4_core.moolightswordhalfworked.description_1": "§nТрата: §950 духа",
       "item.hoh_4_core.moolightswordhalfworked.description_2": "§oИсточник: Чертова реинкарнация",
       "item_group.hoh_4_core.hoh_4": "HOH 4",
+      "item.hoh_4_core.demonite": "Demonite",
       "item.hoh_4_core.adaptation_wheel_leggings": "Поножи Adaptation Wheel",
       "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: Волна Разрушения ",
+      "item.hoh_4_core.mifril": "Demonite",
       "item.hoh_4_core.moonlight_sword.description_2": "§oИсточник: Чертова реинкарнация",
       "block.hoh_4_core.marble_block_chiseled_alt": "Chiseled Marble Block ALT",
       "block.hoh_4_core.jungle_collumn": "Marble Collumn",
@@ -2158,21 +2366,27 @@
       "gamerule.debugMode.description": "HohCoreDebugMode",
       "item.hoh_4_core.moon_sharp.description_0": "§oSource: Damn Reincarnation",
       "block.hoh_4_core.spruce_collumn": "Spruce Collumn",
+      "block.hoh_4_core.demonite_block": "Demonite Block",
       "block.hoh_4_core.marblecollumn": "Marble Collumn",
+      "block.hoh_4_core.mifril_ore": "Mifril Ore",
       "entity.hoh_4_core.crystal": "Crystal",
       "item.hoh_4_core.adaptation_wheel_chestplate": "Нагрудник Adaptation Wheel",
       "block.hoh_4_core.mangroove_collumn": "Mangroove Collumn",
+      "block.hoh_4_core.mifril_block": "Mifril Block",
       "biome.hoh_4_core.mud_barren": "Barren of mud",
-      "block.hoh_4_core.anvil_of_gods": "Anvil Of Gods",
       "gui.hoh_4_core.gods_anvil_gui.label_empty15": "-",
+      "block.hoh_4_core.anvil_of_gods": "Anvil Of Gods",
       "gui.hoh_4_core.gods_anvil_gui.label_empty14": "-",
       "gui.hoh_4_core.gods_anvil_gui.label_empty13": "-",
       "gui.hoh_4_core.gods_anvil_gui.label_empty12": "-",
+      "block.hoh_4_core.demonite_ore": "Demonite Ore",
       "gui.hoh_4_core.gods_anvil_gui.label_empty11": "|",
       "biome.hoh_4_core.deepslate_barren": "Deepslate Barren",
       "gui.hoh_4_core.gods_anvil_gui.label_empty10": "|",
+      "item.hoh_4_core.mifril_ignot": "Mifril Ignot",
       "block.hoh_4_core.marble_slab": "Marble Slab",
       "block.hoh_4_core.marble_pillar": "Marble Pillar",
+      "item.hoh_4_core.demonite_ignot": "Demonite Ignot",
       "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nBonus: §r200 Spirit Force",
       "item.hoh_4_core.inkblotch_spawn_egg": "Ink_blotch Spawn Egg",
       "item.hoh_4_core.moonlight_sword": "Moonlight Sword",
@@ -2206,8 +2420,10 @@
       "item.hoh_4_core.moolightswordhalfworked.description_1": "§nТрата: §950 духа",
       "item.hoh_4_core.moolightswordhalfworked.description_2": "§oИсточник: Чертова реинкарнация",
       "item_group.hoh_4_core.hoh_4": "HOH 4",
+      "item.hoh_4_core.demonite": "Demonite",
       "item.hoh_4_core.adaptation_wheel_leggings": "Поножи Adaptation Wheel",
       "item.hoh_4_core.moonlight_sword.description_0": "§nВторая атака: §rВолна Разрушения ",
+      "item.hoh_4_core.mifril": "Mifril",
       "item.hoh_4_core.moonlight_sword.description_2": "§oИсточник: Чертова реинкарнация",
       "block.hoh_4_core.marble_block_chiseled_alt": "Chiseled Marble Block ALT",
       "block.hoh_4_core.jungle_collumn": "Jungle Collumn",

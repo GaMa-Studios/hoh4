@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "size": 16,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "tag_match",
+          "tag": "minecraft:mineable/pickaxe"
+        },
+        "state": {
+          "Name": "hoh_4_core:demonite_ore"
+        }
+      }
+    ]
+  }
+}
