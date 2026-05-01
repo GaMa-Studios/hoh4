@@ -66,6 +66,20 @@ public class Hoh4CoreModItems {
 	public static final RegistryObject<Item> MIFRIL_BLOCK = block(Hoh4CoreModBlocks.MIFRIL_BLOCK);
 	public static final RegistryObject<Item> MIFRIL_IGNOT = REGISTRY.register("mifril_ignot", () -> new MifrilIgnotItem());
 	public static final RegistryObject<Item> MIFRIL_ORE = block(Hoh4CoreModBlocks.MIFRIL_ORE);
+	public static final RegistryObject<Item> UNBREAKABLE_STONE_BRICKS = block(Hoh4CoreModBlocks.UNBREAKABLE_STONE_BRICKS);
+	public static final RegistryObject<Item> UNBREAKABLESTONEBRICKSSTAIRS = block(Hoh4CoreModBlocks.UNBREAKABLESTONEBRICKSSTAIRS);
+	public static final RegistryObject<Item> UNBREAKABLESTONEBRICKSSLAB = block(Hoh4CoreModBlocks.UNBREAKABLESTONEBRICKSSLAB);
+	public static final RegistryObject<Item> UNBREAKABLE_STONE_BRICKS_WALL = block(Hoh4CoreModBlocks.UNBREAKABLE_STONE_BRICKS_WALL);
+	public static final RegistryObject<Item> UNBREAKABLE_ANDESITE = block(Hoh4CoreModBlocks.UNBREAKABLE_ANDESITE);
+	public static final RegistryObject<Item> UNBREAKABLE_ANDESITE_SLAB = block(Hoh4CoreModBlocks.UNBREAKABLE_ANDESITE_SLAB);
+	public static final RegistryObject<Item> UNBREAKABLE_STONE = block(Hoh4CoreModBlocks.UNBREAKABLE_STONE);
+	public static final RegistryObject<Item> UNBREAKABLECOBBLESTONE = block(Hoh4CoreModBlocks.UNBREAKABLECOBBLESTONE);
+	public static final RegistryObject<Item> UNBREAKABLESTONEBRICKSCRACKED = block(Hoh4CoreModBlocks.UNBREAKABLESTONEBRICKSCRACKED);
+	public static final RegistryObject<Item> UNBREAKABLEDEEPSLATE = block(Hoh4CoreModBlocks.UNBREAKABLEDEEPSLATE);
+	public static final RegistryObject<Item> UNBREAKABLE_DEEPSLTECOBBLESTONE = block(Hoh4CoreModBlocks.UNBREAKABLE_DEEPSLTECOBBLESTONE);
+	public static final RegistryObject<Item> UNBREAKABLEBASALT = block(Hoh4CoreModBlocks.UNBREAKABLEBASALT);
+	public static final RegistryObject<Item> UNBREAKABLESMOOTHBASALT = block(Hoh4CoreModBlocks.UNBREAKABLESMOOTHBASALT);
+	public static final RegistryObject<Item> UNBREAKABLE_POLISHED_BASALT = block(Hoh4CoreModBlocks.UNBREAKABLE_POLISHED_BASALT);
 
 	// Start of user code block custom items
 	// End of user code block custom items

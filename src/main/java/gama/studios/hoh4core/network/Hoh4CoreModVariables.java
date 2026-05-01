@@ -152,6 +152,10 @@ public class Hoh4CoreModVariables {
 		public double TimerStartDay = 0;
 		public boolean isTodayCount = false;
 		public boolean isTimerActive = false;
+		public double forge_x = 0;
+		public double forge_y = 0;
+		public double forge_z = 0;
+		public boolean isForgeGenerated = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -166,6 +170,10 @@ public class Hoh4CoreModVariables {
 			TimerStartDay = nbt.getDouble("TimerStartDay");
 			isTodayCount = nbt.getBoolean("isTodayCount");
 			isTimerActive = nbt.getBoolean("isTimerActive");
+			forge_x = nbt.getDouble("forge_x");
+			forge_y = nbt.getDouble("forge_y");
+			forge_z = nbt.getDouble("forge_z");
+			isForgeGenerated = nbt.getBoolean("isForgeGenerated");
 		}
 
 		@Override
@@ -176,6 +184,10 @@ public class Hoh4CoreModVariables {
 			nbt.putDouble("TimerStartDay", TimerStartDay);
 			nbt.putBoolean("isTodayCount", isTodayCount);
 			nbt.putBoolean("isTimerActive", isTimerActive);
+			nbt.putDouble("forge_x", forge_x);
+			nbt.putDouble("forge_y", forge_y);
+			nbt.putDouble("forge_z", forge_z);
+			nbt.putBoolean("isForgeGenerated", isForgeGenerated);
 			return nbt;
 		}
 

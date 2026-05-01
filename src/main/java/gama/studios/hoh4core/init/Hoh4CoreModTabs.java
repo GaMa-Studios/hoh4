@@ -54,5 +54,19 @@ public class Hoh4CoreModTabs {
 				tabData.accept(Hoh4CoreModBlocks.MIFRIL_BLOCK.get().asItem());
 				tabData.accept(Hoh4CoreModItems.MIFRIL_IGNOT.get());
 				tabData.accept(Hoh4CoreModBlocks.MIFRIL_ORE.get().asItem());
+				tabData.accept(Hoh4CoreModBlocks.UNBREAKABLE_STONE_BRICKS.get().asItem());
+				tabData.accept(Hoh4CoreModBlocks.UNBREAKABLESTONEBRICKSSTAIRS.get().asItem());
+				tabData.accept(Hoh4CoreModBlocks.UNBREAKABLESTONEBRICKSSLAB.get().asItem());
+				tabData.accept(Hoh4CoreModBlocks.UNBREAKABLE_STONE_BRICKS_WALL.get().asItem());
+				tabData.accept(Hoh4CoreModBlocks.UNBREAKABLE_ANDESITE.get().asItem());
+				tabData.accept(Hoh4CoreModBlocks.UNBREAKABLE_ANDESITE_SLAB.get().asItem());
+				tabData.accept(Hoh4CoreModBlocks.UNBREAKABLE_STONE.get().asItem());
+				tabData.accept(Hoh4CoreModBlocks.UNBREAKABLECOBBLESTONE.get().asItem());
+				tabData.accept(Hoh4CoreModBlocks.UNBREAKABLESTONEBRICKSCRACKED.get().asItem());
+				tabData.accept(Hoh4CoreModBlocks.UNBREAKABLEDEEPSLATE.get().asItem());
+				tabData.accept(Hoh4CoreModBlocks.UNBREAKABLE_DEEPSLTECOBBLESTONE.get().asItem());
+				tabData.accept(Hoh4CoreModBlocks.UNBREAKABLEBASALT.get().asItem());
+				tabData.accept(Hoh4CoreModBlocks.UNBREAKABLESMOOTHBASALT.get().asItem());
+				tabData.accept(Hoh4CoreModBlocks.UNBREAKABLE_POLISHED_BASALT.get().asItem());
 			}).build());
 }

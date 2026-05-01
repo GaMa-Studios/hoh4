@@ -2080,6 +2080,361 @@
           "src/main/resources/data/hoh_4_core/recipes/mifril_block_decraft.json"
         ]
       }
+    },
+    {
+      "name": "UnbreakableStoneBricks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unbreakable_stone_bricks",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/block/UnbreakableStoneBricksBlock.java",
+          "src/main/resources/assets/hoh_4_core/blockstates/unbreakable_stone_bricks.json",
+          "src/main/resources/assets/hoh_4_core/models/item/unbreakable_stone_bricks.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/unbreakable_stone_bricks.json",
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakable_stone_bricks.json"
+        ]
+      }
+    },
+    {
+      "name": "Unbreakablestonebricksstairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unbreakablestonebricksstairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/unbreakablestonebricksstairs.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/unbreakablestonebricksstairs.json",
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakablestonebricksstairs.json",
+          "src/main/resources/assets/hoh_4_core/models/item/unbreakablestonebricksstairs.json",
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakablestonebricksstairs_outer.json",
+          "src/main/java/gama/studios/hoh4core/block/UnbreakablestonebricksstairsBlock.java",
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakablestonebricksstairs_inner.json"
+        ]
+      }
+    },
+    {
+      "name": "Unbreakablestonebricksslab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unbreakablestonebricksslab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakablestonebricksslab_top.json",
+          "src/main/java/gama/studios/hoh4core/block/UnbreakablestonebricksslabBlock.java",
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakablestonebricksslab_full.json",
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakablestonebricksslab.json",
+          "src/main/resources/assets/hoh_4_core/models/item/unbreakablestonebricksslab.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/unbreakablestonebricksslab.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/unbreakablestonebricksslab.json"
+        ]
+      }
+    },
+    {
+      "name": "UnbreakableStoneBricksWall",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unbreakable_stone_bricks_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/blockstates/unbreakable_stone_bricks_wall.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/unbreakable_stone_bricks_wall.json",
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakable_stone_bricks_wall_inventory.json",
+          "src/main/resources/assets/hoh_4_core/models/item/unbreakable_stone_bricks_wall.json",
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakable_stone_bricks_wall.json",
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakable_stone_bricks_wall_side_tall.json",
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakable_stone_bricks_wall_post.json",
+          "src/main/java/gama/studios/hoh4core/block/UnbreakableStoneBricksWallBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "UnbreakableAndesite",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unbreakable_andesite",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/block/UnbreakableAndesiteBlock.java",
+          "src/main/resources/assets/hoh_4_core/blockstates/unbreakable_andesite.json",
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakable_andesite.json",
+          "src/main/resources/assets/hoh_4_core/models/item/unbreakable_andesite.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/unbreakable_andesite.json"
+        ]
+      }
+    },
+    {
+      "name": "UnbreakableAndesiteSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unbreakable_andesite_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakable_andesite_slab_top.json",
+          "src/main/java/gama/studios/hoh4core/block/UnbreakableAndesiteSlabBlock.java",
+          "src/main/resources/assets/hoh_4_core/blockstates/unbreakable_andesite_slab.json",
+          "src/main/resources/assets/hoh_4_core/models/item/unbreakable_andesite_slab.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/unbreakable_andesite_slab.json",
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakable_andesite_slab_full.json",
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakable_andesite_slab.json"
+        ]
+      }
+    },
+    {
+      "name": "UnbreakableStone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unbreakable_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakable_stone.json",
+          "src/main/resources/assets/hoh_4_core/models/item/unbreakable_stone.json",
+          "src/main/java/gama/studios/hoh4core/block/UnbreakableStoneBlock.java",
+          "src/main/resources/assets/hoh_4_core/blockstates/unbreakable_stone.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/unbreakable_stone.json"
+        ]
+      }
+    },
+    {
+      "name": "Unbreakablecobblestone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unbreakablecobblestone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/item/unbreakablecobblestone.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/unbreakablecobblestone.json",
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakablecobblestone.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/unbreakablecobblestone.json",
+          "src/main/java/gama/studios/hoh4core/block/UnbreakablecobblestoneBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Unbreakablestonebrickscracked",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unbreakablestonebrickscracked",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/item/unbreakablestonebrickscracked.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/unbreakablestonebrickscracked.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/unbreakablestonebrickscracked.json",
+          "src/main/java/gama/studios/hoh4core/block/UnbreakablestonebrickscrackedBlock.java",
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakablestonebrickscracked.json"
+        ]
+      }
+    },
+    {
+      "name": "Unbreakabledeepslate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unbreakabledeepslate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/item/unbreakabledeepslate.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/unbreakabledeepslate.json",
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakabledeepslate.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/unbreakabledeepslate.json",
+          "src/main/java/gama/studios/hoh4core/block/UnbreakabledeepslateBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "UnbreakableDeepsltecobblestone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unbreakable_deepsltecobblestone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/blockstates/unbreakable_deepsltecobblestone.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/unbreakable_deepsltecobblestone.json",
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakable_deepsltecobblestone.json",
+          "src/main/java/gama/studios/hoh4core/block/UnbreakableDeepsltecobblestoneBlock.java",
+          "src/main/resources/assets/hoh_4_core/models/item/unbreakable_deepsltecobblestone.json"
+        ]
+      }
+    },
+    {
+      "name": "Unbreakablebasalt",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unbreakablebasalt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakablebasalt.json",
+          "src/main/java/gama/studios/hoh4core/block/UnbreakablebasaltBlock.java",
+          "src/main/resources/assets/hoh_4_core/models/item/unbreakablebasalt.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/unbreakablebasalt.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/unbreakablebasalt.json"
+        ]
+      }
+    },
+    {
+      "name": "Unbreakablesmoothbasalt",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unbreakablesmoothbasalt",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/block/UnbreakablesmoothbasaltBlock.java",
+          "src/main/resources/assets/hoh_4_core/models/item/unbreakablesmoothbasalt.json",
+          "src/main/resources/assets/hoh_4_core/blockstates/unbreakablesmoothbasalt.json",
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakablesmoothbasalt.json",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/unbreakablesmoothbasalt.json"
+        ]
+      }
+    },
+    {
+      "name": "UnbreakablePolishedBasalt",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unbreakable_polished_basalt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hoh_4_core/blockstates/unbreakable_polished_basalt.json",
+          "src/main/java/gama/studios/hoh4core/block/UnbreakablePolishedBasaltBlock.java",
+          "src/main/resources/data/hoh_4_core/loot_tables/blocks/unbreakable_polished_basalt.json",
+          "src/main/resources/assets/hoh_4_core/models/block/unbreakable_polished_basalt.json",
+          "src/main/resources/assets/hoh_4_core/models/item/unbreakable_polished_basalt.json"
+        ]
+      }
+    },
+    {
+      "name": "ForgeGenerate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_generate",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/ForgeGenerateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "dimension",
+            "type": "dimensiontype"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CustomPlaceStructureLocateComand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_place_structure_locate_comand",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/CustomPlaceStructureLocateComandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Customlocate",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "customlocate",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/command/CustomlocateCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "CustomSetStructure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_set_structure",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/procedures/CustomSetStructureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CustomSetStructureComand",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_set_structure_comand",
+      "metadata": {
+        "files": [
+          "src/main/java/gama/studios/hoh4core/command/CustomSetStructureComandCommand.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2178,6 +2533,30 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "forge_x",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "forge_y",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "forge_z",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "isForgeGenerated",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -2191,6 +2570,8 @@
       "~Blocks.DEEPSLATE"
     ],
     "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:UnbreakableAndesiteSlab",
+      "~CUSTOM:Unbreakablestonebricksslab",
       "~CUSTOM:MarbleSlab"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
@@ -2221,6 +2602,7 @@
       "~CUSTOM:JungleCollumn"
     ],
     "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:Unbreakablestonebricksstairs",
       "~CUSTOM:MarbleStairs"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
@@ -2242,6 +2624,9 @@
       "~CUSTOM:MarbleBlockChiseledALT",
       "~CUSTOM:MarbleBlockChiseled",
       "~CUSTOM:MarbleBlock"
+    ],
+    "BLOCKS:minecraft:walls": [
+      "~CUSTOM:UnbreakableStoneBricksWall"
     ]
   },
   "tab_element_order": {
@@ -2280,13 +2665,28 @@
       "Mifril",
       "MifrilBlock",
       "MifrilIgnot",
-      "MifrilOre"
+      "MifrilOre",
+      "UnbreakableStoneBricks",
+      "Unbreakablestonebricksstairs",
+      "Unbreakablestonebricksslab",
+      "UnbreakableStoneBricksWall",
+      "UnbreakableAndesite",
+      "UnbreakableAndesiteSlab",
+      "UnbreakableStone",
+      "Unbreakablecobblestone",
+      "Unbreakablestonebrickscracked",
+      "Unbreakabledeepslate",
+      "UnbreakableDeepsltecobblestone",
+      "Unbreakablebasalt",
+      "Unbreakablesmoothbasalt",
+      "UnbreakablePolishedBasalt"
     ]
   },
   "language_map": {
     "ru_ru": {
       "gamerule.debugMode.description": "HohCoreDebugMode",
       "item.hoh_4_core.moon_sharp.description_0": "§oИсточник: Чертова реинкарнация",
+      "block.hoh_4_core.unbreakablecobblestone": "Unbreakable Stone",
       "block.hoh_4_core.spruce_collumn": "Dark Oak Collumn",
       "block.hoh_4_core.demonite_block": "Блок демонита",
       "block.hoh_4_core.marblecollumn": "Marblecollumn",
@@ -2296,8 +2696,8 @@
       "block.hoh_4_core.mangroove_collumn": "Oak Collumn",
       "block.hoh_4_core.mifril_block": "Блок мифрила",
       "biome.hoh_4_core.mud_barren": "Barren of mud",
-      "block.hoh_4_core.anvil_of_gods": "Наковальня Богов",
       "gui.hoh_4_core.gods_anvil_gui.label_empty15": "-",
+      "block.hoh_4_core.anvil_of_gods": "Наковальня Богов",
       "gui.hoh_4_core.gods_anvil_gui.label_empty14": "-",
       "gui.hoh_4_core.gods_anvil_gui.label_empty13": "-",
       "gui.hoh_4_core.gods_anvil_gui.label_empty12": "-",
@@ -2306,15 +2706,20 @@
       "biome.hoh_4_core.deepslate_barren": "Deepslate Barren",
       "gui.hoh_4_core.gods_anvil_gui.label_empty10": "|",
       "item.hoh_4_core.mifril_ignot": "Мифриловый слиток",
+      "block.hoh_4_core.unbreakablestonebricksslab": "Unbreakable Stone Bricks",
       "block.hoh_4_core.marble_slab": "Marble Slab",
       "block.hoh_4_core.marble_pillar": "Marble Pillar",
       "item.hoh_4_core.demonite_ignot": "Демонитовый слиток",
+      "block.hoh_4_core.unbreakablestonebricksstairs": "Unbreakable Stone Bricks",
+      "block.hoh_4_core.unbreakablebasalt": "Unbreakable Deepslate Cobblestone",
       "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nБонус: §r200 Духа",
       "item.hoh_4_core.inkblotch_spawn_egg": "Ink_blotch Spawn Egg",
       "item.hoh_4_core.moonlight_sword": "Лунный Клинок",
       "effect.hoh_4_core.spirit": "Дух",
+      "block.hoh_4_core.unbreakable_polished_basalt": "Unbreakable Basalt",
       "item.hoh_4_core.adaptation_wheel_boots": "Ботинки Adaptation Wheel",
       "block.hoh_4_core.oak_collumn": "Jungle Collumn",
+      "block.hoh_4_core.unbreakablesmoothbasalt": "Unbreakable Basalt",
       "block.hoh_4_core.lunar_soil": "Lunar Soil",
       "item.hoh_4_core.adaptation_wheel_helmet": "Колесо Адаптации",
       "gui.hoh_4_core.gods_anvil_gui.label_empty": "+",
@@ -2328,9 +2733,11 @@
       "gui.hoh_4_core.gods_anvil_gui.label_empty9": "-",
       "gui.hoh_4_core.gods_anvil_gui.label_empty7": "+",
       "gui.hoh_4_core.gods_anvil_gui.label_empty8": "-",
+      "block.hoh_4_core.unbreakablestonebrickscracked": "Unbreakable Stone Bricks",
       "block.hoh_4_core.warped_collumn": "Spruce Collumn",
       "gui.hoh_4_core.gods_anvil_gui.label_empty1": "+",
       "gui.hoh_4_core.gods_anvil_gui.label_empty2": "+",
+      "block.hoh_4_core.unbreakable_andesite_slab": "Unbreakable Andesite",
       "item.hoh_4_core.moonlighswordbroken": "Лунный клинок (Сломан)",
       "gui.hoh_4_core.gods_anvil_gui.label_empty5": "+",
       "block.hoh_4_core.marble_block_chiseled": "Chiseled Marble Block",
@@ -2352,11 +2759,17 @@
       "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
       "entity.hoh_4_core.inkblotch": "Ink_blotch",
       "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
+      "block.hoh_4_core.unbreakable_stone_bricks": "Unbreakable Stone Bricks",
+      "block.hoh_4_core.unbreakabledeepslate": "Unbreakable Stone Bricks Cracked",
+      "block.hoh_4_core.unbreakable_deepsltecobblestone": "Unbreakable Deepslate",
       "block.hoh_4_core.acacia_collumn": "Mangroove Collumn",
       "item.hoh_4_core.moon_sharp": "Лунный фрагмент",
       "block.hoh_4_core.marble_stairs": "Marble Stairs",
+      "block.hoh_4_core.unbreakable_stone_bricks_wall": "Unbreakable Stone Bricks Slab",
+      "block.hoh_4_core.unbreakable_andesite": "Unbreakable Stone Bricks",
       "item.hoh_4_core.moonlighswordbroken.description_0": "§oИсточник: Чертова реинкарнация",
       "item.hoh_4_core.moolightswordhalfworked": "Лунный клинок (Поврежден)",
+      "block.hoh_4_core.unbreakable_stone": "Unbreakable Stone Bricks",
       "block.hoh_4_core.birch_collumn": "Acacia Collumn",
       "gamerule.debugMode": "HohCoreDebugMode",
       "block.hoh_4_core.crimson_collumn": "Cherry Collumn",
@@ -2365,6 +2778,7 @@
     "en_us": {
       "gamerule.debugMode.description": "HohCoreDebugMode",
       "item.hoh_4_core.moon_sharp.description_0": "§oSource: Damn Reincarnation",
+      "block.hoh_4_core.unbreakablecobblestone": "Unbreakable Cobblestone",
       "block.hoh_4_core.spruce_collumn": "Spruce Collumn",
       "block.hoh_4_core.demonite_block": "Demonite Block",
       "block.hoh_4_core.marblecollumn": "Marble Collumn",
@@ -2374,8 +2788,8 @@
       "block.hoh_4_core.mangroove_collumn": "Mangroove Collumn",
       "block.hoh_4_core.mifril_block": "Mifril Block",
       "biome.hoh_4_core.mud_barren": "Barren of mud",
-      "gui.hoh_4_core.gods_anvil_gui.label_empty15": "-",
       "block.hoh_4_core.anvil_of_gods": "Anvil Of Gods",
+      "gui.hoh_4_core.gods_anvil_gui.label_empty15": "-",
       "gui.hoh_4_core.gods_anvil_gui.label_empty14": "-",
       "gui.hoh_4_core.gods_anvil_gui.label_empty13": "-",
       "gui.hoh_4_core.gods_anvil_gui.label_empty12": "-",
@@ -2384,15 +2798,20 @@
       "biome.hoh_4_core.deepslate_barren": "Deepslate Barren",
       "gui.hoh_4_core.gods_anvil_gui.label_empty10": "|",
       "item.hoh_4_core.mifril_ignot": "Mifril Ignot",
+      "block.hoh_4_core.unbreakablestonebricksslab": "Unbreakable Stone Bricks Slab",
       "block.hoh_4_core.marble_slab": "Marble Slab",
       "block.hoh_4_core.marble_pillar": "Marble Pillar",
       "item.hoh_4_core.demonite_ignot": "Demonite Ignot",
+      "block.hoh_4_core.unbreakablestonebricksstairs": "Unbreakable Stone Bricks Stairs",
+      "block.hoh_4_core.unbreakablebasalt": "Unbreakable Basalt",
       "item.hoh_4_core.primordial_power_talisman_chestplate.description_0": "§nBonus: §r200 Spirit Force",
       "item.hoh_4_core.inkblotch_spawn_egg": "Ink_blotch Spawn Egg",
       "item.hoh_4_core.moonlight_sword": "Moonlight Sword",
       "effect.hoh_4_core.spirit": "Spirit",
+      "block.hoh_4_core.unbreakable_polished_basalt": "Unbreakable Polished Basalt",
       "item.hoh_4_core.adaptation_wheel_boots": "Ботинки Adaptation Wheel",
       "block.hoh_4_core.oak_collumn": "Oak Collumn",
+      "block.hoh_4_core.unbreakablesmoothbasalt": "Unbreakable Smooth Basalt",
       "block.hoh_4_core.lunar_soil": "Lunar Soil",
       "item.hoh_4_core.adaptation_wheel_helmet": "Adaptation Wheel",
       "gui.hoh_4_core.gods_anvil_gui.label_empty": "+",
@@ -2406,9 +2825,11 @@
       "gui.hoh_4_core.gods_anvil_gui.label_empty9": "-",
       "gui.hoh_4_core.gods_anvil_gui.label_empty7": "+",
       "gui.hoh_4_core.gods_anvil_gui.label_empty8": "-",
+      "block.hoh_4_core.unbreakablestonebrickscracked": "Unbreakable Stone Bricks Cracked",
       "block.hoh_4_core.warped_collumn": "Warped Collumn",
       "gui.hoh_4_core.gods_anvil_gui.label_empty1": "+",
       "gui.hoh_4_core.gods_anvil_gui.label_empty2": "+",
+      "block.hoh_4_core.unbreakable_andesite_slab": "Unbreakable Andesite Slab",
       "item.hoh_4_core.moonlighswordbroken": "Moonlight Sword (Broken)",
       "gui.hoh_4_core.gods_anvil_gui.label_empty5": "+",
       "block.hoh_4_core.marble_block_chiseled": "Chiseled Marble Block",
@@ -2430,11 +2851,17 @@
       "item.hoh_4_core.moonlight_sword.description_1": "§nТрата: §9200 духа",
       "entity.hoh_4_core.inkblotch": "Ink_blotch",
       "item.hoh_4_core.moonlight_dash_item": "Moonlight Dash Item",
+      "block.hoh_4_core.unbreakable_stone_bricks": "Unbreakable Stone Bricks",
+      "block.hoh_4_core.unbreakabledeepslate": "Unbreakable Deepslate",
+      "block.hoh_4_core.unbreakable_deepsltecobblestone": "Unbreakable Deepslate Cobblestone",
       "block.hoh_4_core.acacia_collumn": "Acacia Collumn",
       "item.hoh_4_core.moon_sharp": "Moon Sharp",
       "block.hoh_4_core.marble_stairs": "Marble Stairs",
+      "block.hoh_4_core.unbreakable_stone_bricks_wall": "Unbreakable Stone Bricks Wall",
+      "block.hoh_4_core.unbreakable_andesite": "Unbreakable Andesite",
       "item.hoh_4_core.moonlighswordbroken.description_0": "§oSource: Damn Reincarnation",
       "item.hoh_4_core.moolightswordhalfworked": "Broken Moonlight Sword",
+      "block.hoh_4_core.unbreakable_stone": "Unbreakable Stone",
       "block.hoh_4_core.birch_collumn": "Birch Collumn",
       "gamerule.debugMode": "HohCoreDebugMode",
       "block.hoh_4_core.crimson_collumn": "Crimson Collumn",

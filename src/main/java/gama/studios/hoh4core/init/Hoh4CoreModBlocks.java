@@ -11,6 +11,20 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.Block;
 
 import gama.studios.hoh4core.block.WarpedCollumnBlock;
+import gama.studios.hoh4core.block.UnbreakablestonebricksstairsBlock;
+import gama.studios.hoh4core.block.UnbreakablestonebricksslabBlock;
+import gama.studios.hoh4core.block.UnbreakablestonebrickscrackedBlock;
+import gama.studios.hoh4core.block.UnbreakablesmoothbasaltBlock;
+import gama.studios.hoh4core.block.UnbreakabledeepslateBlock;
+import gama.studios.hoh4core.block.UnbreakablecobblestoneBlock;
+import gama.studios.hoh4core.block.UnbreakablebasaltBlock;
+import gama.studios.hoh4core.block.UnbreakableStoneBricksWallBlock;
+import gama.studios.hoh4core.block.UnbreakableStoneBricksBlock;
+import gama.studios.hoh4core.block.UnbreakableStoneBlock;
+import gama.studios.hoh4core.block.UnbreakablePolishedBasaltBlock;
+import gama.studios.hoh4core.block.UnbreakableDeepsltecobblestoneBlock;
+import gama.studios.hoh4core.block.UnbreakableAndesiteSlabBlock;
+import gama.studios.hoh4core.block.UnbreakableAndesiteBlock;
 import gama.studios.hoh4core.block.SpruceCollumnBlock;
 import gama.studios.hoh4core.block.OakCollumnBlock;
 import gama.studios.hoh4core.block.MifrilOreBlock;
@@ -64,6 +78,20 @@ public class Hoh4CoreModBlocks {
 	public static final RegistryObject<Block> DEMONITE_ORE = REGISTRY.register("demonite_ore", () -> new DemoniteOreBlock());
 	public static final RegistryObject<Block> MIFRIL_BLOCK = REGISTRY.register("mifril_block", () -> new MifrilBlockBlock());
 	public static final RegistryObject<Block> MIFRIL_ORE = REGISTRY.register("mifril_ore", () -> new MifrilOreBlock());
+	public static final RegistryObject<Block> UNBREAKABLE_STONE_BRICKS = REGISTRY.register("unbreakable_stone_bricks", () -> new UnbreakableStoneBricksBlock());
+	public static final RegistryObject<Block> UNBREAKABLESTONEBRICKSSTAIRS = REGISTRY.register("unbreakablestonebricksstairs", () -> new UnbreakablestonebricksstairsBlock());
+	public static final RegistryObject<Block> UNBREAKABLESTONEBRICKSSLAB = REGISTRY.register("unbreakablestonebricksslab", () -> new UnbreakablestonebricksslabBlock());
+	public static final RegistryObject<Block> UNBREAKABLE_STONE_BRICKS_WALL = REGISTRY.register("unbreakable_stone_bricks_wall", () -> new UnbreakableStoneBricksWallBlock());
+	public static final RegistryObject<Block> UNBREAKABLE_ANDESITE = REGISTRY.register("unbreakable_andesite", () -> new UnbreakableAndesiteBlock());
+	public static final RegistryObject<Block> UNBREAKABLE_ANDESITE_SLAB = REGISTRY.register("unbreakable_andesite_slab", () -> new UnbreakableAndesiteSlabBlock());
+	public static final RegistryObject<Block> UNBREAKABLE_STONE = REGISTRY.register("unbreakable_stone", () -> new UnbreakableStoneBlock());
+	public static final RegistryObject<Block> UNBREAKABLECOBBLESTONE = REGISTRY.register("unbreakablecobblestone", () -> new UnbreakablecobblestoneBlock());
+	public static final RegistryObject<Block> UNBREAKABLESTONEBRICKSCRACKED = REGISTRY.register("unbreakablestonebrickscracked", () -> new UnbreakablestonebrickscrackedBlock());
+	public static final RegistryObject<Block> UNBREAKABLEDEEPSLATE = REGISTRY.register("unbreakabledeepslate", () -> new UnbreakabledeepslateBlock());
+	public static final RegistryObject<Block> UNBREAKABLE_DEEPSLTECOBBLESTONE = REGISTRY.register("unbreakable_deepsltecobblestone", () -> new UnbreakableDeepsltecobblestoneBlock());
+	public static final RegistryObject<Block> UNBREAKABLEBASALT = REGISTRY.register("unbreakablebasalt", () -> new UnbreakablebasaltBlock());
+	public static final RegistryObject<Block> UNBREAKABLESMOOTHBASALT = REGISTRY.register("unbreakablesmoothbasalt", () -> new UnbreakablesmoothbasaltBlock());
+	public static final RegistryObject<Block> UNBREAKABLE_POLISHED_BASALT = REGISTRY.register("unbreakable_polished_basalt", () -> new UnbreakablePolishedBasaltBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

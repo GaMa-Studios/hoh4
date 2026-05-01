@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "minecraft:block/andesite",
+    "bottom": "minecraft:block/andesite",
+    "top": "minecraft:block/andesite",
+    "side": "minecraft:block/andesite"
+  },
+  "render_type": "solid"
+}

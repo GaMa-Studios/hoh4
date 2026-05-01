@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "hoh_4_core:block/unbreakablesmoothbasalt",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "hoh_4_core:block/unbreakablesmoothbasalt"
+    },
+    "axis=z": {
+      "model": "hoh_4_core:block/unbreakablesmoothbasalt",
+      "x": 90
+    }
+  }
+}

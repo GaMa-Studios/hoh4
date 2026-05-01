@@ -65,6 +65,16 @@ public class AnvilOfGodsBlock extends Block implements EntityBlock {
 	}
 
 	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return switch (state.getValue(FACING)) {
+			default -> box(0, 0, 0, 16, 12, 16);
+			case NORTH -> box(0, 0, 0, 16, 12, 16);
+			case EAST -> box(0, 0, 0, 16, 12, 16);
+			case WEST -> box(0, 0, 0, 16, 12, 16);
+		};
+	}
+
+	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
 		builder.add(FACING);
