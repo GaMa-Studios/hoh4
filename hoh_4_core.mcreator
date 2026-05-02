@@ -2685,8 +2685,8 @@
   "language_map": {
     "ru_ru": {
       "gamerule.debugMode.description": "HohCoreDebugMode",
-      "item.hoh_4_core.moon_sharp.description_0": "§oИсточник: Чертова реинкарнация",
       "block.hoh_4_core.unbreakablecobblestone": "Unbreakable Stone",
+      "item.hoh_4_core.moon_sharp.description_0": "§oИсточник: Чертова реинкарнация",
       "block.hoh_4_core.spruce_collumn": "Dark Oak Collumn",
       "block.hoh_4_core.demonite_block": "Блок демонита",
       "block.hoh_4_core.marblecollumn": "Marblecollumn",
@@ -2777,8 +2777,8 @@
     },
     "en_us": {
       "gamerule.debugMode.description": "HohCoreDebugMode",
-      "item.hoh_4_core.moon_sharp.description_0": "§oSource: Damn Reincarnation",
       "block.hoh_4_core.unbreakablecobblestone": "Unbreakable Cobblestone",
+      "item.hoh_4_core.moon_sharp.description_0": "§oSource: Damn Reincarnation",
       "block.hoh_4_core.spruce_collumn": "Spruce Collumn",
       "block.hoh_4_core.demonite_block": "Demonite Block",
       "block.hoh_4_core.marblecollumn": "Marble Collumn",

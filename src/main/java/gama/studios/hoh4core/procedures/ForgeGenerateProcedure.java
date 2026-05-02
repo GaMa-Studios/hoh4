@@ -5,21 +5,19 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.EntityTravelToDimensionEvent;
 
-import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
-import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
-import net.minecraft.world.level.block.Rotation;
-import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 import javax.annotation.Nullable;
 
@@ -64,28 +62,14 @@ public class ForgeGenerateProcedure {
 					}
 					Hoh4CoreModVariables.MapVariables.get(world).forge_y = Mth.nextInt(RandomSource.create(), 200, 220);
 					Hoh4CoreModVariables.MapVariables.get(world).syncData(world);
-					{
-						Entity _ent = entity;
-						_ent.teleportTo(Hoh4CoreModVariables.MapVariables.get(world).forge_x, Hoh4CoreModVariables.MapVariables.get(world).forge_y, Hoh4CoreModVariables.MapVariables.get(world).forge_z);
-						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport(Hoh4CoreModVariables.MapVariables.get(world).forge_x, Hoh4CoreModVariables.MapVariables.get(world).forge_y, Hoh4CoreModVariables.MapVariables.get(world).forge_z, _ent.getYRot(),
-									_ent.getXRot());
-					}
-					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("hoh_4_core", "forge_of_gods"));
-						if (template != null) {
-							template.placeInWorld(_serverworld, BlockPos.containing(x, y, z), BlockPos.containing(x, y, z),
-									new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.values()[_serverworld.random.nextInt(2)]).setIgnoreEntities(false), _serverworld.random, 3);
-						}
-					}
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, new Vec3(Hoh4CoreModVariables.MapVariables.get(world).forge_x, Hoh4CoreModVariables.MapVariables.get(world).forge_y, Hoh4CoreModVariables.MapVariables.get(world).forge_z),
+										Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								("execute positioned " + Hoh4CoreModVariables.MapVariables.get(world).forge_x + " " + Hoh4CoreModVariables.MapVariables.get(world).forge_y + " " + Hoh4CoreModVariables.MapVariables.get(world).forge_z
+										+ " in hoh_4_core:moon run customsetstructure forge_of_gods"));
 					Hoh4CoreModVariables.MapVariables.get(world).isForgeGenerated = true;
 					Hoh4CoreModVariables.MapVariables.get(world).syncData(world);
-					{
-						Entity _ent = entity;
-						_ent.teleportTo(xx, yy, zz);
-						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport(xx, yy, zz, _ent.getYRot(), _ent.getXRot());
-					}
 				}
 			}
 		}
