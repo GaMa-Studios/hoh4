@@ -11,12 +11,12 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "blastingInputStack": {
-      "value": "CUSTOM:Demonite"
+      "value": "CUSTOM:Mifril"
     },
     "blastingReturnStack": {
-      "value": "CUSTOM:DemoniteIgnot"
+      "value": "CUSTOM:MifrilIgnot"
     },
-    "name": "demonite_ignot_craft",
+    "name": "mifril_ignot_craft",
     "namespace": "mod"
   }
 }

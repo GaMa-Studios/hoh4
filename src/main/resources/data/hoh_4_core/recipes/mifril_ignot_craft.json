@@ -4,7 +4,7 @@
   "experience": 10,
   "cookingtime": 1200,
   "ingredient": {
-    "item": "hoh_4_core:demonite"
+    "item": "hoh_4_core:mifril"
   },
-  "result": "hoh_4_core:demonite_ignot"
+  "result": "hoh_4_core:mifril_ignot"
 }

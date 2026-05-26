@@ -2435,6 +2435,18 @@
           "src/main/java/gama/studios/hoh4core/command/CustomSetStructureComandCommand.java"
         ]
       }
+    },
+    {
+      "name": "MifrilIgnotCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mifril_ignot_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hoh_4_core/recipes/mifril_ignot_craft.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
